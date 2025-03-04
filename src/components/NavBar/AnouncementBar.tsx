@@ -8,7 +8,7 @@ function AnnouncementBarItem({
   isariahidden = false,
 }: AnnouncementItem) {
   return (
-    <div className="flex items-center gap-7 px-7" aria-hidden={isariahidden}>
+    <div className="flex items-center gap-7 pl-7" aria-hidden={isariahidden}>
       <Link to={link}>{text}</Link>
       <span className="inline-block w-1 h-1 bg-white rounded-full"></span>
     </div>
