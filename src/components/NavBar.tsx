@@ -1,41 +1,84 @@
-import logo from "../assets/logo.svg";
-import ButtonWithIconGroup from "./NavBar/ButtonGroup";
-import DropDown from "./NavBar/DropDown";
-import { LuSearch, LuShoppingCart, LuUserRound } from "react-icons/lu";
-import { AnnouncementBarProps, ButtonGroupProps } from "./NavBar/types";
-import AnouncementBar from "./NavBar/AnouncementBar";
-import { Link } from "react-router-dom";
+import { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
+import { LuSearch, LuShoppingCart, LuUserRound } from 'react-icons/lu';
+import logo from '../assets/logo.svg';
+import ButtonWithIconGroup from './NavBar/ButtonGroup';
+import DropDownGroup from './NavBar/DropDownGroup';
+import AnouncementBar from './NavBar/AnouncementBar';
+import { AnnouncementBarProps, ButtonGroupProps } from './NavBar/types';
 
 export default function NavBar() {
+  const [scrollY, setScrollY] = useState(0);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrollY(window.scrollY);
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
   const buttongroup: ButtonGroupProps = {
     buttons: [
       { icon: LuUserRound, size: 22, onClick: () => {} },
       { icon: LuSearch, size: 22, onClick: () => {} },
       { icon: LuShoppingCart, size: 22, onClick: () => {} },
     ],
-    className: "",
+    className: '',
   };
 
   const anouncmentbar: AnnouncementBarProps = {
     items: [
-      { text: "END OF SEASON SALE", link: "/" },
-      { text: "LIMITED TIME OFFER", link: "/" },
-      { text: "NEW ARRIVALS AVAILABLE", link: "/" },
+      { text: 'END OF SEASON SALE', link: '/' },
+      { text: 'LIMITED TIME OFFER', link: '/' },
+      { text: 'NEW ARRIVALS AVAILABLE', link: '/' },
     ],
     speed: 80,
-    direction: "left",
+    direction: 'left',
   };
 
   return (
-    <>
-      <AnouncementBar {...anouncmentbar} />
-      <div className="flex items-center justify-between pt-5 px-12">
-        <DropDown />
-        <Link to="/">
-          <img src={logo} className="w-30" />
-        </Link>
-        <ButtonWithIconGroup {...buttongroup} />
+    <div
+      className={`fixed top-0 left-0 w-full transition-transform duration-300 ${
+        scrollY > 150 ? '-translate-y-full' : 'translate-y-0'
+      }`}
+    >
+      {/* Announcement Bar */}
+      <div
+        className="overflow-hidden transition-all duration-300"
+        style={{
+          opacity: scrollY > 50 ? 0 : 1,
+          height: scrollY > 50 ? 0 : '40px',
+        }}
+      >
+        <AnouncementBar {...anouncmentbar} />
       </div>
-    </>
+
+      {/* Main Navbar */}
+      <div
+        className={`relative flex items-center justify-between px-12 py-10 transition-all duration-300`}
+        style={{
+          opacity: scrollY > 150 ? 0 : 1,
+        }}
+      >
+        {/* Left side menu */}
+        <div className="absolute left-12">
+          <DropDownGroup />
+        </div>
+
+        {/* Centered Logo */}
+        <div className="absolute left-1/2 -translate-x-1/2 transform">
+          <Link to="/">
+            <img src={logo} className="w-35" alt="Logo" />
+          </Link>
+        </div>
+
+        {/* Right side buttons */}
+        <div className="absolute right-12">
+          <ButtonWithIconGroup {...buttongroup} />
+        </div>
+      </div>
+    </div>
   );
 }
