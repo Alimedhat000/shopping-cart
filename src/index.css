@@ -1,1 +1,10 @@
 @import "tailwindcss";
+
+@font-face {
+  font-family: ActayWide;
+  src: url(assets/Actay_Wide_Bold_1.woff2);
+}
+
+#root {
+  font-family: ActayWide;
+}
