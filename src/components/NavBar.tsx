@@ -21,9 +21,9 @@ export default function NavBar() {
 
   const buttongroup: ButtonGroupProps = {
     buttons: [
-      { icon: LuUserRound, size: 22, onClick: () => {} },
-      { icon: LuSearch, size: 22, onClick: () => {} },
-      { icon: LuShoppingCart, size: 22, onClick: () => {} },
+      { icon: LuUserRound, size: 22, onClick: () => {}, color: '#fff' },
+      { icon: LuSearch, size: 22, onClick: () => {}, color: '#fff' },
+      { icon: LuShoppingCart, size: 22, onClick: () => {}, color: '#fff' },
     ],
     className: '',
   };
@@ -64,7 +64,7 @@ export default function NavBar() {
       >
         {/* Left side menu */}
         <div className="absolute left-12">
-          <DropDownGroup />
+          <DropDownGroup color={'#fff'} />
         </div>
 
         {/* Centered Logo */}

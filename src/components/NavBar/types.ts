@@ -1,9 +1,10 @@
-import { IconType } from "react-icons";
+import { IconType } from 'react-icons';
 
 export interface ButtonProps {
   icon: IconType;
   size?: number;
   onClick?: () => void;
+  color?: string;
 }
 
 export interface ButtonGroupProps {
@@ -20,5 +21,5 @@ export interface AnnouncementItem {
 export interface AnnouncementBarProps {
   items: AnnouncementItem[];
   speed?: number;
-  direction?: "left" | "right";
+  direction?: 'left' | 'right';
 }

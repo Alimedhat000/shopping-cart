@@ -1,14 +1,14 @@
-import { ButtonProps, ButtonGroupProps } from "./types";
+import { ButtonProps, ButtonGroupProps } from './types';
 
-const IconButton = ({ icon: Icon, size = 15, onClick }: ButtonProps) => (
+const IconButton = ({ icon: Icon, size = 15, onClick, color }: ButtonProps) => (
   <button onClick={onClick}>
-    <Icon size={size} />
+    <Icon size={size} color={color} />
   </button>
 );
 
 export default function ButtonGroup({
   buttons,
-  className = "",
+  className = '',
 }: ButtonGroupProps) {
   return (
     <div className={`flex items-center justify-center gap-4 ${className}`}>

@@ -1,10 +1,16 @@
-import { LuChevronDown } from "react-icons/lu";
+import { LuChevronDown } from 'react-icons/lu';
 
-export default function DropDown({ text }: { text: string }) {
+export default function DropDown({
+  text,
+  color,
+}: {
+  text: string;
+  color: string;
+}) {
   return (
     <button className="flex items-center gap-1">
-      <span>{text}</span>
-      <LuChevronDown />
+      <span style={{ color }}>{text}</span>
+      <LuChevronDown color={color} />
     </button>
   );
 }
