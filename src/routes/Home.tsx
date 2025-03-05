@@ -4,8 +4,9 @@ import HeroBanner from '../components/Home/HeroBanner';
 function Home() {
   return (
     <>
-      <div className="flex items-center justify-center">
+      <div className="flex flex-col items-center justify-center">
         <HeroBanner />
+
         {/* <AnnouncementBar />
         <ProductSlider />
         <ProductGrid /> */}

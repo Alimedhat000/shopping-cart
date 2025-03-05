@@ -40,7 +40,7 @@ export default function NavBar() {
 
   return (
     <div
-      className={`fixed top-0 left-0 w-full transition-transform duration-300 ${
+      className={`fixed top-0 left-0 z-50 w-full transition-transform duration-300 ${
         scrollY > 150 ? '-translate-y-full' : 'translate-y-0'
       }`}
     >
@@ -57,13 +57,14 @@ export default function NavBar() {
 
       {/* Main Navbar */}
       <div
-        className={`relative flex items-center justify-between px-12 py-10 transition-all duration-300`}
+        className={`relative flex items-center justify-between px-22 py-10 transition-all duration-300`}
         style={{
           opacity: scrollY > 150 ? 0 : 1,
+          background: scrollY > 50 ? '#000' : 0,
         }}
       >
         {/* Left side menu */}
-        <div className="absolute left-12">
+        <div className="">
           <DropDownGroup color={'#fff'} />
         </div>
 
@@ -75,7 +76,7 @@ export default function NavBar() {
         </div>
 
         {/* Right side buttons */}
-        <div className="absolute right-12">
+        <div className="">
           <ButtonWithIconGroup {...buttongroup} />
         </div>
       </div>

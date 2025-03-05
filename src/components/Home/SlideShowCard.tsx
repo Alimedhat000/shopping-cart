@@ -2,7 +2,7 @@ import ModelImage from '../../assets/model-banner-1.png';
 
 export const FirstSlideShowCard = () => {
   return (
-    <div className="relative mx-auto flex min-h-[600px] w-full max-w-7xl overflow-hidden rounded-3xl bg-[#f2ebd9] text-[#FF4500]">
+    <div className="relative flex min-h-[600px] w-full overflow-hidden rounded-3xl bg-[#f2ebd9] text-[#FF4500]">
       <div className="absolute top-4 right-4 left-4 flex justify-between text-[6.5px] uppercase">
         <div className="tracking-tight">
           <div className="flex flex-col">
@@ -69,7 +69,7 @@ import ModelDetailImage from '../../assets/model-banner-2-closeup.png'; // Adjus
 
 export const SecondSlideShowCard = () => {
   return (
-    <div className="relative mx-auto flex min-h-[600px] w-full max-w-7xl overflow-hidden rounded-3xl bg-[#f2ebd9]">
+    <div className="relative flex min-h-[600px] w-full overflow-hidden rounded-3xl bg-[#f2ebd9]">
       {/* Top Section */}
       <div className="absolute top-0 right-0 left-0 flex justify-between p-4 text-xs tracking-wider text-black uppercase">
         <div className="flex space-x-4">

@@ -1,29 +1,50 @@
 import { Link } from 'react-router-dom';
 import { FirstSlideShowCard, SecondSlideShowCard } from './SlideShowCard';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
+
 export default function SlideShow() {
   const [currentSlide, setCurrentSlide] = useState(0);
 
   const slides = [
-    <Link to={'/'} key="slide1">
-      <SecondSlideShowCard />
-    </Link>,
     <Link to={'/'} key="slide2">
       <FirstSlideShowCard />
     </Link>,
+
+    <Link to={'/'} key="slide1">
+      <SecondSlideShowCard />
+    </Link>,
   ];
+
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setCurrentSlide((prevSlide) =>
+        prevSlide === slides.length - 1 ? 0 : prevSlide + 1
+      );
+    }, 10000); // 10 seconds
+
+    return () => clearInterval(timer);
+  }, [slides.length]);
 
   const handleDotClick = (index: number) => {
     setCurrentSlide(index);
   };
 
   return (
-    <div className="relative w-full">
+    <div className="relative w-full overflow-hidden">
       {/* Slide Content */}
-      {slides[currentSlide]}
+      <div
+        className="flex transition-transform duration-500 ease-in-out"
+        style={{ transform: `translateX(-${currentSlide * 100}%)` }}
+      >
+        {slides.map((slide, index) => (
+          <div key={index} className="w-full flex-shrink-0">
+            {slide}
+          </div>
+        ))}
+      </div>
 
       {/* Custom Dot Navigation */}
-      <div className="absolute right-35 bottom-8 flex items-center space-x-2">
+      <div className="absolute right-35 bottom-8 z-1 flex items-center space-x-2">
         {slides.map((_, index) => (
           <button
             key={index}
