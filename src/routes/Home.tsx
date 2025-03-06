@@ -4,7 +4,7 @@ import HeroBanner from '../components/Home/HeroBanner';
 function Home() {
   return (
     <>
-      <div className="flex flex-col items-center justify-center">
+      <div className="flex w-full flex-col items-center justify-center">
         <HeroBanner />
 
         {/* <AnnouncementBar />
