@@ -9,15 +9,25 @@ import { AnnouncementBarProps, ButtonGroupProps } from './NavBar/types';
 
 export default function NavBar() {
   const [scrollY, setScrollY] = useState(0);
+  const [showNav, setShowNav] = useState(true); // Initially show the navbar
 
   useEffect(() => {
     const handleScroll = () => {
-      setScrollY(window.scrollY);
+      const currentScrollY = window.scrollY;
+
+      // Show navbar when scrolling up, hide when scrolling down
+      if (currentScrollY < scrollY) {
+        setShowNav(true); // Show navbar when scrolling up
+      } else if (currentScrollY > scrollY && currentScrollY > 150) {
+        setShowNav(false); // Hide navbar when scrolling down past 150px
+      }
+      // Update scrollY state
+      setScrollY(currentScrollY);
     };
 
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
+  }, [scrollY]);
 
   const buttongroup: ButtonGroupProps = {
     buttons: [
@@ -40,9 +50,7 @@ export default function NavBar() {
 
   return (
     <div
-      className={`fixed top-0 left-0 z-50 w-full transition-transform duration-300 ${
-        scrollY > 150 ? '-translate-y-full' : 'translate-y-0'
-      }`}
+      className={`fixed top-0 left-0 z-50 w-full transition-transform duration-300`}
     >
       {/* Announcement Bar */}
       <div
@@ -59,8 +67,8 @@ export default function NavBar() {
       <div
         className={`relative flex items-center justify-between px-5 py-10 transition-all duration-300 md:px-22`}
         style={{
-          opacity: scrollY > 150 ? 0 : 1,
-          background: scrollY > 50 ? '#000' : 0,
+          opacity: showNav ? 1 : 0,
+          background: scrollY > 50 ? '#000' : 'transparent',
         }}
       >
         {/* Left side menu */}
