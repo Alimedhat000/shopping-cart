@@ -80,7 +80,7 @@ export default function SlideShow() {
       </div>
 
       {/* Custom Dot Navigation */}
-      <div className="absolute right-8 bottom-4 z-10 flex items-center space-x-2">
+      <div className="absolute right-5 bottom-8 z-10 flex items-center space-x-4 md:right-15">
         {slides.map((_, index) => (
           <button
             key={index}
@@ -90,8 +90,8 @@ export default function SlideShow() {
             <div
               className={`transition-all duration-300 ease-in-out ${
                 currentSlide === index
-                  ? 'h-2 w-10 rounded-full bg-white'
-                  : 'h-2 w-2 rounded-full bg-[#FF4500]'
+                  ? 'h-3 w-8 rounded-full bg-white md:h-2 md:w-10'
+                  : 'h-3 w-3 rounded-full bg-white opacity-40 md:h-2 md:w-2'
               } `}
             />
           </button>
