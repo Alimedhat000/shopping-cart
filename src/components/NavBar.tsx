@@ -4,7 +4,7 @@ import { LuSearch, LuShoppingCart, LuUserRound } from 'react-icons/lu';
 import logo from '../assets/logo.svg';
 import ButtonWithIconGroup from './NavBar/ButtonGroup';
 import DropDownGroup from './NavBar/DropDownGroup';
-import AnouncementBar from './NavBar/AnouncementBar';
+import AnnouncementBar from './NavBar/AnnouncementBar';
 import { AnnouncementBarProps, ButtonGroupProps } from './NavBar/types';
 
 export default function NavBar() {
@@ -38,7 +38,7 @@ export default function NavBar() {
     className: '',
   };
 
-  const anouncmentbar: AnnouncementBarProps = {
+  const announcementbar: AnnouncementBarProps = {
     items: [
       { text: 'END OF SEASON SALE', link: '/' },
       { text: 'LIMITED TIME OFFER', link: '/' },
@@ -61,7 +61,7 @@ export default function NavBar() {
           height: scrollY > 50 ? 0 : '40px',
         }}
       >
-        <AnouncementBar {...anouncmentbar} />
+        <AnnouncementBar {...announcementbar} />
       </div>
 
       {/* Main Navbar */}
