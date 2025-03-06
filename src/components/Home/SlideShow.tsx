@@ -1,32 +1,68 @@
 import { Link } from 'react-router-dom';
-import { FirstSlideShowCard, SecondSlideShowCard } from './SlideShowCard';
-import { useState, useEffect } from 'react';
+import FirstSlideBig from '../../assets/imgs/hero_slide_1_big.png';
+import FirstSlideSmall from '../../assets/imgs/hero_slide_1_small.png';
+import SecondSlideBig from '../../assets/imgs/hero_slide_2_big.png';
+import SecondSlideSmall from '../../assets/imgs/hero_slide_2_small.png';
+import { useState, useEffect, useRef, useCallback } from 'react';
 
 export default function SlideShow() {
   const [currentSlide, setCurrentSlide] = useState(0);
+  const [isMobile, setIsMobile] = useState(window.innerWidth < 768);
+  const timerRef = useRef<NodeJS.Timeout | null>(null);
+
+  // Detect screen size changes
+  useEffect(() => {
+    const handleResize = () => setIsMobile(window.innerWidth < 768);
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
 
   const slides = [
-    <Link to={'/'} key="slide2">
-      <FirstSlideShowCard />
+    <Link to={'/'} key="slide1">
+      <img
+        src={isMobile ? FirstSlideSmall : FirstSlideBig}
+        className="h-auto w-screen"
+        alt="First Slide"
+      />
     </Link>,
 
-    <Link to={'/'} key="slide1">
-      <SecondSlideShowCard />
+    <Link to={'/'} key="slide2">
+      <img
+        src={isMobile ? SecondSlideSmall : SecondSlideBig}
+        className="h-auto w-screen"
+        alt="Second Slide"
+      />
     </Link>,
   ];
 
-  useEffect(() => {
-    const timer = setInterval(() => {
+  // Memoize the startTimer function
+  const startTimer = useCallback(() => {
+    if (timerRef.current) {
+      clearInterval(timerRef.current);
+    }
+
+    timerRef.current = setInterval(() => {
       setCurrentSlide((prevSlide) =>
         prevSlide === slides.length - 1 ? 0 : prevSlide + 1
       );
-    }, 10000); // 10 seconds
-
-    return () => clearInterval(timer);
+    }, 10000);
   }, [slides.length]);
 
+  useEffect(() => {
+    startTimer();
+    return () => {
+      if (timerRef.current) {
+        clearInterval(timerRef.current);
+      }
+    };
+  }, [startTimer]);
+
   const handleDotClick = (index: number) => {
+    if (timerRef.current) {
+      clearInterval(timerRef.current);
+    }
     setCurrentSlide(index);
+    startTimer();
   };
 
   return (
@@ -44,7 +80,7 @@ export default function SlideShow() {
       </div>
 
       {/* Custom Dot Navigation */}
-      <div className="absolute right-35 bottom-8 z-1 flex items-center space-x-2">
+      <div className="absolute right-8 bottom-4 z-10 flex items-center space-x-2">
         {slides.map((_, index) => (
           <button
             key={index}
@@ -54,7 +90,7 @@ export default function SlideShow() {
             <div
               className={`transition-all duration-300 ease-in-out ${
                 currentSlide === index
-                  ? 'h-2 w-8 rounded-full bg-white'
+                  ? 'h-2 w-10 rounded-full bg-white'
                   : 'h-2 w-2 rounded-full bg-[#FF4500]'
               } `}
             />
