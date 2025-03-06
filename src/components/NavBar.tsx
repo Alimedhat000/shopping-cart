@@ -43,6 +43,7 @@ export default function NavBar() {
       { text: 'END OF SEASON SALE', link: '/' },
       { text: 'LIMITED TIME OFFER', link: '/' },
       { text: 'NEW ARRIVALS AVAILABLE', link: '/' },
+      { text: 'HUGE DISCOUNTS', link: '/' },
     ],
     speed: 80,
     direction: 'left',
