@@ -1,5 +1,10 @@
 import { useState, useRef } from 'react';
-import { IoIosArrowBack, IoIosArrowForward } from 'react-icons/io';
+import {
+  IoIosArrowBack,
+  IoIosArrowForward,
+  IoMdArrowRoundForward,
+  IoMdArrowRoundBack,
+} from 'react-icons/io';
 import ProductCard from '../ProductCard';
 
 // ViewAllButton Component
@@ -32,6 +37,56 @@ const ProgressBar: React.FC<ProgressBarProps> = ({ percentage }) => {
   );
 };
 
+// NavigationButton Component
+interface NavigationButtonProps {
+  onClick: () => void;
+  disabled: boolean;
+  direction: 'prev' | 'next';
+  ariaLabel: string;
+}
+
+const NavigationButton: React.FC<NavigationButtonProps> = ({
+  onClick,
+  disabled,
+  direction,
+  ariaLabel,
+}) => {
+  const [isHovered, setIsHovered] = useState<boolean>(false);
+
+  const showHoverIcon = isHovered && !disabled;
+
+  return (
+    <button
+      onClick={onClick}
+      className={disabled ? 'cursor-not-allowed opacity-20' : 'cursor-pointer'}
+      disabled={disabled}
+      aria-label={ariaLabel}
+      onMouseEnter={() => setIsHovered(true)}
+      onMouseLeave={() => setIsHovered(false)}
+    >
+      <div className="rounded-full border-1 border-gray-500 p-3.5 transition-all duration-200 hover:border-gray-500">
+        {direction === 'prev' ? (
+          showHoverIcon ? (
+            <IoMdArrowRoundBack className="h-5 w-5 text-gray-700" />
+          ) : (
+            <IoIosArrowBack
+              className="h-5 w-5 text-gray-700"
+              strokeWidth={'20'}
+            />
+          )
+        ) : showHoverIcon ? (
+          <IoMdArrowRoundForward className="h-5 w-5 text-gray-700" />
+        ) : (
+          <IoIosArrowForward
+            className="h-5 w-5 text-gray-700"
+            strokeWidth={'20'}
+          />
+        )}
+      </div>
+    </button>
+  );
+};
+
 // SliderControls Component
 interface SliderControlsProps {
   onPrev: () => void;
@@ -47,27 +102,20 @@ const SliderControls: React.FC<SliderControlsProps> = ({
   isNextDisabled,
 }) => {
   return (
-    <div className="flex space-x-3">
-      <button
+    <div className="flex space-x-4">
+      <NavigationButton
         onClick={onPrev}
-        className={isPrevDisabled ? 'opacity-50' : ''}
         disabled={isPrevDisabled}
-        aria-label="Previous slide"
-      >
-        <div className="rounded-full border-2 border-gray-300 p-4 hover:border-gray-500">
-          <IoIosArrowBack />
-        </div>
-      </button>
-      <button
+        direction="prev"
+        ariaLabel="Previous slide"
+      />
+
+      <NavigationButton
         onClick={onNext}
-        className={isNextDisabled ? 'opacity-50' : ''}
         disabled={isNextDisabled}
-        aria-label="Next slide"
-      >
-        <div className="rounded-full border-2 border-gray-300 p-4 hover:border-gray-500">
-          <IoIosArrowForward />
-        </div>
-      </button>
+        direction="next"
+        ariaLabel="Next slide"
+      />
     </div>
   );
 };
@@ -92,7 +140,7 @@ const ProductContainer: React.FC<ProductContainerProps> = ({
       ref={sliderRef}
       style={{
         transform: `translateX(-${currentSlide * (100 / totalSlides)}%)`,
-        transition: 'transform 0.3s ease',
+        transition: 'transform 0.6s ease',
         display: 'grid',
         width: `${(totalSlides / visibleSlides) * 100}%`,
       }}
