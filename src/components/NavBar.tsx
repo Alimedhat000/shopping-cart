@@ -31,8 +31,8 @@ export default function NavBar() {
 
   const buttongroup: ButtonGroupProps = {
     buttons: [
-      { icon: LuUserRound, size: 22, onClick: () => {}, color: '#fff' },
       { icon: LuSearch, size: 22, onClick: () => {}, color: '#fff' },
+      { icon: LuUserRound, size: 22, onClick: () => {}, color: '#fff' },
       { icon: LuShoppingCart, size: 22, onClick: () => {}, color: '#fff' },
     ],
     className: '',
@@ -66,7 +66,7 @@ export default function NavBar() {
 
       {/* Main Navbar */}
       <div
-        className={`relative flex items-center justify-between px-5 py-10 transition-all duration-300 md:px-22`}
+        className={`relative flex items-center justify-between px-5 py-10 transition-all duration-300 md:px-12`}
         style={{
           opacity: showNav ? 1 : 0,
           background: scrollY > 50 ? '#000' : 'transparent',

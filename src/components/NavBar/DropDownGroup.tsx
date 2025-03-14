@@ -2,9 +2,9 @@ import DropDown from './DropDown';
 
 export default function DropDownGroup({ color = '#fff' }: { color: string }) {
   return (
-    <div className="flex gap-4 text-xs">
-      <DropDown text={'WOMEN'} color={color} />
-      <DropDown text={'MEN'} color={color} />
+    <div className="flex gap-9 text-lg">
+      <DropDown text={'Women'} color={color} />
+      <DropDown text={'Men'} color={color} />
     </div>
   );
 }
