@@ -66,7 +66,7 @@ export default function NavBar() {
 
       {/* Main Navbar */}
       <div
-        className={`relative flex items-center justify-between px-5 py-10 transition-all duration-300 md:px-12`}
+        className={`relative flex items-center justify-between px-5 py-10 transition-all duration-300 md:px-9 lg:px-12`}
         style={{
           opacity: showNav ? 1 : 0,
           background: scrollY > 50 ? '#000' : 'transparent',

@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 export default function ProductCard() {
   return (
-    <div className="relative row-span-2 grid grid-rows-subgrid rounded-md bg-white md:min-w-80">
+    <div className="relative row-span-2 grid min-w-70 grid-rows-subgrid rounded-md bg-white lg:min-w-60">
       {/* card_badge */}
       <div className="absolute top-3 left-3 z-10">
         <span className="rounded-full bg-[#ff4f2c] px-3 py-1 text-xs font-medium text-white">

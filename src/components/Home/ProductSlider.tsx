@@ -28,9 +28,9 @@ interface ProgressBarProps {
 
 const ProgressBar: React.FC<ProgressBarProps> = ({ percentage }) => {
   return (
-    <div className="relative mr-6 h-0.5 w-full bg-gray-200">
+    <div className="relative mr-6 h-1 w-full bg-gray-200 md:h-0.5">
       <div
-        className="absolute left-0 h-0.5 rounded-xl bg-gray-800 transition-all ease-in-out"
+        className="absolute left-0 h-1 rounded-xl bg-gray-800 transition-all ease-in-out md:h-0.5"
         style={{ width: `${percentage}%` }}
       />
     </div>
@@ -181,7 +181,7 @@ const ProductSlider: React.FC = () => {
   const isNextDisabled = currentSlide >= totalSlides - visibleSlides;
 
   return (
-    <div className="space-y-12 overflow-hidden px-12">
+    <div className="space-y-12 overflow-hidden px-5 md:px-9 lg:px-12">
       <ViewAllButton />
 
       <ProductContainer
