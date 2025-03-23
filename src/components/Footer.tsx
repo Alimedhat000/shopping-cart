@@ -5,6 +5,7 @@ import { MdLockOutline } from 'react-icons/md';
 import { SlSocialDropbox } from 'react-icons/sl';
 import { TbHeadset } from 'react-icons/tb';
 import { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 
 function FooterCard({
   icon,
@@ -170,36 +171,36 @@ export default function Footer() {
                 </a>
               </li>
               <li>
-                <a
-                  href="#"
+                <Link
+                  to="/"
                   className="text-[#aaa499] hover:text-[#f2eada] hover:underline"
                 >
                   Shipping Policy
-                </a>
+                </Link>
               </li>
               <li>
-                <a
-                  href="#"
+                <Link
+                  to="/"
                   className="text-[#aaa499] hover:text-[#f2eada] hover:underline"
                 >
                   Refund Policy
-                </a>
+                </Link>
               </li>
               <li>
-                <a
-                  href="#"
+                <Link
+                  to="/"
                   className="text-[#aaa499] hover:text-[#f2eada] hover:underline"
                 >
                   Privacy Policy
-                </a>
+                </Link>
               </li>
               <li>
-                <a
-                  href="#"
+                <Link
+                  to="/"
                   className="text-[#aaa499] hover:text-[#f2eada] hover:underline"
                 >
                   Terms of Service
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
@@ -228,7 +229,7 @@ export default function Footer() {
             </a>
           </div>
           <p className="text-xs sm:text-sm">
-            © 2025, Go Native. Powered by Shopify
+            © 2025, Logo Ipsum. Powered by Ali
           </p>
         </div>
       </div>

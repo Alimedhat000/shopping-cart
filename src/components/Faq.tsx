@@ -35,7 +35,7 @@ export default function FAQ() {
 
   return (
     <div className="mb-20 px-0 py-12 sm:px-5 md:px-9 lg:px-12">
-      <section className="space-y-8 rounded-3xl bg-white px-5 py-10 shadow-md sm:p-10 lg:gap-8 xl:flex xl:px-14 xl:py-16">
+      <section className="space-y-8 bg-white px-5 py-10 shadow-xs sm:rounded-3xl sm:p-10 sm:shadow-md lg:gap-8 xl:flex xl:px-14 xl:py-16">
         <div className="space-y-8">
           <h2 className="text-2xl font-bold lg:text-5xl">FAQ</h2>
           <p className="xl:text-lg">
@@ -65,7 +65,7 @@ export default function FAQ() {
                 <div
                   className={`overflow-hidden transition-all duration-300 ${isOpen ? 'max-h-40 opacity-100' : 'max-h-0 opacity-0'}`}
                 >
-                  <p className="mb-5 pr-6 xl:text-lg">{faq.answer}</p>
+                  <p className="mb-5 pr-6 text-sm">{faq.answer}</p>
                 </div>
               </div>
             );
