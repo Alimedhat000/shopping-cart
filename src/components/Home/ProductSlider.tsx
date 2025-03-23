@@ -6,7 +6,7 @@ import {
   IoMdArrowRoundBack,
 } from 'react-icons/io';
 import ProductCard from '../ProductCard';
-import ViewAllButton from '../ViewAllButton';
+import ViewAllButton from '../Util/ViewAllButton';
 
 // ProgressBar Component
 interface ProgressBarProps {
