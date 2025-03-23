@@ -162,27 +162,42 @@ export default function Footer() {
             <h3 className="font-bold">Useful Links</h3>
             <ul className="mt-2 space-y-2">
               <li>
-                <a href="#" className="hover:underline">
+                <a
+                  href="#"
+                  className="text-[#aaa499] hover:text-[#f2eada] hover:underline"
+                >
                   Frequently Asked Questions
                 </a>
               </li>
               <li>
-                <a href="#" className="hover:underline">
+                <a
+                  href="#"
+                  className="text-[#aaa499] hover:text-[#f2eada] hover:underline"
+                >
                   Shipping Policy
                 </a>
               </li>
               <li>
-                <a href="#" className="hover:underline">
+                <a
+                  href="#"
+                  className="text-[#aaa499] hover:text-[#f2eada] hover:underline"
+                >
                   Refund Policy
                 </a>
               </li>
               <li>
-                <a href="#" className="hover:underline">
+                <a
+                  href="#"
+                  className="text-[#aaa499] hover:text-[#f2eada] hover:underline"
+                >
                   Privacy Policy
                 </a>
               </li>
               <li>
-                <a href="#" className="hover:underline">
+                <a
+                  href="#"
+                  className="text-[#aaa499] hover:text-[#f2eada] hover:underline"
+                >
                   Terms of Service
                 </a>
               </li>
@@ -192,7 +207,7 @@ export default function Footer() {
           {/* About */}
           <div>
             <h3 className="font-bold">About</h3>
-            <p className="mt-2">
+            <p className="mt-2 text-[#aaa499]">
               Support your community's creative economy while finding
               one-of-a-kind pieces. Visit our spacious hub today!
             </p>
