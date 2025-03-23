@@ -1,49 +1,89 @@
 // import testimage from '../assets/imgs/model-banner-2-closeup.png';
 import { Link } from 'react-router-dom';
 
-export default function ProductCard() {
-  return (
-    <div className="relative row-span-2 grid min-w-70 grid-rows-subgrid rounded-md bg-white lg:min-w-60">
-      {/* card_badge */}
-      <div className="absolute top-3 left-3 z-10">
-        <span className="rounded-full bg-[#ff4f2c] px-3 py-1 text-xs font-medium text-white">
-          Save 105.00
-        </span>
-      </div>
+interface ProductCardProps {
+  image: string;
+  title: string;
+  brand?: string;
+  price: number;
+  oldPrice?: number;
+  discountText?: string;
+  isSoldOut?: boolean;
+  link?: string;
+  classname?: string;
+}
 
-      {/* card_figure */}
+export default function ProductCard({
+  image,
+  title,
+  brand,
+  price,
+  oldPrice,
+  discountText,
+  isSoldOut = false,
+  link = '/',
+  classname = '',
+}: ProductCardProps) {
+  return (
+    <div
+      className={`relative row-span-2 grid grid-rows-subgrid rounded-md bg-white ${classname}`}
+    >
+      {/* Discount Badge (if exists) */}
+      {discountText && (
+        <div className="absolute top-1 left-2 z-10 md:top-3 md:left-3">
+          <span className="rounded-full bg-[#ff4f2c] px-2 py-1 text-[0.5rem] font-medium text-white md:px-3 md:text-xs">
+            {discountText}
+          </span>
+        </div>
+      )}
+
+      {isSoldOut
+        ? discountText && (
+            <div className="absolute top-6 left-2 z-10 md:top-10 md:left-3">
+              <span className="rounded-full bg-black px-2 py-1 text-[0.5rem] font-medium text-white md:px-3 md:text-xs">
+                Sold Out
+              </span>
+            </div>
+          )
+        : null}
+
+      {/* Product Image */}
       <div className="row-start-1 w-full bg-gray-100">
         <img
-          src="https://placehold.co/500x700"
-          alt="Product"
-          className="h-full w-full object-cover"
+          src={image}
+          alt={title}
+          className="aspect-[3/4] h-auto w-full object-cover"
         />
       </div>
 
-      {/* card_info */}
-      <div className="row-start-2 space-y-1 px-8 py-4">
-        <Link
-          to="/"
-          className="text-xs font-medium text-gray-500 hover:text-gray-700"
-        >
-          Woke
-        </Link>
+      {/* Product Info */}
+      <div className="row-start-2 space-y-1 px-4 py-4 md:px-6">
+        {/* Brand Link (if exists) */}
+        {brand && (
+          <Link
+            to={link}
+            className="text-xs font-medium text-gray-500 hover:text-gray-700"
+          >
+            {brand}
+          </Link>
+        )}
 
         <div>
-          <h3 className="text-md font-medium text-gray-900">Comfy Pants</h3>
+          <h3 className="md:text-md text-sm font-medium text-gray-900">
+            {title}{' '}
+          </h3>
 
           <div className="flex items-center space-x-2">
-            <span className="text-md font-sans text-[#ff4f2c]">750.00 EGP</span>
-            <span className="font-sans text-sm text-gray-500 line-through">
-              855.00 EGP
+            <span className="font-sans text-sm text-[#ff4f2c] md:text-sm">
+              {price} EGP
             </span>
+            {oldPrice && (
+              <span className="font-sans text-xs text-gray-500 line-through md:text-sm">
+                {oldPrice} EGP
+              </span>
+            )}
           </div>
         </div>
-        {/* 
-        <div className="flex items-center space-x-2 pt-1">
-          <button className="h-5 w-5 rounded-full border border-gray-300 bg-gray-800"></button>
-          <button className="h-5 w-5 rounded-full border border-gray-300 bg-blue-600"></button>
-        </div> */}
       </div>
     </div>
   );

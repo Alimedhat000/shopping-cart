@@ -6,20 +6,7 @@ import {
   IoMdArrowRoundBack,
 } from 'react-icons/io';
 import ProductCard from '../ProductCard';
-
-// ViewAllButton Component
-const ViewAllButton: React.FC = () => {
-  return (
-    <div className="flex items-center justify-end">
-      <div className="flex items-center gap-3 font-light">
-        <span>View all</span>
-        <div className="rounded-full bg-gray-300 p-1">
-          <IoIosArrowForward />
-        </div>
-      </div>
-    </div>
-  );
-};
+import ViewAllButton from '../ViewAllButton';
 
 // ProgressBar Component
 interface ProgressBarProps {
@@ -136,7 +123,7 @@ const ProductContainer: React.FC<ProductContainerProps> = ({
 }) => {
   return (
     <div
-      className="grid grid-flow-col grid-rows-[16fr_5fr] gap-x-6 overflow-hidden"
+      className="grid grid-flow-col grid-rows-[16fr_6fr] gap-x-6 overflow-hidden"
       ref={sliderRef}
       style={{
         transform: `translateX(-${currentSlide * (100 / totalSlides)}%)`,
@@ -146,7 +133,17 @@ const ProductContainer: React.FC<ProductContainerProps> = ({
       }}
     >
       {Array.from({ length: totalSlides }).map((_, index) => (
-        <ProductCard key={index} />
+        <ProductCard
+          key={index}
+          image="https://placehold.co/500x700"
+          title="Comfy Pants"
+          brand="Woke"
+          price={750}
+          oldPrice={855}
+          discountText="Save 105.00"
+          link="/"
+          classname="min-w-60 lg:min-w-50 "
+        />
       ))}
     </div>
   );

@@ -1,4 +1,5 @@
 import HeroBanner from '../components/Home/HeroBanner';
+import ProductGrid from '../components/Home/ProductGrid';
 import ProductSlider from '../components/Home/ProductSlider';
 import AnnouncementBar from '../components/NavBar/AnnouncementBar';
 import { AnnouncementBarProps } from '../components/NavBar/types';
@@ -30,7 +31,8 @@ function Home() {
         </div>
 
         <ProductSlider />
-        {/*<ProductGrid /> */}
+
+        <ProductGrid />
       </div>
     </>
   );
