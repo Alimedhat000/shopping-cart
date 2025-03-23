@@ -34,7 +34,7 @@ export default function FAQ() {
   };
 
   return (
-    <div className="px-0 py-12 sm:px-5 md:px-9 lg:px-12">
+    <div className="mb-20 px-0 py-12 sm:px-5 md:px-9 lg:px-12">
       <section className="space-y-8 rounded-3xl bg-white px-5 py-10 shadow-md sm:p-10 lg:gap-8 xl:flex xl:px-14 xl:py-16">
         <div className="space-y-8">
           <h2 className="text-2xl font-bold lg:text-5xl">FAQ</h2>
