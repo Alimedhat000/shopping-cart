@@ -1,3 +1,4 @@
+import FAQ from '../components/Faq';
 import HeroBanner from '../components/Home/HeroBanner';
 import ProductGrid from '../components/Home/ProductGrid';
 import ProductSlider from '../components/Home/ProductSlider';
@@ -29,10 +30,9 @@ function Home() {
         <div className="w-full overflow-hidden">
           <AnnouncementBar {...announcementbar} />
         </div>
-
         <ProductSlider />
-
         <ProductGrid />
+        <FAQ />
       </div>
     </>
   );
