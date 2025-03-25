@@ -81,7 +81,7 @@ function FooterServices() {
   }, [currentSlide, isTransitioning, cards.length]);
 
   return (
-    <div className="bg-gray-100 px-12 pb-20 text-black">
+    <div className="bg-main-bg px-12 pb-20 text-black">
       {/* Desktop view */}
       <div className="hidden lg:grid lg:grid-cols-4 lg:gap-8">
         {cards.map((card) => (
