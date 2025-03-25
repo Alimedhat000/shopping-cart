@@ -1,5 +1,17 @@
 @import 'tailwindcss';
 
+@theme {
+  --color-primary: #ff4500;
+  --color-creme: #f2eada;
+  --color-main-bg: #f2f2f2;
+
+  --color-text-secondary: #666666;
+  --color-text-muted: #aaa499;
+
+  --font-actay: 'ActayWide';
+  --font-anton: 'my-custom';
+}
+
 @font-face {
   font-family: ActayWide;
   src: url(assets/fonts/Actay_Wide_Bold_1.woff2);

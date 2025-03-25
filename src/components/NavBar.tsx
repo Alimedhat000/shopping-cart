@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import { LuSearch, LuShoppingCart, LuUserRound } from 'react-icons/lu';
 import logo from '../assets/logo.svg';
 import ButtonWithIconGroup from './NavBar/ButtonGroup';
@@ -10,6 +10,8 @@ import { AnnouncementBarProps, ButtonGroupProps } from './NavBar/types';
 export default function NavBar() {
   const [scrollY, setScrollY] = useState(0);
   const [showNav, setShowNav] = useState(true); // Initially show the navbar
+  const location = useLocation();
+  const isHomePage = location.pathname === '/';
 
   useEffect(() => {
     const handleScroll = () => {
@@ -51,14 +53,14 @@ export default function NavBar() {
 
   return (
     <div
-      className={`fixed top-0 left-0 z-50 w-full transition-transform duration-300`}
+      className={`${!isHomePage ? 'sticky' : 'fixed'} top-0 left-0 z-50 w-full transition-transform duration-300`}
     >
       {/* Announcement Bar */}
       <div
         className="overflow-hidden transition-all duration-300"
         style={{
-          opacity: scrollY > 50 ? 0 : 1,
-          height: scrollY > 50 ? 0 : '40px',
+          opacity: scrollY > 50 || !isHomePage ? 0 : 1,
+          height: scrollY > 50 || !isHomePage ? 0 : '40px',
         }}
       >
         <AnnouncementBar {...announcementbar} />
@@ -69,7 +71,7 @@ export default function NavBar() {
         className={`relative flex items-center justify-between px-5 py-10 transition-all duration-300 md:px-9 lg:px-12`}
         style={{
           opacity: showNav ? 1 : 0,
-          background: scrollY > 50 ? '#000' : 'transparent',
+          background: !isHomePage || scrollY > 50 ? '#000' : 'transparent',
         }}
       >
         {/* Left side menu */}

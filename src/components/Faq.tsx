@@ -45,13 +45,13 @@ export default function FAQ() {
             </a>
           </p>
         </div>
-        <div className="mt-6 rounded-lg bg-[#f2f2f2] px-6 py-1 md:px-12 md:py-5 xl:w-1/2">
+        <div className="mt-6 rounded-lg bg-zinc-100 px-6 py-1 md:px-12 md:py-5 xl:w-1/2">
           {faqData.map((faq, index) => {
             const isOpen = openIndices.includes(index);
             return (
               <div
                 key={index}
-                className="border-b border-[#e3e3e3] last:border-b-0"
+                className="border-b border-neutral-200 last:border-b-0"
               >
                 <button
                   className="flex w-full justify-between py-5 text-left font-medium text-gray-900 focus:outline-none xl:text-lg"

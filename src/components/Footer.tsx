@@ -138,7 +138,7 @@ function FooterServices() {
 
 export default function Footer() {
   return (
-    <footer className="bg-black text-[#f2eada]">
+    <footer className="text-creme bg-black">
       {/* Top Section: Service Highlights */}
       <FooterServices />
       {/* Bottom Section: Newsletter & Links */}
@@ -153,7 +153,7 @@ export default function Footer() {
               <input
                 type="email"
                 placeholder="E-mail"
-                className="w-full rounded-lg bg-gray-800 p-3 text-[#f2eada]"
+                className="text-creme w-full rounded-lg bg-gray-800 p-3"
               />
             </div>
           </div>
@@ -165,7 +165,7 @@ export default function Footer() {
               <li>
                 <a
                   href="#"
-                  className="text-[#aaa499] hover:text-[#f2eada] hover:underline"
+                  className="hover:text-creme text-text-muted hover:underline"
                 >
                   Frequently Asked Questions
                 </a>
@@ -173,7 +173,7 @@ export default function Footer() {
               <li>
                 <Link
                   to="/"
-                  className="text-[#aaa499] hover:text-[#f2eada] hover:underline"
+                  className="hover:text-creme text-text-muted hover:underline"
                 >
                   Shipping Policy
                 </Link>
@@ -181,7 +181,7 @@ export default function Footer() {
               <li>
                 <Link
                   to="/"
-                  className="text-[#aaa499] hover:text-[#f2eada] hover:underline"
+                  className="hover:text-creme text-text-muted hover:underline"
                 >
                   Refund Policy
                 </Link>
@@ -189,7 +189,7 @@ export default function Footer() {
               <li>
                 <Link
                   to="/"
-                  className="text-[#aaa499] hover:text-[#f2eada] hover:underline"
+                  className="hover:text-creme text-text-muted hover:underline"
                 >
                   Privacy Policy
                 </Link>
@@ -197,7 +197,7 @@ export default function Footer() {
               <li>
                 <Link
                   to="/"
-                  className="text-[#aaa499] hover:text-[#f2eada] hover:underline"
+                  className="hover:text-creme text-text-muted hover:underline"
                 >
                   Terms of Service
                 </Link>
@@ -208,7 +208,7 @@ export default function Footer() {
           {/* About */}
           <div>
             <h3 className="font-bold">About</h3>
-            <p className="mt-2 text-[#aaa499]">
+            <p className="text-text-muted mt-2">
               Support your community's creative economy while finding
               one-of-a-kind pieces. Visit our spacious hub today!
             </p>
@@ -219,13 +219,13 @@ export default function Footer() {
         <div className="mt-8 flex items-center justify-between border-t border-gray-700 pt-6">
           <div className="flex space-x-4">
             <a href="#">
-              <FaFacebookF className="text-xl text-[#f2eada] hover:text-gray-400" />
+              <FaFacebookF className="text-creme text-xl hover:text-gray-400" />
             </a>
             <a href="#">
-              <FaInstagram className="text-xl text-[#f2eada] hover:text-gray-400" />
+              <FaInstagram className="text-creme text-xl hover:text-gray-400" />
             </a>
             <a href="#">
-              <FaTiktok className="text-xl text-[#f2eada] hover:text-gray-400" />
+              <FaTiktok className="text-creme text-xl hover:text-gray-400" />
             </a>
           </div>
           <p className="text-xs sm:text-sm">

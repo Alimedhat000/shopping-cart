@@ -30,7 +30,7 @@ export const FirstSlideShowCard = () => {
       </div>
 
       {/* Main Title */}
-      <div className="absolute bottom-4 left-4 transform font-[my-custom]">
+      <div className="font-anton absolute bottom-4 left-4 transform">
         <h1 className="text-8xl leading-none font-bold md:text-[11rem]">
           NATIVE
           <br />
@@ -103,7 +103,7 @@ export const SmallFirstSlideShowCard = () => {
       </div>
 
       {/* Main Title */}
-      <div className="absolute bottom-4 left-4 transform font-[my-custom]">
+      <div className="font-anton absolute bottom-4 left-4 transform">
         <h1 className="text-[8rem] leading-none font-bold">
           NATIVE
           <br />
@@ -164,7 +164,7 @@ export const SecondSlideShowCard = () => {
           />
 
           {/* Price Text */}
-          <div className="absolute top-4 right-4 font-[my-custom] text-2xl text-black">
+          <div className="font-anton absolute top-4 right-4 text-2xl text-black">
             <span>STARTING FROM</span>
             <div className="text-8xl tracking-tight">300 EGP</div>
           </div>
@@ -174,7 +174,7 @@ export const SecondSlideShowCard = () => {
       {/* Bottom Section */}
       <div className="absolute right-0 bottom-0 left-0 h-1/2 bg-black">
         <div className="container mx-auto flex flex-col items-center py-4">
-          <span className="font-[my-custom] text-[10rem] leading-none uppercase">
+          <span className="font-anton text-[10rem] leading-none uppercase">
             END OF SEASON SALE
           </span>
 
@@ -221,7 +221,7 @@ export const SmallSecondSlideShowCard = () => {
         {/* Right Image and Text */}
         <div className="relative w-1/2">
           {/* Price Text */}
-          <div className="absolute top-4 right-4 font-[my-custom] text-2xl text-black">
+          <div className="font-anton absolute top-4 right-4 text-2xl text-black">
             <span className="text-[3.2rem] tracking-tight">STARTING FROM</span>
             <div className="text-8xl tracking-tight">300 EGP</div>
           </div>
@@ -244,7 +244,7 @@ export const SmallSecondSlideShowCard = () => {
             <div>9.Eclipse</div>
             <div>10.Urban Edge</div>
           </div>
-          <span className="font-[my-custom] text-[8rem] leading-none uppercase">
+          <span className="font-anton text-[8rem] leading-none uppercase">
             END OF <br />
             SEASON SALE
           </span>

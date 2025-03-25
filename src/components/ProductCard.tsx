@@ -31,7 +31,7 @@ export default function ProductCard({
       {/* Discount Badge (if exists) */}
       {discountText && (
         <div className="absolute top-1 left-2 z-10 md:top-3 md:left-3">
-          <span className="rounded-full bg-[#ff4f2c] px-2 py-1 text-[0.5rem] font-medium text-white md:px-3 md:text-xs">
+          <span className="bg-primary rounded-full px-2 py-1 text-[0.5rem] font-medium text-white md:px-3 md:text-xs">
             {discountText}
           </span>
         </div>
@@ -74,7 +74,7 @@ export default function ProductCard({
           </h3>
 
           <div className="flex items-center space-x-2">
-            <span className="font-sans text-sm text-[#ff4f2c] md:text-sm">
+            <span className="text-primary font-sans text-sm md:text-sm">
               {price} EGP
             </span>
             {oldPrice && (
