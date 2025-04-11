@@ -1,7 +1,7 @@
 import Layout from './components/Layout';
 import Home from './routes/Home';
-import Products from './routes/ProductPage';
-import ProductDetails from './routes/Products';
+import Collections from './routes/Collections';
+import Product from './routes/Product';
 import Cart from './routes/Cart';
 import Error404 from './routes/Error404';
 
@@ -10,8 +10,8 @@ const routes = {
   element: <Layout />, // Common Layout with header and footer
   children: [
     { path: '', element: <Home /> },
-    { path: 'products', element: <Products /> },
-    { path: 'product/:id', element: <ProductDetails /> },
+    { path: 'collections', element: <Collections /> },
+    { path: 'product/:id', element: <Product /> },
     { path: 'cart', element: <Cart /> },
     {
       path: '*',
