@@ -1,12 +1,34 @@
-import { VscSettings } from 'react-icons/vsc';
+import Filter from './Filter';
 
-function FilterBar({ className }: { className?: string }) {
+function FilterBar({
+  className = '',
+  activeFilters = [],
+  handleFilterChange,
+}: {
+  className?: string;
+  activeFilters?: string[];
+  handleFilterChange?: (filters: string[]) => void;
+}) {
   return (
     <div className={`${className}`}>
-      <div className="flex items-center justify-start gap-8">
-        <VscSettings />
-        <span>Filter Lalalala</span>
-      </div>
+      <Filter
+        Name="Brand"
+        Options={['Go Native Merch (2)', 'Vega (3)', 'Woke (2)']}
+      />
+      <Filter
+        Name="Brand"
+        Options={['Go Native Merch (2)', 'Vega (3)', 'Woke (2)']}
+      />
+      <Filter
+        Name="Brand"
+        Options={['Go Native Merch (2)', 'Vega (3)', 'Woke (2)']}
+      />
+      <Filter
+        Name="Brand"
+        Options={['Go Native Merch (2)', 'Vega (3)', 'Woke (2)']}
+      />
+
+      {/* Add more filters here if needed */}
     </div>
   );
 }
