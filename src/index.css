@@ -25,3 +25,7 @@
 #root {
   font-family: ActayWide;
 }
+
+.site-padding {
+  @apply px-5 md:px-9 lg:px-12;
+}
