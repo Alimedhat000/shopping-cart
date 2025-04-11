@@ -63,7 +63,7 @@ function ProductGrid({
   className,
 }: GridContainerProps) {
   return (
-    <div className={`space-y-12 overflow-hidden ${className}`}>
+    <div className={`overflow-hidden ${className}`}>
       <div className="flex flex-col items-start gap-5 sm:flex-row sm:items-center sm:justify-between">
         <h1 className="text-2xl text-black md:text-4xl">{title}</h1>
         {showViewAll && <ViewAllButton />}
