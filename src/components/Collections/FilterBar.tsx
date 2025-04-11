@@ -7,7 +7,7 @@ function FilterBar({
 }: {
   className?: string;
   activeFilters?: string[];
-  handleFilterChange?: (filters: string[]) => void;
+  handleFilterChange?: (filters: string) => void;
 }) {
   return (
     <div className={`${className}`}>
