@@ -2,14 +2,39 @@ import ViewAllButton from '../Util/ViewAllButton';
 import ProductCard from '../ProductCard';
 import Reveal from '../Util/Reveal';
 
-function GridContainer() {
-  console.log(window.innerWidth);
+interface GridContainerProps {
+  columns?: {
+    sm?: number;
+    md?: number;
+    lg?: number;
+    xl?: number;
+  };
+  items?: number;
+  title?: string;
+  showViewAll?: boolean;
+  className?: string;
+}
+
+function GridContainer({
+  columns = { sm: 2, md: 2, lg: 5, xl: 5 },
+  items = 10,
+}: GridContainerProps) {
+  const getColumnClass = () => {
+    return `grid grid-cols-${columns.sm} gap-2 
+            sm:grid-cols-${columns.sm} 
+            md:grid-cols-${columns.md} md:gap-6 
+            lg:grid-cols-${columns.lg}
+            xl:grid-cols-${columns.xl}`;
+  };
+
   return (
-    <div className="grid grid-cols-2 gap-2 sm:grid-cols-2 md:gap-6 lg:grid-cols-5">
-      {Array.from({ length: 10 }).map((_, index) => (
+    <div className={getColumnClass()}>
+      {Array.from({ length: items }).map((_, index) => (
         <Reveal
           delay={
-            window.innerWidth > 768 ? (index % 5) * 0.1 : (index % 2) * 0.1
+            window.innerWidth > 768
+              ? (index % (columns.lg || 5)) * 0.1
+              : (index % (columns.sm || 2)) * 0.1
           }
           key={index}
         >
@@ -22,7 +47,7 @@ function GridContainer() {
             oldPrice={855}
             discountText="Save 105.00"
             link="/"
-            classname="min-w-20 md:min-w-70 lg:min-w-45 pb-10"
+            classname="w-full pb-10"
           />
         </Reveal>
       ))}
@@ -30,14 +55,20 @@ function GridContainer() {
   );
 }
 
-function ProductGrid() {
+function ProductGrid({
+  columns,
+  items,
+  title = 'End of Season Sale',
+  showViewAll = true,
+  className,
+}: GridContainerProps) {
   return (
-    <div className="space-y-12 overflow-hidden px-5 py-12 md:px-9 lg:px-12">
+    <div className={`space-y-12 overflow-hidden ${className}`}>
       <div className="flex flex-col items-start gap-5 sm:flex-row sm:items-center sm:justify-between">
-        <h1 className="text-2xl text-black md:text-4xl">End of Season Sale</h1>
-        <ViewAllButton />
+        <h1 className="text-2xl text-black md:text-4xl">{title}</h1>
+        {showViewAll && <ViewAllButton />}
       </div>
-      <GridContainer />
+      <GridContainer columns={columns} items={items} />
     </div>
   );
 }

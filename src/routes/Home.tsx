@@ -31,7 +31,7 @@ function Home() {
           <AnnouncementBar {...announcementbar} />
         </div>
         <ProductSlider />
-        <ProductGrid />
+        <ProductGrid className="site-padding py-12" />
         <FAQ />
       </div>
     </>

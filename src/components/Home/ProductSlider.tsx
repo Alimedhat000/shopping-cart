@@ -178,7 +178,7 @@ const ProductSlider: React.FC = () => {
   const isNextDisabled = currentSlide >= totalSlides - visibleSlides;
 
   return (
-    <div className="space-y-12 overflow-hidden px-5 md:px-9 lg:px-12">
+    <div className="site-padding space-y-12 overflow-hidden">
       <ViewAllButton />
 
       <ProductContainer

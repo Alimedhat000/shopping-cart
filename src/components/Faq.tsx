@@ -34,7 +34,7 @@ export default function FAQ() {
   };
 
   return (
-    <div className="mb-20 px-0 py-12 sm:px-5 md:px-9 lg:px-12">
+    <div className="site-padding mb-20 px-0 py-12 sm:px-5">
       <section className="space-y-8 bg-white px-5 py-10 shadow-xs sm:rounded-3xl sm:p-10 sm:shadow-md lg:gap-8 xl:flex xl:px-14 xl:py-16">
         <div className="space-y-8">
           <h2 className="text-2xl font-bold lg:text-5xl">FAQ</h2>
