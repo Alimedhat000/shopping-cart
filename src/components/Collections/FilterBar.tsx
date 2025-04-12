@@ -1,9 +1,11 @@
 import Filter from './Filter';
+import InStockOnly from './InStockOnly';
+import PriceFilter from './PriceFilter';
 
 function FilterBar({
   className = '',
-  activeFilters = [],
-  handleFilterChange,
+  // activeFilters = [],
+  // handleFilterChange,
 }: {
   className?: string;
   activeFilters?: string[];
@@ -11,6 +13,9 @@ function FilterBar({
 }) {
   return (
     <div className={`${className}`}>
+      <InStockOnly />
+
+      <PriceFilter />
       <Filter
         Name="Brand"
         Options={['Go Native Merch (2)', 'Vega (3)', 'Woke (2)']}

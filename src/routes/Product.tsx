@@ -1,7 +1,12 @@
+import { useParams } from 'react-router-dom';
+
 function Product() {
+  const ProductID = useParams();
   return (
     <>
-      <div>Product</div>
+      <div>
+        Product: <span>{ProductID.id}</span>
+      </div>
     </>
   );
 }
