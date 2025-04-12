@@ -40,7 +40,7 @@ function Collections() {
         }
 
         <ProductGrid
-          columns={{ sm: 2, md: 2, lg: 4 }}
+          columns={{ sm: 2, md: 2, lg: 4, xl: 4 }}
           showViewAll={false}
           title=""
           items={12}

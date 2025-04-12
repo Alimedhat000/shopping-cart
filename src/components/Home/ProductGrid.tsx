@@ -19,16 +19,31 @@ function GridContainer({
   columns = { sm: 2, md: 2, lg: 5, xl: 5 },
   items = 10,
 }: GridContainerProps) {
-  const getColumnClass = () => {
-    return `grid grid-cols-${columns.sm} gap-2 
-            sm:grid-cols-${columns.sm} 
-            md:grid-cols-${columns.md} md:gap-6 
-            lg:grid-cols-${columns.lg}
-            xl:grid-cols-${columns.xl}`;
+  // Using a Record type to properly type the object with number keys
+  const GridColsClass: Record<number, string> = {
+    1: 'grid-cols-1',
+    2: 'grid-cols-2',
+    3: 'grid-cols-3',
+    4: 'grid-cols-4',
+    5: 'grid-cols-5',
+    6: 'grid-cols-6',
   };
 
+  // Make sure we have fallbacks and properly access the object keys
+  const smCols = columns.sm ?? 2;
+  const mdCols = columns.md ?? 2;
+  const lgCols = columns.lg ?? 5;
+  const xlCols = columns.xl ?? 5;
+
+  const gridClass = `grid gap-2 md:gap-6 
+    ${GridColsClass[smCols]}
+    sm:${GridColsClass[smCols]}
+    md:${GridColsClass[mdCols]}
+    lg:${GridColsClass[lgCols]}
+    xl:${GridColsClass[xlCols]}`;
+
   return (
-    <div className={getColumnClass()}>
+    <div className={gridClass}>
       {Array.from({ length: items }).map((_, index) => (
         <Reveal
           delay={

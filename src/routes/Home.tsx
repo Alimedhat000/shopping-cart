@@ -31,7 +31,10 @@ function Home() {
           <AnnouncementBar {...announcementbar} />
         </div>
         <ProductSlider />
-        <ProductGrid className="site-padding space-y-12 py-12" />
+        <ProductGrid
+          className="site-padding space-y-12 py-12"
+          columns={{ sm: 2, md: 2, lg: 5, xl: 5 }}
+        />
         <FAQ />
       </div>
     </>
