@@ -3,7 +3,7 @@ import { IoChevronDown } from 'react-icons/io5';
 import { useState, useRef, useEffect } from 'react';
 
 export default function PriceFilter() {
-  const [isOpen, setIsOpen] = useState(false);
+  const [isOpen, setIsOpen] = useState(true);
   const [values, setValues] = useState([0, 3000]);
   const [height, setHeight] = useState(0);
   const contentRef = useRef<HTMLDivElement>(null);

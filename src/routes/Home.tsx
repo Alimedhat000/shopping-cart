@@ -32,7 +32,7 @@ function Home() {
         </div>
         <ProductSlider />
         <ProductGrid
-          className="site-padding space-y-12 py-12"
+          className="site-padding space-y-12 py-12 lg:space-y-0"
           columns={{ sm: 2, md: 2, lg: 5, xl: 5 }}
         />
         <FAQ />

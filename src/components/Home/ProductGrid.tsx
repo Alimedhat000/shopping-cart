@@ -36,7 +36,7 @@ function GridContainer({
   const xlCols = columns.xl ?? 5;
 
   const gridClass = `grid gap-2 md:gap-6 
-    ${GridColsClass[smCols]}
+    ${GridColsClass[2]}
     sm:${GridColsClass[smCols]}
     md:${GridColsClass[mdCols]}
     lg:${GridColsClass[lgCols]}
@@ -62,7 +62,7 @@ function GridContainer({
             oldPrice={855}
             discountText="Save 105.00"
             link="/"
-            classname="w-full pb-10"
+            classname="w-full pb-10 "
           />
         </Reveal>
       ))}

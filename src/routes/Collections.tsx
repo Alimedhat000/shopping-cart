@@ -2,8 +2,16 @@ import ProductGrid from '../components/Home/ProductGrid';
 import FilterBar from '../components/Collections/FilterBar';
 import { VscSettings } from 'react-icons/vsc';
 import { useState } from 'react';
+import { SortDropdown } from '../components/Collections/SortBy';
+import { useParams, useSearchParams } from 'react-router-dom';
 
 function Collections() {
+  // Todo : handle Params and SearchParams
+  const { category } = useParams();
+  const [searchParams] = useSearchParams();
+  const sortBy = searchParams.get('sort_by'); // e.g., 'price-ascending'
+  const page = searchParams.get('page');
+
   const [activeFilters, setActiveFilters] = useState<string[]>([]);
 
   const handleFilterChange = (filter: string) => {
@@ -21,14 +29,23 @@ function Collections() {
           NEW ARRIVALS
         </h1>
       </div>
-      <div className="site-padding grid grid-cols-1 grid-rows-[20px_1fr] gap-12 md:grid-cols-[300px_1fr]">
+      <div className="site-padding grid grid-cols-1 grid-rows-[20px_1fr] gap-12 md:grid-cols-[250px_1fr] lg:grid-cols-[300px_1fr]">
         {/* Top row */}
         <div className="col-span-full hidden grid-cols-[inherit] gap-[inherit] sm:col-span-2 md:grid">
           <div className="flex items-center gap-2">
             <VscSettings size={20} />
             <span>Filters</span>
           </div>
-          <div className="flex items-center justify-end">Sort by:</div>
+          <div className="flex items-center justify-end">
+            <SortDropdown
+              defaultValue="title-asc"
+              onSortChange={(value) => {
+                console.log('Sort changed to:', value);
+                searchParams.set('sort_by', value);
+                //TODO: Here I should update product list based on the sort value
+              }}
+            />
+          </div>
         </div>
 
         {/* Main content*/}

@@ -19,7 +19,7 @@ function FooterCard({
   return (
     <div className="flex flex-col items-center gap-3">
       {icon}
-      <h3 className="mt-2 font-bold">{title}</h3>
+      <h3 className="font-anton mt-2 text-2xl tracking-wider">{title}</h3>
       <p className="text-center text-sm font-light">{text}</p>
     </div>
   );

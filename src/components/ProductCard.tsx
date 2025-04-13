@@ -30,7 +30,7 @@ export default function ProductCard({
     >
       {/* Discount Badge (if exists) */}
       {discountText && (
-        <div className="absolute top-1 left-2 z-10 md:top-3 md:left-3">
+        <div className="absolute top-1 left-2 z-1 md:top-3 md:left-3">
           <span className="bg-primary rounded-full px-2 py-1 text-[0.5rem] font-medium text-white md:px-3 md:text-xs">
             {discountText}
           </span>
@@ -39,7 +39,7 @@ export default function ProductCard({
 
       {isSoldOut
         ? discountText && (
-            <div className="absolute top-6 left-2 z-10 md:top-10 md:left-3">
+            <div className="absolute top-6 left-2 z-1 md:top-10 md:left-3">
               <span className="rounded-full bg-black px-2 py-1 text-[0.5rem] font-medium text-white md:px-3 md:text-xs">
                 Sold Out
               </span>
