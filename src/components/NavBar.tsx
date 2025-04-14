@@ -1,11 +1,14 @@
 import { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { LuSearch, LuShoppingCart, LuUserRound } from 'react-icons/lu';
-import logo from '../assets/logo.svg';
-import ButtonWithIconGroup from './NavBar/ButtonGroup';
-import DropDownGroup from './NavBar/DropDownGroup';
-import AnnouncementBar from './NavBar/AnnouncementBar';
-import { AnnouncementBarProps, ButtonGroupProps } from './NavBar/types';
+import logo from '@/assets/logo.svg';
+import ButtonWithIconGroup from '@components/NavBar/ButtonGroup';
+import DropDownGroup from '@components/NavBar/DropDownGroup';
+import AnnouncementBar from '@components/NavBar/AnnouncementBar';
+import {
+  AnnouncementBarProps,
+  ButtonGroupProps,
+} from '@components/NavBar/types';
 
 export default function NavBar() {
   const [scrollY, setScrollY] = useState(0);

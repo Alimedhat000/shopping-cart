@@ -1,9 +1,9 @@
-import FAQ from '../components/Faq';
-import HeroBanner from '../components/Home/HeroBanner';
-import ProductGrid from '../components/Home/ProductGrid';
-import ProductSlider from '../components/Home/ProductSlider';
-import AnnouncementBar from '../components/NavBar/AnnouncementBar';
-import { AnnouncementBarProps } from '../components/NavBar/types';
+import FAQ from '@/components/Faq';
+import HeroBanner from '@/components/Home/HeroBanner';
+import ProductGrid from '@/components/Home/ProductGrid';
+import ProductSlider from '@/components/Home/ProductSlider';
+import AnnouncementBar from '@/components/NavBar/AnnouncementBar';
+import { AnnouncementBarProps } from '@/components/NavBar/types';
 
 function Home() {
   const announcementbar: AnnouncementBarProps = {

@@ -1,8 +1,8 @@
-import ProductGrid from '../components/Home/ProductGrid';
-import FilterBar from '../components/Collections/FilterBar';
+import ProductGrid from '@/components/Home/ProductGrid';
+import FilterBar from '@/components/Collections/FilterBar';
 import { VscSettings } from 'react-icons/vsc';
 import { useState } from 'react';
-import { SortDropdown } from '../components/Collections/SortBy';
+import { SortDropdown } from '@/components/Collections/SortBy';
 import { useParams, useSearchParams } from 'react-router-dom';
 
 function Collections() {
@@ -11,6 +11,10 @@ function Collections() {
   const [searchParams] = useSearchParams();
   const sortBy = searchParams.get('sort_by'); // e.g., 'price-ascending'
   const page = searchParams.get('page');
+
+  console.log('Category:', category);
+  console.log('Sort By:', sortBy);
+  console.log('Page:', page);
 
   const [activeFilters, setActiveFilters] = useState<string[]>([]);
 

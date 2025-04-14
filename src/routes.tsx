@@ -1,9 +1,9 @@
-import Layout from './components/Layout';
-import Home from './routes/Home';
-import Collections from './routes/Collections';
-import ProductPage from './routes/Product';
-import Cart from './routes/Cart';
-import Error404 from './routes/Error404';
+import Layout from '@/components/Layout';
+import Home from '@/routes/Home';
+import Collections from '@/routes/Collections';
+import ProductPage from '@/routes/Product';
+import Cart from '@/routes/Cart';
+import Error404 from '@/routes/Error404';
 import { Navigate } from 'react-router-dom';
 
 const routes = {
