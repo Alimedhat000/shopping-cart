@@ -116,9 +116,11 @@ export default function ProductPage() {
         <div className="space-y-3">
           <p className="font-bold">
             We do not accept exchanges, however, we do accept return requests
-            through our customer service department email
-            [wecare@gonativeco.com]. The returned items must comply with our
-            return policy:
+            through our customer service department email{' '}
+            <a href="/" className="underline">
+              wecare@test.com
+            </a>
+            . The returned items must comply with our return policy:
           </p>
           <ol className="list-decimal space-y-2 pl-5">
             <li>Items ordered online cannot be returned in-store.</li>
