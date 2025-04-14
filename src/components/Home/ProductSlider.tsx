@@ -150,7 +150,15 @@ const ProductContainer: React.FC<ProductContainerProps> = ({
 };
 
 // Main ProductSlider Component
-const ProductSlider: React.FC = () => {
+export default function ProductSlider({
+  Title,
+  showViewAll,
+  className,
+}: {
+  Title?: string;
+  showViewAll?: boolean;
+  className?: string;
+}) {
   const totalSlides = 24;
   const visibleSlides = 4;
   const [currentSlide, setCurrentSlide] = useState<number>(0);
@@ -178,8 +186,11 @@ const ProductSlider: React.FC = () => {
   const isNextDisabled = currentSlide >= totalSlides - visibleSlides;
 
   return (
-    <div className="site-padding space-y-12 overflow-hidden">
-      <ViewAllButton />
+    <div className={`space-y-12 overflow-hidden ${className}`}>
+      <div className="flex items-center justify-between">
+        <h2 className="font-oswald text-3xl">{Title}</h2>
+        {showViewAll && <ViewAllButton />}
+      </div>
 
       <ProductContainer
         currentSlide={currentSlide}
@@ -187,7 +198,6 @@ const ProductSlider: React.FC = () => {
         visibleSlides={visibleSlides}
         sliderRef={sliderRef}
       />
-
       <div className="flex items-center justify-between">
         <ProgressBar percentage={progressPercentage} />
         <SliderControls
@@ -199,6 +209,4 @@ const ProductSlider: React.FC = () => {
       </div>
     </div>
   );
-};
-
-export default ProductSlider;
+}

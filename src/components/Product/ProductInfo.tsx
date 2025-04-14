@@ -37,7 +37,7 @@ export default function ProductInfo({
   increaseQuantity,
 }: ProductInfoProps) {
   return (
-    <div className="md:w-1/2">
+    <div>
       <ProductHeader
         Name="Long-Sleeve Crewneck Top"
         Brand="Diss&Miss"
