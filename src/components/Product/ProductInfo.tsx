@@ -4,6 +4,7 @@ import ColorSelector from './ColorSelector';
 import SizeSelector from './SizeSelector';
 import QuantitySelector from './QuantitySelector';
 import ProductActions from './ProductActions';
+import { useCart } from '@util/CartProvider';
 
 interface ColorOption {
   name: string;
@@ -29,6 +30,12 @@ interface SizeAvailability {
 }
 
 interface ProductInfoProps {
+  productId: number;
+  productName: string;
+  productBrand: string;
+  productImage: string;
+  productPrice: number;
+  productDiscount: number;
   colors: ColorOption[];
   sizes: SizeAvailability;
   selectedColor: string;
@@ -41,6 +48,12 @@ interface ProductInfoProps {
 }
 
 export default function ProductInfo({
+  productId,
+  productName,
+  productBrand,
+  productImage,
+  productPrice,
+  productDiscount,
   colors,
   sizes,
   selectedColor,
@@ -51,13 +64,29 @@ export default function ProductInfo({
   decreaseQuantity,
   increaseQuantity,
 }: ProductInfoProps) {
+  const { addToCart } = useCart();
+
+  const handleAddToCart = () => {
+    const product = {
+      id: productId,
+      name: productName,
+      brand: productBrand,
+      price: productPrice,
+      discount: productDiscount,
+      color: selectedColor,
+      size: selectedSize,
+      image: productImage,
+    };
+
+    addToCart(product, quantity);
+  };
   return (
     <div>
       <ProductHeader
-        Name="Long-Sleeve Crewneck Top"
-        Brand="Diss&Miss"
-        Price={513.0}
-        Discount={211.5}
+        Name={productName}
+        Brand={productBrand}
+        Price={productPrice}
+        Discount={productDiscount}
       />
 
       <ColorSelector
@@ -79,9 +108,7 @@ export default function ProductInfo({
       />
 
       <ProductActions
-        onAddToCart={() => {
-          console.log('Add to cart clicked');
-        }}
+        onAddToCart={handleAddToCart}
         onBuyNow={() => {
           console.log('Buy now clicked');
         }}

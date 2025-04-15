@@ -134,6 +134,7 @@ const ProductContainer: React.FC<ProductContainerProps> = ({
     >
       {Array.from({ length: totalSlides }).map((_, index) => (
         <ProductCard
+          id={index.toString()}
           key={index}
           image="https://placehold.co/500x700"
           title="Comfy Pants"
@@ -141,7 +142,6 @@ const ProductContainer: React.FC<ProductContainerProps> = ({
           price={750}
           oldPrice={855}
           discountText="Save 105.00"
-          link="/"
           classname="min-w-60 lg:min-w-50 "
         />
       ))}

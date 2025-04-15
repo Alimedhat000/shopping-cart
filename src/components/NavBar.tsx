@@ -38,7 +38,13 @@ export default function NavBar() {
     buttons: [
       { icon: LuSearch, size: 22, onClick: () => {}, color: '#fff' },
       { icon: LuUserRound, size: 22, onClick: () => {}, color: '#fff' },
-      { icon: LuShoppingCart, size: 22, onClick: () => {}, color: '#fff' },
+      {
+        icon: LuShoppingCart,
+        size: 22,
+        onClick: () => {},
+        color: '#fff',
+        to: '/cart',
+      },
     ],
     className: '',
   };

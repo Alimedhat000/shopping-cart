@@ -54,6 +54,7 @@ function GridContainer({
           key={index}
         >
           <ProductCard
+            id={index.toString()}
             key={index}
             image="https://placehold.co/500x700"
             title="Comfy Pants"

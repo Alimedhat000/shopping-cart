@@ -1,7 +1,7 @@
-// import testimage from '../assets/imgs/model-banner-2-closeup.png';
 import { Link } from 'react-router-dom';
 
 interface ProductCardProps {
+  id: string;
   image: string;
   title: string;
   brand?: string;
@@ -14,6 +14,7 @@ interface ProductCardProps {
 }
 
 export default function ProductCard({
+  id,
   image,
   title,
   brand,
@@ -21,7 +22,6 @@ export default function ProductCard({
   oldPrice,
   discountText,
   isSoldOut = false,
-  link = '/',
   classname = '',
 }: ProductCardProps) {
   return (
@@ -49,41 +49,42 @@ export default function ProductCard({
 
       {/* Product Image */}
       <div className="row-start-1 w-full bg-gray-100">
-        <img
-          src={image}
-          alt={title}
-          className="aspect-[3/4] h-auto w-full object-cover"
-        />
+        <Link to={`/product/${id}`}>
+          <img
+            src={image}
+            alt={title}
+            className="aspect-[3/4] h-auto w-full object-cover"
+          />
+        </Link>
       </div>
 
       {/* Product Info */}
       <div className="row-start-2 space-y-1 px-4 py-4 md:px-6">
-        {/* Brand Link (if exists) */}
-        {brand && (
-          <Link
-            to={link}
-            className="text-xs font-medium text-gray-500 hover:text-gray-700"
-          >
-            {brand}
-          </Link>
-        )}
+        <Link to={`/product/${id}`}>
+          {/* Brand Link (if exists) */}
+          {brand && (
+            <p className="text-xs font-medium text-gray-500 hover:text-gray-700">
+              {brand}
+            </p>
+          )}
 
-        <div>
-          <h3 className="md:text-md text-sm font-medium text-gray-900">
-            {title}{' '}
-          </h3>
+          <div>
+            <h3 className="md:text-md text-sm font-medium text-gray-900">
+              {title}{' '}
+            </h3>
 
-          <div className="flex items-center space-x-2">
-            <span className="text-primary font-sans text-sm md:text-sm">
-              {price} EGP
-            </span>
-            {oldPrice && (
-              <span className="font-sans text-xs text-gray-500 line-through md:text-sm">
-                {oldPrice} EGP
+            <div className="flex items-center space-x-2">
+              <span className="text-primary font-sans text-sm md:text-sm">
+                {price} EGP
               </span>
-            )}
+              {oldPrice && (
+                <span className="font-sans text-xs text-gray-500 line-through md:text-sm">
+                  {oldPrice} EGP
+                </span>
+              )}
+            </div>
           </div>
-        </div>
+        </Link>
       </div>
     </div>
   );

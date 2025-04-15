@@ -40,7 +40,6 @@ export default function SizeSelector({
       <div className="flex gap-2">
         {sizeOptions.map((size) => {
           const isAvailable = sizes[size].availability;
-          console.log(size, isAvailable);
           const isSelected = selectedSize === size;
 
           return (

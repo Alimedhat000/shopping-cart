@@ -197,11 +197,16 @@ export default function ProductPage() {
         <div className="flex flex-col gap-8 md:flex-row">
           {/* Product Gallery */}
           <ProductGallery thumbnails={thumbnails} />
-
           {/* Product Info */}
           <div className="md:w-1/2">
             <div className="md:sticky md:top-30">
               <ProductInfo
+                productId={Number(id)}
+                productName="Long-Sleeve Crewneck Top"
+                productImage="https://placehold.co/560x850"
+                productPrice={513.0}
+                productBrand="Diss&Miss"
+                productDiscount={211.5}
                 colors={colors}
                 sizes={sizes}
                 selectedColor={selectedColor}

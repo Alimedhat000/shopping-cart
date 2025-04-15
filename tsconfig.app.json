@@ -27,7 +27,9 @@
       "@/*": ["src/*"],
       "@assets/*": ["src/assets/*"],
       "@components/*": ["src/components/*"],
-      "@routes/*": ["src/routes/*"]
+      "@routes/*": ["src/routes/*"],
+      "@util/*": ["src/util/*"],
+      "@types/*": ["src/types/*"],
     }
   },
   "include": ["src"]

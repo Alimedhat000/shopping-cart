@@ -1,13 +1,19 @@
+import React from 'react';
 import { Outlet } from 'react-router-dom';
 import NavBar from '@components/NavBar';
 import Footer from '@components/Footer';
+import { CartProvider } from '@util/CartProvider';
 
-export default function Layout() {
+const Layout: React.FC = () => {
   return (
-    <div className="bg-main-bg">
-      <NavBar />
-      <Outlet />
-      <Footer />
-    </div>
+    <CartProvider>
+      <div className="bg-main-bg">
+        <NavBar />
+        <Outlet />
+        <Footer />
+      </div>
+    </CartProvider>
   );
-}
+};
+
+export default Layout;
