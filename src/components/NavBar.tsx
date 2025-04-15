@@ -9,12 +9,14 @@ import {
   AnnouncementBarProps,
   ButtonGroupProps,
 } from '@components/NavBar/types';
+import { useCart } from '@/util/CartProvider';
 
 export default function NavBar() {
   const [scrollY, setScrollY] = useState(0);
   const [showNav, setShowNav] = useState(true); // Initially show the navbar
   const location = useLocation();
   const isHomePage = location.pathname === '/';
+  const { itemCount } = useCart();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -44,6 +46,7 @@ export default function NavBar() {
         onClick: () => {},
         color: '#fff',
         to: '/cart',
+        count: itemCount,
       },
     ],
     className: '',

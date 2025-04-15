@@ -6,6 +6,7 @@ export interface ButtonProps {
   onClick?: () => void;
   color?: string;
   to?: string;
+  count?: number;
 }
 
 export interface ButtonGroupProps {

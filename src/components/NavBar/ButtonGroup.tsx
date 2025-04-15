@@ -7,10 +7,16 @@ const IconButton = ({
   onClick,
   color,
   to = '/',
-}: ButtonProps) => (
-  <Link to={to}>
+  count,
+}: ButtonProps & { count?: number }) => (
+  <Link to={to} className="relative">
     <button onClick={onClick}>
       <Icon size={size} color={color} strokeWidth={2} />
+      {count !== undefined && count > 0 && (
+        <span className="absolute -top-2 -right-2 flex h-4 w-4 items-center justify-center rounded-full bg-white text-[10px] text-black">
+          {count}
+        </span>
+      )}
     </button>
   </Link>
 );
