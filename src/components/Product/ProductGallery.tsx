@@ -112,7 +112,7 @@ export default function ProductGallery({
         }}
       >
         {showTopFade && (
-          <div className="sticky top-0 z-10 h-30 w-full bg-gradient-to-b from-[#f2f2f2] to-transparent">
+          <div className="sticky -top-1 z-10 h-30 w-full bg-gradient-to-b from-[#f2f2f2] to-transparent">
             <wbr />
           </div>
         )}
@@ -181,7 +181,7 @@ export default function ProductGallery({
           }}
         >
           {showLeftFade && (
-            <div className="sticky left-0 z-10 h-full w-4 bg-gradient-to-r from-[#f2f2f2] to-transparent">
+            <div className="absolute -left-1 z-10 min-h-full w-8 bg-gradient-to-r from-[#f2f2f2] to-transparent">
               <wbr />
             </div>
           )}
@@ -210,7 +210,7 @@ export default function ProductGallery({
           ))}
 
           {showRightFade && (
-            <div className="sticky right-0 z-10 h-full w-4 bg-gradient-to-l from-[#f2f2f2] to-transparent">
+            <div className="absolute right-0 z-10 h-full w-8 bg-gradient-to-l from-[#f2f2f2] to-transparent">
               <wbr />
             </div>
           )}
