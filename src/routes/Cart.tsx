@@ -6,7 +6,7 @@ import OrderSummary from '@components/Cart/OrderSummary';
 import { LuShoppingBag } from 'react-icons/lu';
 import { Link } from 'react-router-dom';
 
-// import ShippingEstimator from '@components/Cart/ShippingEstimator';
+import ShippingEstimator from '@components/Cart/ShippingEstimator';
 
 const Cart: React.FC = () => {
   const { cartItems, removeFromCart, updateQuantity, subtotal } = useCart();
@@ -34,7 +34,9 @@ const Cart: React.FC = () => {
 
   return (
     <div className="site-padding mb-50">
-      <h1 className="mb-8 text-center text-3xl font-bold">CART</h1>
+      <h1 className="font-condensed m-20 text-center text-3xl font-bold">
+        CART
+      </h1>
 
       <div className="flex flex-col gap-8 lg:flex-row">
         <div className="w-full lg:w-2/3">
@@ -48,7 +50,7 @@ const Cart: React.FC = () => {
             removeFromCart={removeFromCart}
           />
           {/* Shipping estimator */}
-          {/* <ShippingEstimator /> */}
+          <ShippingEstimator />
         </div>
 
         {/* Order summary */}

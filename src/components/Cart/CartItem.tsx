@@ -14,7 +14,7 @@ const CartItem: React.FC<CartItemProps> = ({
   removeFromCart,
 }) => {
   return (
-    <div className="font-condensed grid grid-cols-1 gap-4 border-b border-zinc-300 py-4 md:grid-cols-[2.5fr_1fr_1fr]">
+    <div className="font-condensed flex gap-4 border-b border-zinc-300 py-4 md:grid md:grid-cols-[2.5fr_1fr_1fr]">
       {/* Product info */}
       <div className="flex items-center gap-4 self-center">
         <div className="h-30 w-20 bg-gray-100">
@@ -26,22 +26,45 @@ const CartItem: React.FC<CartItemProps> = ({
         </div>
         <div>
           <h3 className="font-medium">{item.name}</h3>
-          <p className="text-sm text-zinc-700">{item.price.toFixed(2)}</p>
+          <p className="text-sm text-zinc-700">
+            {(item.price * item.quantity).toFixed(2)}
+          </p>
           <p className="text-sm text-zinc-700">
             {item.color} / {item.size}
           </p>
+          <div className="mt-2 flex md:hidden">
+            <div className="flex items-center justify-center gap-2">
+              <input
+                type="number"
+                value={item.quantity}
+                onChange={(e) => {
+                  if (e.target.value === '') {
+                    return;
+                  }
+                  updateQuantity(item.id, parseInt(e.target.value));
+                }}
+                className="h-9 w-12 [appearance:textfield] rounded-lg border border-zinc-400 text-center focus:outline-none [&::-webkit-inner-spin-button]:appearance-none [&::-webkit-outer-spin-button]:appearance-none"
+              />
+              <button
+                onClick={() => removeFromCart(item.id)}
+                className="text-sm text-zinc-500 underline hover:text-black"
+              >
+                Remove
+              </button>
+            </div>
+          </div>
         </div>
       </div>
 
       {/* Quantity */}
-      <div className="flex justify-center self-center">
+      <div className="hidden justify-center self-center md:flex">
         <div className="flex flex-col items-center justify-center gap-2">
           <input
             type="number"
             min="1"
             value={item.quantity}
             onChange={(e) => updateQuantity(item.id, parseInt(e.target.value))}
-            className="h-10 w-12 rounded-lg border border-zinc-400 text-center"
+            className="h-10 w-12 [appearance:textfield] rounded-lg border border-zinc-400 text-center focus:outline-none [&::-webkit-inner-spin-button]:appearance-none [&::-webkit-outer-spin-button]:appearance-none"
           />
           <button
             onClick={() => removeFromCart(item.id)}
@@ -53,7 +76,7 @@ const CartItem: React.FC<CartItemProps> = ({
       </div>
 
       {/* Total */}
-      <div className="mb-5 self-center text-right text-zinc-700">
+      <div className="mb-5 hidden self-center text-right text-zinc-700 md:block">
         {(item.price * item.quantity).toFixed(2)}
       </div>
     </div>
