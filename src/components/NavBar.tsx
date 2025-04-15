@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { LuSearch, LuShoppingCart, LuUserRound } from 'react-icons/lu';
+import { LuSearch, LuShoppingBag, LuUserRound } from 'react-icons/lu';
 import logo from '@/assets/logo.svg';
 import ButtonWithIconGroup from '@components/NavBar/ButtonGroup';
 import DropDownGroup from '@components/NavBar/DropDownGroup';
@@ -39,7 +39,7 @@ export default function NavBar() {
       { icon: LuSearch, size: 22, onClick: () => {}, color: '#fff' },
       { icon: LuUserRound, size: 22, onClick: () => {}, color: '#fff' },
       {
-        icon: LuShoppingCart,
+        icon: LuShoppingBag,
         size: 22,
         onClick: () => {},
         color: '#fff',

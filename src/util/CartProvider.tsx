@@ -1,7 +1,7 @@
 import React, { useState, useContext, createContext, ReactNode } from 'react';
 
 // Define types
-interface CartItem {
+export interface CartItem {
   id: number;
   name: string;
   price: number;
@@ -11,7 +11,7 @@ interface CartItem {
   image: string;
 }
 
-interface Product {
+export interface Product {
   id: number;
   name: string;
   price: number;
@@ -21,7 +21,7 @@ interface Product {
   quantity?: number; // Make quantity optional in product interface
 }
 
-interface CartContextType {
+export interface CartContextType {
   cartItems: CartItem[];
   addToCart: (product: Product, quantity?: number) => void;
   removeFromCart: (productId: number) => void;
@@ -30,7 +30,7 @@ interface CartContextType {
   itemCount: number; // Added to display cart count
 }
 
-interface CartProviderProps {
+export interface CartProviderProps {
   children: ReactNode;
 }
 
