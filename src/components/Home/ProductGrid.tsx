@@ -9,6 +9,7 @@ interface GridContainerProps {
     lg?: number;
     xl?: number;
   };
+  columnsClassName?: string;
   items?: number;
   title?: string;
   showViewAll?: boolean;
@@ -17,33 +18,11 @@ interface GridContainerProps {
 
 function GridContainer({
   columns = { sm: 2, md: 2, lg: 5, xl: 5 },
+  columnsClassName,
   items = 10,
 }: GridContainerProps) {
-  // Using a Record type to properly type the object with number keys
-  const GridColsClass: Record<number, string> = {
-    1: 'grid-cols-1',
-    2: 'grid-cols-2',
-    3: 'grid-cols-3',
-    4: 'grid-cols-4',
-    5: 'grid-cols-5',
-    6: 'grid-cols-6',
-  };
-
-  // Make sure we have fallbacks and properly access the object keys
-  const smCols = columns.sm ?? 2;
-  const mdCols = columns.md ?? 2;
-  const lgCols = columns.lg ?? 5;
-  const xlCols = columns.xl ?? 5;
-
-  const gridClass = `grid gap-2 md:gap-6 
-    ${GridColsClass[2]}
-    sm:${GridColsClass[smCols]}
-    md:${GridColsClass[mdCols]}
-    lg:${GridColsClass[lgCols]}
-    xl:${GridColsClass[xlCols]}`;
-
   return (
-    <div className={gridClass}>
+    <div className={`${columnsClassName}`}>
       {Array.from({ length: items }).map((_, index) => (
         <Reveal
           delay={
@@ -73,6 +52,7 @@ function GridContainer({
 
 function ProductGrid({
   columns,
+  columnsClassName,
   items,
   title = 'End of Season Sale',
   showViewAll = true,
@@ -80,11 +60,15 @@ function ProductGrid({
 }: GridContainerProps) {
   return (
     <div className={`overflow-hidden ${className}`}>
-      <div className="flex flex-col items-start gap-5 sm:flex-row sm:items-center sm:justify-between">
+      <div className="mb-10 flex flex-col items-start gap-5 sm:flex-row sm:items-center sm:justify-between">
         <h1 className="text-2xl text-black md:text-4xl">{title}</h1>
         {showViewAll && <ViewAllButton />}
       </div>
-      <GridContainer columns={columns} items={items} />
+      <GridContainer
+        columns={columns}
+        columnsClassName={columnsClassName}
+        items={items}
+      />
     </div>
   );
 }

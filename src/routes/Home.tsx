@@ -59,6 +59,12 @@ function Home() {
         <ProductGrid
           className="site-padding space-y-12 py-12 lg:space-y-0"
           columns={{ sm: 2, md: 2, lg: 5, xl: 5 }}
+          columnsClassName="grid gap-2 md:gap-6 
+    grid-cols-2
+    sm:grid-cols-2
+    md:grid-cols-2
+    lg:grid-cols-5
+    xl:grid-cols-5 undefined"
         />
         <FAQ FAQdata={faqData} />
       </div>

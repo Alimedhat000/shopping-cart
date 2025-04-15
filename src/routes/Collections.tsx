@@ -62,6 +62,12 @@ function Collections() {
 
         <ProductGrid
           columns={{ sm: 2, md: 2, lg: 4, xl: 4 }}
+          columnsClassName="grid gap-2 md:gap-6 
+    grid-cols-2
+    sm:grid-cols-2
+    md:grid-cols-2
+    lg:grid-cols-4
+    xl:grid-cols-4 "
           showViewAll={false}
           title=""
           items={12}
