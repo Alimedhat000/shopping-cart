@@ -13,9 +13,24 @@ interface ColorOption {
 
 type SizeOption = 'S' | 'M' | 'L' | 'XL';
 
+interface SizeAvailability {
+  S: {
+    availability?: boolean;
+  };
+  M: {
+    availability?: boolean;
+  };
+  L: {
+    availability?: boolean;
+  };
+  XL: {
+    availability?: boolean;
+  };
+}
+
 interface ProductInfoProps {
   colors: ColorOption[];
-  sizes: SizeOption[];
+  sizes: SizeAvailability;
   selectedColor: string;
   setSelectedColor: (color: string) => void;
   selectedSize: SizeOption;

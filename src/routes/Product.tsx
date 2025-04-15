@@ -157,7 +157,12 @@ export default function ProductPage() {
     },
   ];
 
-  const sizes: SizeOption[] = ['S', 'M', 'L', 'XL'];
+  const sizes = {
+    S: { availability: true },
+    M: { availability: false },
+    L: { availability: true },
+    XL: { availability: true },
+  };
 
   const thumbnails: string[] = [
     'https://placehold.co/560x850',
