@@ -1,16 +1,5 @@
-import { IconType } from 'react-icons';
-
-export interface ButtonProps {
-  icon: IconType;
-  size?: number;
-  onClick?: () => void;
-  color?: string;
-  to?: string;
-  count?: number;
-}
-
 export interface ButtonGroupProps {
-  buttons: ButtonProps[];
+  count?: number;
   className?: string;
 }
 
