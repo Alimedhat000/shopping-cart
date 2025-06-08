@@ -63,9 +63,19 @@ export const DrawerProvider = ({
         closeDrawer();
       }
     };
+
+    if (isOpen) {
+      document.body.style.overflow = 'hidden'; // Disable scrolling
+    } else {
+      document.body.style.overflow = ''; // Restore scrolling
+    }
+
     document.addEventListener('keydown', handleKeyDown);
-    return () => document.removeEventListener('keydown', handleKeyDown);
-  }, [closeDrawer]);
+    return () => {
+      document.removeEventListener('keydown', handleKeyDown);
+      document.body.style.overflow = '';
+    };
+  }, [closeDrawer, isOpen]);
 
   const contextValue: DrawerContextType = {
     isOpen,

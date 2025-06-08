@@ -1,15 +1,16 @@
 import { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { LuSearch, LuShoppingBag, LuUserRound } from 'react-icons/lu';
 import logo from '@/assets/logo.svg';
-import ButtonWithIconGroup from '@components/NavBar/ButtonGroup';
+import { LuSearch, LuShoppingBag, LuUserRound } from 'react-icons/lu';
+
+import { DrawerProvider } from '@/components/Util/Drawer';
+import { CartDrawer } from '@components/Home/CartDrawer';
+
 import DropDownGroup from '@components/NavBar/DropDownGroup';
 import AnnouncementBar from '@components/NavBar/AnnouncementBar';
-import {
-  AnnouncementBarProps,
-  ButtonGroupProps,
-} from '@components/NavBar/types';
+import { AnnouncementBarProps } from '@components/NavBar/types';
 import { useCart } from '@/util/CartProvider';
+import { SearchDrawer } from './Home/SearchDrawer';
 
 export default function NavBar() {
   const [scrollY, setScrollY] = useState(0);
@@ -35,22 +36,6 @@ export default function NavBar() {
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
   }, [scrollY]);
-
-  const buttongroup: ButtonGroupProps = {
-    buttons: [
-      { icon: LuSearch, size: 22, onClick: () => {}, color: '#fff' },
-      { icon: LuUserRound, size: 22, onClick: () => {}, color: '#fff' },
-      {
-        icon: LuShoppingBag,
-        size: 22,
-        onClick: () => {},
-        color: '#fff',
-        to: '/cart',
-        count: itemCount,
-      },
-    ],
-    className: '',
-  };
 
   const announcementbar: AnnouncementBarProps = {
     items: [
@@ -87,7 +72,7 @@ export default function NavBar() {
         }}
       >
         {/* Left side menu */}
-        <div className="">
+        <div>
           <DropDownGroup color={'#fff'} />
         </div>
 
@@ -99,8 +84,21 @@ export default function NavBar() {
         </div>
 
         {/* Right side buttons */}
-        <div className="">
-          <ButtonWithIconGroup {...buttongroup} />
+        <div className={`flex items-center justify-center gap-6`}>
+          {/* <button onClick={() => {}}>
+            <LuSearch size={22} color={'#fff'} strokeWidth={2} />
+          </button> */}
+          <DrawerProvider side="top">
+            <SearchDrawer />
+          </DrawerProvider>
+
+          <button onClick={() => {}}>
+            <LuUserRound size={22} color={'#fff'} strokeWidth={2} />
+          </button>
+
+          <DrawerProvider side="right">
+            <CartDrawer />
+          </DrawerProvider>
         </div>
       </div>
     </div>
