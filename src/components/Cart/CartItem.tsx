@@ -6,15 +6,19 @@ interface CartItemProps {
   item: CartItemType;
   updateQuantity: (productId: number, newQuantity: number) => void;
   removeFromCart: (productId: number) => void;
+  borders?: boolean;
 }
 
 const CartItem: React.FC<CartItemProps> = ({
   item,
   updateQuantity,
   removeFromCart,
+  borders,
 }) => {
   return (
-    <div className="font-condensed flex gap-4 border-b border-zinc-300 py-4 md:grid md:grid-cols-[2.5fr_1fr_1fr]">
+    <div
+      className={`${borders ? 'border-b' : ''} font-condensed flex gap-4 border-zinc-300 py-4 md:grid md:grid-cols-[2.5fr_1fr_1fr]`}
+    >
       {/* Product info */}
       <div className="flex items-center gap-4 self-center">
         <div className="h-30 w-20 bg-gray-100">

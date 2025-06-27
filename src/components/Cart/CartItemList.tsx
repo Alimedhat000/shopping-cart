@@ -8,12 +8,14 @@ interface CartItemListProps {
   cartItems: CartItemType[];
   updateQuantity: (productId: number, newQuantity: number) => void;
   removeFromCart: (productId: number) => void;
+  borders?: boolean;
 }
 
 const CartItemList: React.FC<CartItemListProps> = ({
   cartItems,
   updateQuantity,
   removeFromCart,
+  borders = true,
 }) => {
   const navigate = useNavigate();
   if (cartItems.length === 0) {
@@ -28,6 +30,7 @@ const CartItemList: React.FC<CartItemListProps> = ({
           item={item}
           updateQuantity={updateQuantity}
           removeFromCart={removeFromCart}
+          borders={borders}
         />
       ))}
     </div>

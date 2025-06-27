@@ -1,23 +1,21 @@
 import { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import logo from '@/assets/logo.svg';
-import { LuSearch, LuShoppingBag, LuUserRound } from 'react-icons/lu';
+import { LuUserRound } from 'react-icons/lu';
 
 import { DrawerProvider } from '@/components/Util/Drawer';
-import { CartDrawer } from '@components/Home/CartDrawer';
+import { CartDrawer } from '@/components/Drawers/Cart/CartDrawer';
 
 import DropDownGroup from '@components/NavBar/DropDownGroup';
 import AnnouncementBar from '@components/NavBar/AnnouncementBar';
 import { AnnouncementBarProps } from '@components/NavBar/types';
-import { useCart } from '@/util/CartProvider';
-import { SearchDrawer } from './Home/SearchDrawer';
+import { SearchDrawer } from './Drawers/Search/SearchDrawer';
 
 export default function NavBar() {
   const [scrollY, setScrollY] = useState(0);
   const [showNav, setShowNav] = useState(true); // Initially show the navbar
   const location = useLocation();
   const isHomePage = location.pathname === '/';
-  const { itemCount } = useCart();
 
   useEffect(() => {
     const handleScroll = () => {

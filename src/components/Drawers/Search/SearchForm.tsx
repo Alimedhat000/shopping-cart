@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
-import SearchDropdown from './SearchDropdown';
+import SearchDropdown from '@components/Drawers/Search/SearchDropdown';
 import { useDrawer, DrawerClose } from '@/components/Util/Drawer';
 import { LuX } from 'react-icons/lu';
 
