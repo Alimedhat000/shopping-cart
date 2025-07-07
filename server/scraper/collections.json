@@ -1,0 +1,2277 @@
+[
+    {
+        "id": 486706905371,
+        "title": "Accessories",
+        "handle": "accessories-1",
+        "body_html": null,
+        "published_at": "2024-07-16T20:43:30+03:00",
+        "updated_at": "2024-11-25T13:02:21+02:00",
+        "image": null,
+        "products_count": 0
+    },
+    {
+        "id": 491134583067,
+        "title": "Am-Pm",
+        "handle": "am-pm",
+        "body_html": null,
+        "published_at": "2024-10-02T10:37:21+03:00",
+        "updated_at": "2024-11-25T13:02:21+02:00",
+        "image": {
+            "id": 1748402667803,
+            "created_at": "2024-10-02T12:20:58+03:00",
+            "src": "https://cdn.shopify.com/s/files/1/0887/0982/4795/collections/Screenshot_2024-10-02_at_12.19.16_PM.png?v=1727860859",
+            "alt": null
+        },
+        "products_count": 0
+    },
+    {
+        "id": 499686998299,
+        "title": "Arabesque",
+        "handle": "arabesque",
+        "body_html": null,
+        "published_at": "2025-04-17T15:32:24+02:00",
+        "updated_at": "2025-07-01T04:40:14+03:00",
+        "image": {
+            "id": 1749976613147,
+            "created_at": "2025-04-17T15:33:07+02:00",
+            "src": "https://cdn.shopify.com/s/files/1/0887/0982/4795/collections/WhatsApp_Image_2025-02-26_at_7.20.20_PM_c6ecf440-71cc-4618-b0b2-3f354a0555f9.jpg?v=1744896787",
+            "alt": null
+        },
+        "products_count": 2
+    },
+    {
+        "id": 501481013531,
+        "title": "Atypical Studios",
+        "handle": "atypical-studios",
+        "body_html": null,
+        "published_at": "2025-06-01T19:19:51+03:00",
+        "updated_at": "2025-07-06T08:25:13+03:00",
+        "image": null,
+        "products_count": 4
+    },
+    {
+        "id": 500792918299,
+        "title": "Avelle",
+        "handle": "avelle",
+        "body_html": null,
+        "published_at": "2025-05-11T14:17:27+03:00",
+        "updated_at": "2025-07-06T14:26:45+03:00",
+        "image": {
+            "id": 1750124953883,
+            "created_at": "2025-05-11T14:19:06+03:00",
+            "src": "https://cdn.shopify.com/s/files/1/0887/0982/4795/collections/WhatsApp_Image_2025-02-26_at_7.20.21_PM_3.jpg?v=1746962346",
+            "alt": null
+        },
+        "products_count": 4
+    },
+    {
+        "id": 492678545691,
+        "title": "Aya Osama Couture",
+        "handle": "aya-osama-couture",
+        "body_html": null,
+        "published_at": "2024-11-03T20:01:15+02:00",
+        "updated_at": "2025-06-29T14:35:09+03:00",
+        "image": {
+            "id": 1748828881179,
+            "created_at": "2024-11-23T12:30:19+02:00",
+            "src": "https://cdn.shopify.com/s/files/1/0887/0982/4795/collections/Screenshot_2024-11-23_at_12.30.04_PM.png?v=1732357819",
+            "alt": null
+        },
+        "products_count": 3
+    },
+    {
+        "id": 486706839835,
+        "title": "Bags",
+        "handle": "bags-1",
+        "body_html": null,
+        "published_at": "2024-07-16T20:43:09+03:00",
+        "updated_at": "2024-11-25T13:05:21+02:00",
+        "image": null,
+        "products_count": 1
+    },
+    {
+        "id": 498933760283,
+        "title": "Best Seller",
+        "handle": "best-seller",
+        "body_html": null,
+        "published_at": "2025-03-27T15:39:01+02:00",
+        "updated_at": "2025-07-07T17:42:26+03:00",
+        "image": null,
+        "products_count": 284
+    },
+    {
+        "id": 491134615835,
+        "title": "Blac",
+        "handle": "blac",
+        "body_html": null,
+        "published_at": "2024-10-02T10:37:46+03:00",
+        "updated_at": "2025-04-16T17:22:48+02:00",
+        "image": {
+            "id": 1748402700571,
+            "created_at": "2024-10-02T12:22:47+03:00",
+            "src": "https://cdn.shopify.com/s/files/1/0887/0982/4795/collections/Screenshot_2024-10-02_at_12.19.16_PM_5c7c91b1-3ce9-43d9-83a5-a2e71b00e07e.png?v=1727860968",
+            "alt": null
+        },
+        "products_count": 0
+    },
+    {
+        "id": 492678676763,
+        "title": "Blancka",
+        "handle": "blancka",
+        "body_html": null,
+        "published_at": "2024-11-03T20:03:18+02:00",
+        "updated_at": "2025-06-29T12:57:04+03:00",
+        "image": {
+            "id": 1748651802907,
+            "created_at": "2024-11-03T20:03:17+02:00",
+            "src": "https://cdn.shopify.com/s/files/1/0887/0982/4795/collections/WhatsApp_Image_2024-11-03_at_7.56.48_PM_52cac0aa-d883-4826-922b-458e6ca35880.jpg?v=1730656998",
+            "alt": null
+        },
+        "products_count": 9
+    },
+    {
+        "id": 491134779675,
+        "title": "Blnco",
+        "handle": "blnco",
+        "body_html": null,
+        "published_at": "2024-10-02T10:38:19+03:00",
+        "updated_at": "2024-11-25T13:02:14+02:00",
+        "image": {
+            "id": 1748402733339,
+            "created_at": "2024-10-02T12:23:14+03:00",
+            "src": "https://cdn.shopify.com/s/files/1/0887/0982/4795/collections/Screenshot_2024-10-02_at_12.19.16_PM_b0206240-cba0-4d36-9284-b2686298a3bb.png?v=1727860995",
+            "alt": null
+        },
+        "products_count": 0
+    },
+    {
+        "id": 486706610459,
+        "title": "Boots",
+        "handle": "boots-1",
+        "body_html": null,
+        "published_at": "2024-07-16T20:40:49+03:00",
+        "updated_at": "2024-10-02T13:00:02+03:00",
+        "image": null,
+        "products_count": 0
+    },
+    {
+        "id": 501147336987,
+        "title": "Bowline",
+        "handle": "bowline",
+        "body_html": null,
+        "published_at": "2025-05-22T00:45:15+03:00",
+        "updated_at": "2025-07-06T17:45:20+03:00",
+        "image": {
+            "id": 1750188392731,
+            "created_at": "2025-05-22T00:45:14+03:00",
+            "src": "https://cdn.shopify.com/s/files/1/0887/0982/4795/collections/WhatsApp_Image_2025-05-22_at_12.43.39_AM.jpg?v=1747863914",
+            "alt": null
+        },
+        "products_count": 13
+    },
+    {
+        "id": 491134353691,
+        "title": "Brown Toast",
+        "handle": "brown-toast",
+        "body_html": null,
+        "published_at": "2024-10-02T10:35:44+03:00",
+        "updated_at": "2025-06-01T18:58:54+03:00",
+        "image": {
+            "id": 1748402831643,
+            "created_at": "2024-10-02T12:24:23+03:00",
+            "src": "https://cdn.shopify.com/s/files/1/0887/0982/4795/collections/Screenshot_2024-10-02_at_12.19.16_PM_5d60475a-6fbe-487c-b623-66dcc68527bd.png?v=1727861063",
+            "alt": null
+        },
+        "products_count": 8
+    },
+    {
+        "id": 492790972699,
+        "title": "Cargo Pants",
+        "handle": "mens-cargo-pants",
+        "body_html": null,
+        "published_at": "2024-11-05T20:53:45+02:00",
+        "updated_at": "2025-01-06T11:19:44+02:00",
+        "image": null,
+        "products_count": 0
+    },
+    {
+        "id": 492791038235,
+        "title": "Cargo Pants",
+        "handle": "womens-cargo-pants",
+        "body_html": null,
+        "published_at": "2024-11-05T20:54:53+02:00",
+        "updated_at": "2025-01-06T11:19:44+02:00",
+        "image": null,
+        "products_count": 0
+    },
+    {
+        "id": 492790841627,
+        "title": "Casual Pants",
+        "handle": "mens-casual-pants",
+        "body_html": null,
+        "published_at": "2024-11-05T20:50:29+02:00",
+        "updated_at": "2025-04-12T22:35:11+02:00",
+        "image": null,
+        "products_count": 1
+    },
+    {
+        "id": 492790874395,
+        "title": "Casual Pants",
+        "handle": "womens-casual-pants",
+        "body_html": null,
+        "published_at": "2024-11-05T20:51:44+02:00",
+        "updated_at": "2025-06-29T15:20:06+03:00",
+        "image": null,
+        "products_count": 2
+    },
+    {
+        "id": 491027333403,
+        "title": "Casuals",
+        "handle": "casuals",
+        "body_html": null,
+        "published_at": "2024-09-29T19:59:41+03:00",
+        "updated_at": "2025-07-06T16:20:17+03:00",
+        "image": null,
+        "products_count": 163
+    },
+    {
+        "id": 491134845211,
+        "title": "Cave",
+        "handle": "cave",
+        "body_html": null,
+        "published_at": "2024-10-02T10:38:43+03:00",
+        "updated_at": "2025-06-29T12:57:05+03:00",
+        "image": {
+            "id": 1748402864411,
+            "created_at": "2024-10-02T12:25:43+03:00",
+            "src": "https://cdn.shopify.com/s/files/1/0887/0982/4795/collections/Screenshot_2024-10-02_at_12.19.16_PM_168a60b2-3626-4a81-aca9-dd9a4973ccd4.png?v=1727861143",
+            "alt": null
+        },
+        "products_count": 6
+    },
+    {
+        "id": 491134550299,
+        "title": "Cielo",
+        "handle": "cielo",
+        "body_html": null,
+        "published_at": "2024-10-02T10:36:49+03:00",
+        "updated_at": "2024-11-25T13:02:15+02:00",
+        "image": {
+            "id": 1748402929947,
+            "created_at": "2024-10-02T12:26:24+03:00",
+            "src": "https://cdn.shopify.com/s/files/1/0887/0982/4795/collections/Screenshot_2024-10-02_at_12.19.16_PM_c9817fd1-226b-4cd0-a113-efc12be40502.png?v=1727861185",
+            "alt": null
+        },
+        "products_count": 0
+    },
+    {
+        "id": 492678938907,
+        "title": "Clother",
+        "handle": "clother",
+        "body_html": null,
+        "published_at": "2024-11-03T20:05:09+02:00",
+        "updated_at": "2025-07-07T17:25:30+03:00",
+        "image": {
+            "id": 1748651835675,
+            "created_at": "2024-11-03T20:05:07+02:00",
+            "src": "https://cdn.shopify.com/s/files/1/0887/0982/4795/collections/WhatsApp_Image_2024-11-03_at_7.56.48_PM_f2be363c-01fa-4e3a-9c4c-2a92add32a45.jpg?v=1730657108",
+            "alt": null
+        },
+        "products_count": 7
+    },
+    {
+        "id": 501481177371,
+        "title": "Decked Out",
+        "handle": "decked-out",
+        "body_html": null,
+        "published_at": "2025-06-01T19:22:32+03:00",
+        "updated_at": "2025-07-05T20:05:27+03:00",
+        "image": null,
+        "products_count": 18
+    },
+    {
+        "id": 499687162139,
+        "title": "Denim",
+        "handle": "denim-1",
+        "body_html": null,
+        "published_at": "2025-04-17T15:38:51+02:00",
+        "updated_at": "2025-07-07T17:41:34+03:00",
+        "image": null,
+        "products_count": 65
+    },
+    {
+        "id": 492791136539,
+        "title": "Denim Jacket",
+        "handle": "womens-denim-jacket",
+        "body_html": null,
+        "published_at": "2024-11-05T20:57:57+02:00",
+        "updated_at": "2025-06-29T14:34:01+03:00",
+        "image": null,
+        "products_count": 5
+    },
+    {
+        "id": 501481275675,
+        "title": "Denjo",
+        "handle": "denjo",
+        "body_html": null,
+        "published_at": "2025-06-01T19:23:41+03:00",
+        "updated_at": "2025-07-03T14:00:11+03:00",
+        "image": null,
+        "products_count": 6
+    },
+    {
+        "id": 492679037211,
+        "title": "Diss&Miss",
+        "handle": "diss-miss",
+        "body_html": null,
+        "published_at": "2024-11-03T20:06:34+02:00",
+        "updated_at": "2025-06-26T06:50:09+03:00",
+        "image": {
+            "id": 1748651901211,
+            "created_at": "2024-11-03T20:06:33+02:00",
+            "src": "https://cdn.shopify.com/s/files/1/0887/0982/4795/collections/WhatsApp_Image_2024-11-03_at_7.56.48_PM_118d09eb-cffe-4169-ba1c-afff41783de3.jpg?v=1730657193",
+            "alt": null
+        },
+        "products_count": 7
+    },
+    {
+        "id": 491135140123,
+        "title": "Dodici",
+        "handle": "dodici",
+        "body_html": null,
+        "published_at": "2024-10-02T10:39:40+03:00",
+        "updated_at": "2024-11-25T13:02:20+02:00",
+        "image": {
+            "id": 1748402962715,
+            "created_at": "2024-10-02T12:26:52+03:00",
+            "src": "https://cdn.shopify.com/s/files/1/0887/0982/4795/collections/Screenshot_2024-10-02_at_12.19.16_PM_69fd2e8c-8bec-4c63-9047-4a49f462aa95.png?v=1727861212",
+            "alt": null
+        },
+        "products_count": 0
+    },
+    {
+        "id": 491135205659,
+        "title": "Double-D",
+        "handle": "double-d",
+        "body_html": null,
+        "published_at": "2024-10-02T10:40:08+03:00",
+        "updated_at": "2024-11-25T13:01:58+02:00",
+        "image": {
+            "id": 1748402995483,
+            "created_at": "2024-10-02T12:27:08+03:00",
+            "src": "https://cdn.shopify.com/s/files/1/0887/0982/4795/collections/Screenshot_2024-10-02_at_12.19.16_PM_1326095c-bacc-4ea6-8e1e-c0fc64f92ae5.png?v=1727861229",
+            "alt": null
+        },
+        "products_count": 0
+    },
+    {
+        "id": 499686965531,
+        "title": "Doxx House",
+        "handle": "doxx-house",
+        "body_html": null,
+        "published_at": "2025-04-17T15:32:10+02:00",
+        "updated_at": "2025-05-12T15:25:18+03:00",
+        "image": {
+            "id": 1749976580379,
+            "created_at": "2025-04-17T15:32:09+02:00",
+            "src": "https://cdn.shopify.com/s/files/1/0887/0982/4795/collections/WhatsApp_Image_2025-02-26_at_7.20.20_PM_cac747ec-3799-472e-aa10-ca0e262dadcd.jpg?v=1744896729",
+            "alt": null
+        },
+        "products_count": 3
+    },
+    {
+        "id": 501147435291,
+        "title": "Drift",
+        "handle": "drift",
+        "body_html": null,
+        "published_at": "2025-05-22T00:46:42+03:00",
+        "updated_at": "2025-07-06T22:15:20+03:00",
+        "image": {
+            "id": 1750188458267,
+            "created_at": "2025-05-22T00:46:41+03:00",
+            "src": "https://cdn.shopify.com/s/files/1/0887/0982/4795/collections/WhatsApp_Image_2025-05-22_at_12.43.39_AM_24ce2508-7dc4-4c32-bdb3-26e501ea865e.jpg?v=1747864002",
+            "alt": null
+        },
+        "products_count": 9
+    },
+    {
+        "id": 496261398811,
+        "title": "Eco",
+        "handle": "eco",
+        "body_html": null,
+        "published_at": "2025-01-16T17:40:45+02:00",
+        "updated_at": "2025-05-17T03:10:09+03:00",
+        "image": {
+            "id": 1749276721435,
+            "created_at": "2025-01-27T13:49:32+02:00",
+            "src": "https://cdn.shopify.com/s/files/1/0887/0982/4795/collections/WhatsApp_Image_2024-11-03_at_7.23.53_PM_f7b0792d-3015-4eb4-aa01-ef3f8315f1d4.jpg?v=1737978573",
+            "alt": null
+        },
+        "products_count": 1
+    },
+    {
+        "id": 501481603355,
+        "title": "Elemnts",
+        "handle": "elemnts",
+        "body_html": null,
+        "published_at": "2025-06-01T19:39:19+03:00",
+        "updated_at": "2025-07-01T03:05:11+03:00",
+        "image": null,
+        "products_count": 12
+    },
+    {
+        "id": 497231954203,
+        "title": "End of Season Sale",
+        "handle": "end-of-season-sale",
+        "body_html": null,
+        "published_at": "2025-02-13T20:17:51+02:00",
+        "updated_at": "2025-05-11T13:03:59+03:00",
+        "image": null,
+        "products_count": 11
+    },
+    {
+        "id": 491027169563,
+        "title": "Essentials",
+        "handle": "basics",
+        "body_html": null,
+        "published_at": "2024-09-29T19:50:27+03:00",
+        "updated_at": "2025-07-06T16:20:18+03:00",
+        "image": null,
+        "products_count": 69
+    },
+    {
+        "id": 496261366043,
+        "title": "Exclusive Offers",
+        "handle": "exclusive-offers",
+        "body_html": null,
+        "published_at": "2025-01-16T17:40:05+02:00",
+        "updated_at": "2025-02-13T20:16:31+02:00",
+        "image": null,
+        "products_count": 0
+    },
+    {
+        "id": 499686670619,
+        "title": "Exclusive Products",
+        "handle": "exclusive-products-1",
+        "body_html": null,
+        "published_at": "2025-04-17T15:23:39+02:00",
+        "updated_at": "2025-07-07T17:42:26+03:00",
+        "image": null,
+        "products_count": 285
+    },
+    {
+        "id": 501668020507,
+        "title": "Fallen Saints",
+        "handle": "fallen-saints",
+        "body_html": null,
+        "published_at": "2025-06-08T01:33:06+03:00",
+        "updated_at": "2025-07-07T16:47:39+03:00",
+        "image": {
+            "id": 1750272016667,
+            "created_at": "2025-06-08T01:33:05+03:00",
+            "src": "https://cdn.shopify.com/s/files/1/0887/0982/4795/collections/WhatsApp_Image_2025-05-22_at_12.43.37_AM.jpg?v=1749335586",
+            "alt": null
+        },
+        "products_count": 3
+    },
+    {
+        "id": 491135336731,
+        "title": "Fools",
+        "handle": "fools",
+        "body_html": null,
+        "published_at": "2024-10-02T10:40:26+03:00",
+        "updated_at": "2024-11-25T13:02:19+02:00",
+        "image": {
+            "id": 1748403028251,
+            "created_at": "2024-10-02T12:27:35+03:00",
+            "src": "https://cdn.shopify.com/s/files/1/0887/0982/4795/collections/Screenshot_2024-10-02_at_12.19.16_PM_b13af3dd-7d7d-4860-b551-d2db1cdb6406.png?v=1727861256",
+            "alt": null
+        },
+        "products_count": 0
+    },
+    {
+        "id": 486706577691,
+        "title": "Footwear",
+        "handle": "footwear-1",
+        "body_html": null,
+        "published_at": "2024-07-16T20:40:32+03:00",
+        "updated_at": "2024-10-02T13:00:02+03:00",
+        "image": null,
+        "products_count": 0
+    },
+    {
+        "id": 500683407643,
+        "title": "Fourteen",
+        "handle": "fourteen",
+        "body_html": null,
+        "published_at": "2025-05-07T19:03:38+03:00",
+        "updated_at": "2025-07-07T16:35:25+03:00",
+        "image": {
+            "id": 1750125019419,
+            "created_at": "2025-05-11T14:30:55+03:00",
+            "src": "https://cdn.shopify.com/s/files/1/0887/0982/4795/collections/WhatsApp_Image_2025-02-26_at_7.20.21_PM_3_ba79c7d5-4fda-41c3-8857-2721bad1d983.jpg?v=1746963055",
+            "alt": null
+        },
+        "products_count": 13
+    },
+    {
+        "id": 497076470043,
+        "title": "Frenchee",
+        "handle": "frenchee",
+        "body_html": null,
+        "published_at": "2025-02-09T16:26:28+02:00",
+        "updated_at": "2025-04-05T03:40:16+02:00",
+        "image": {
+            "id": 1749485224219,
+            "created_at": "2025-02-26T19:22:19+02:00",
+            "src": "https://cdn.shopify.com/s/files/1/0887/0982/4795/collections/WhatsApp_Image_2025-02-26_at_7.20.21_PM_1.jpg?v=1740590539",
+            "alt": null
+        },
+        "products_count": 2
+    },
+    {
+        "id": 501147402523,
+        "title": "Fugazi",
+        "handle": "fugazi",
+        "body_html": null,
+        "published_at": "2025-05-22T00:46:03+03:00",
+        "updated_at": "2025-06-26T20:50:20+03:00",
+        "image": {
+            "id": 1750188425499,
+            "created_at": "2025-05-22T00:46:02+03:00",
+            "src": "https://cdn.shopify.com/s/files/1/0887/0982/4795/collections/WhatsApp_Image_2025-05-22_at_12.43.39_AM_4bb4cd45-0316-45d8-960c-ec54de15d077.jpg?v=1747863962",
+            "alt": null
+        },
+        "products_count": 7
+    },
+    {
+        "id": 491135500571,
+        "title": "Full Slang",
+        "handle": "full-slang",
+        "body_html": null,
+        "published_at": "2024-10-02T10:41:00+03:00",
+        "updated_at": "2024-11-25T13:02:01+02:00",
+        "image": {
+            "id": 1748403061019,
+            "created_at": "2024-10-02T12:27:59+03:00",
+            "src": "https://cdn.shopify.com/s/files/1/0887/0982/4795/collections/Screenshot_2024-10-02_at_12.19.16_PM_55704b93-3fb4-4b1d-b61c-b361b9968789.png?v=1727861280",
+            "alt": null
+        },
+        "products_count": 0
+    },
+    {
+        "id": 491135533339,
+        "title": "Glitch",
+        "handle": "glitch",
+        "body_html": null,
+        "published_at": "2024-10-02T10:41:29+03:00",
+        "updated_at": "2025-07-06T14:19:22+03:00",
+        "image": {
+            "id": 1748403093787,
+            "created_at": "2024-10-02T12:28:22+03:00",
+            "src": "https://cdn.shopify.com/s/files/1/0887/0982/4795/collections/Screenshot_2024-10-02_at_12.19.16_PM_01dd8da0-25fb-4f37-ae05-fb5ac869daa5.png?v=1727861303",
+            "alt": null
+        },
+        "products_count": 6
+    },
+    {
+        "id": 491135598875,
+        "title": "Go Native",
+        "handle": "go-native-merch",
+        "body_html": null,
+        "published_at": "2024-10-02T10:42:16+03:00",
+        "updated_at": "2025-07-07T17:14:04+03:00",
+        "image": {
+            "id": 1748403126555,
+            "created_at": "2024-10-02T12:28:43+03:00",
+            "src": "https://cdn.shopify.com/s/files/1/0887/0982/4795/collections/Screenshot_2024-10-02_at_12.19.16_PM_08385635-98be-45d3-8e6e-6c88fd610503.png?v=1727861324",
+            "alt": null
+        },
+        "products_count": 16
+    },
+    {
+        "id": 491135729947,
+        "title": "Hilos",
+        "handle": "hilos",
+        "body_html": null,
+        "published_at": "2024-10-02T10:42:52+03:00",
+        "updated_at": "2025-05-11T13:04:22+03:00",
+        "image": {
+            "id": 1748403159323,
+            "created_at": "2024-10-02T12:28:58+03:00",
+            "src": "https://cdn.shopify.com/s/files/1/0887/0982/4795/collections/Screenshot_2024-10-02_at_12.19.16_PM_c7ad44c8-1efa-4284-88f8-cd1925e1f212.png?v=1727861339",
+            "alt": null
+        },
+        "products_count": 3
+    },
+    {
+        "id": 491135959323,
+        "title": "Homeboy",
+        "handle": "homeboy",
+        "body_html": null,
+        "published_at": "2024-10-02T10:43:23+03:00",
+        "updated_at": "2024-11-25T13:03:02+02:00",
+        "image": {
+            "id": 1748403192091,
+            "created_at": "2024-10-02T12:29:14+03:00",
+            "src": "https://cdn.shopify.com/s/files/1/0887/0982/4795/collections/Screenshot_2024-10-02_at_12.19.16_PM_eb15fa7a-cd02-4b90-bb41-2689ce8c8068.png?v=1727861355",
+            "alt": null
+        },
+        "products_count": 0
+    },
+    {
+        "id": 491136024859,
+        "title": "Hrtbrk",
+        "handle": "hrtbrk",
+        "body_html": null,
+        "published_at": "2024-10-02T10:44:14+03:00",
+        "updated_at": "2024-11-25T13:03:00+02:00",
+        "image": {
+            "id": 1748403224859,
+            "created_at": "2024-10-02T12:29:28+03:00",
+            "src": "https://cdn.shopify.com/s/files/1/0887/0982/4795/collections/Screenshot_2024-10-02_at_12.19.16_PM_b89dff8d-e8ba-4484-b02a-69718e2b0be8.png?v=1727861369",
+            "alt": null
+        },
+        "products_count": 0
+    },
+    {
+        "id": 492679135515,
+        "title": "Jelika",
+        "handle": "jelika",
+        "body_html": null,
+        "published_at": "2024-11-03T20:07:43+02:00",
+        "updated_at": "2025-05-18T12:22:32+03:00",
+        "image": {
+            "id": 1748651933979,
+            "created_at": "2024-11-03T20:07:42+02:00",
+            "src": "https://cdn.shopify.com/s/files/1/0887/0982/4795/collections/WhatsApp_Image_2024-11-03_at_7.56.46_PM.jpg?v=1730657262",
+            "alt": null
+        },
+        "products_count": 4
+    },
+    {
+        "id": 501668053275,
+        "title": "Jen",
+        "handle": "jen",
+        "body_html": null,
+        "published_at": "2025-06-08T01:33:54+03:00",
+        "updated_at": "2025-07-03T15:55:14+03:00",
+        "image": {
+            "id": 1750272049435,
+            "created_at": "2025-06-08T01:33:53+03:00",
+            "src": "https://cdn.shopify.com/s/files/1/0887/0982/4795/collections/WhatsApp_Image_2025-05-22_at_12.43.37_AM_3411f27b-b176-41a4-a1c6-c298fc9591fc.jpg?v=1749335633",
+            "alt": null
+        },
+        "products_count": 6
+    },
+    {
+        "id": 491136057627,
+        "title": "Juvenile",
+        "handle": "juvenile",
+        "body_html": null,
+        "published_at": "2024-10-02T10:44:52+03:00",
+        "updated_at": "2025-07-07T06:50:13+03:00",
+        "image": {
+            "id": 1748403257627,
+            "created_at": "2024-10-02T12:29:42+03:00",
+            "src": "https://cdn.shopify.com/s/files/1/0887/0982/4795/collections/Screenshot_2024-10-02_at_12.19.16_PM_e13183c2-0ed0-460c-8a0b-11d0a08a00c7.png?v=1727861383",
+            "alt": null
+        },
+        "products_count": 7
+    },
+    {
+        "id": 491136123163,
+        "title": "KAVA",
+        "handle": "kava",
+        "body_html": null,
+        "published_at": "2024-10-02T10:45:28+03:00",
+        "updated_at": "2025-06-29T14:34:01+03:00",
+        "image": {
+            "id": 1748403290395,
+            "created_at": "2024-10-02T12:29:59+03:00",
+            "src": "https://cdn.shopify.com/s/files/1/0887/0982/4795/collections/Screenshot_2024-10-02_at_12.19.16_PM_95e05cc8-0860-4a62-8355-e3f6b2134818.png?v=1727861400",
+            "alt": null
+        },
+        "products_count": 1
+    },
+    {
+        "id": 486706938139,
+        "title": "Kids",
+        "handle": "kids",
+        "body_html": null,
+        "published_at": "2024-07-16T20:43:59+03:00",
+        "updated_at": "2024-10-02T13:00:02+03:00",
+        "image": null,
+        "products_count": 0
+    },
+    {
+        "id": 486707036443,
+        "title": "Kids Homewear",
+        "handle": "kids-homewear",
+        "body_html": null,
+        "published_at": "2024-07-16T20:44:46+03:00",
+        "updated_at": "2024-10-02T13:00:02+03:00",
+        "image": null,
+        "products_count": 0
+    },
+    {
+        "id": 486707003675,
+        "title": "Kids Outwear",
+        "handle": "kids-outwear",
+        "body_html": null,
+        "published_at": "2024-07-16T20:44:23+03:00",
+        "updated_at": "2024-10-02T13:00:02+03:00",
+        "image": null,
+        "products_count": 0
+    },
+    {
+        "id": 496261431579,
+        "title": "Kijha",
+        "handle": "kijha",
+        "body_html": null,
+        "published_at": "2025-01-16T17:41:15+02:00",
+        "updated_at": "2025-07-07T17:16:56+03:00",
+        "image": {
+            "id": 1749276754203,
+            "created_at": "2025-01-27T13:50:16+02:00",
+            "src": "https://cdn.shopify.com/s/files/1/0887/0982/4795/collections/WhatsApp_Image_2024-11-03_at_7.23.53_PM_c2ac50ea-88f8-4d87-8fb2-e1e3ae4cd615.jpg?v=1737978616",
+            "alt": null
+        },
+        "products_count": 20
+    },
+    {
+        "id": 491136254235,
+        "title": "Kntd",
+        "handle": "kntd",
+        "body_html": null,
+        "published_at": "2024-10-02T10:46:00+03:00",
+        "updated_at": "2025-07-07T17:42:26+03:00",
+        "image": {
+            "id": 1748403323163,
+            "created_at": "2024-10-02T12:30:22+03:00",
+            "src": "https://cdn.shopify.com/s/files/1/0887/0982/4795/collections/Screenshot_2024-10-02_at_12.19.16_PM_b367a688-871f-4710-8250-f2be68dc4651.png?v=1727861422",
+            "alt": null
+        },
+        "products_count": 14
+    },
+    {
+        "id": 492790743323,
+        "title": "Leather Pants",
+        "handle": "womens-leather-pants",
+        "body_html": null,
+        "published_at": "2024-11-05T20:48:37+02:00",
+        "updated_at": "2025-04-03T13:03:50+02:00",
+        "image": null,
+        "products_count": 2
+    },
+    {
+        "id": 491136450843,
+        "title": "Leiila",
+        "handle": "leiila",
+        "body_html": null,
+        "published_at": "2024-10-02T10:46:31+03:00",
+        "updated_at": "2024-11-25T13:03:12+02:00",
+        "image": {
+            "id": 1748403355931,
+            "created_at": "2024-10-02T12:30:50+03:00",
+            "src": "https://cdn.shopify.com/s/files/1/0887/0982/4795/collections/Screenshot_2024-10-02_at_12.19.16_PM_efcb819f-4981-4bbf-9f86-11aa6b97b0e9.png?v=1727861450",
+            "alt": null
+        },
+        "products_count": 0
+    },
+    {
+        "id": 491136614683,
+        "title": "Leon",
+        "handle": "leon",
+        "body_html": null,
+        "published_at": "2024-10-02T10:47:01+03:00",
+        "updated_at": "2024-11-25T13:03:01+02:00",
+        "image": {
+            "id": 1748403388699,
+            "created_at": "2024-10-02T12:31:28+03:00",
+            "src": "https://cdn.shopify.com/s/files/1/0887/0982/4795/collections/Screenshot_2024-10-02_at_12.19.16_PM_91debc44-59a9-4699-87cc-fffd1d714d0d.png?v=1727861489",
+            "alt": null
+        },
+        "products_count": 0
+    },
+    {
+        "id": 486706675995,
+        "title": "Loafers",
+        "handle": "loafers-1",
+        "body_html": null,
+        "published_at": "2024-07-16T20:41:40+03:00",
+        "updated_at": "2024-10-02T13:00:02+03:00",
+        "image": null,
+        "products_count": 0
+    },
+    {
+        "id": 499686932763,
+        "title": "Local Town",
+        "handle": "local-town",
+        "body_html": null,
+        "published_at": "2025-04-17T15:31:35+02:00",
+        "updated_at": "2025-07-06T16:20:17+03:00",
+        "image": {
+            "id": 1749976547611,
+            "created_at": "2025-04-17T15:31:34+02:00",
+            "src": "https://cdn.shopify.com/s/files/1/0887/0982/4795/collections/WhatsApp_Image_2025-02-26_at_7.20.20_PM_4da0007c-69e6-4572-a8cd-ec0989b7e9fb.jpg?v=1744896694",
+            "alt": null
+        },
+        "products_count": 5
+    },
+    {
+        "id": 491136876827,
+        "title": "Locco",
+        "handle": "locco",
+        "body_html": null,
+        "published_at": "2024-10-02T10:47:51+03:00",
+        "updated_at": "2024-11-25T13:03:13+02:00",
+        "image": {
+            "id": 1748403421467,
+            "created_at": "2024-10-02T12:31:55+03:00",
+            "src": "https://cdn.shopify.com/s/files/1/0887/0982/4795/collections/Screenshot_2024-10-02_at_12.19.16_PM_93aecc42-8344-4aff-8c3f-4f7b38ef775e.png?v=1727861516",
+            "alt": null
+        },
+        "products_count": 0
+    },
+    {
+        "id": 491027366171,
+        "title": "Loungewear",
+        "handle": "loungewear",
+        "body_html": null,
+        "published_at": "2024-09-29T20:00:37+03:00",
+        "updated_at": "2024-11-21T12:30:14+02:00",
+        "image": null,
+        "products_count": 1
+    },
+    {
+        "id": 491137171739,
+        "title": "Lumaa",
+        "handle": "lumaa",
+        "body_html": null,
+        "published_at": "2024-10-02T10:48:45+03:00",
+        "updated_at": "2025-07-07T17:32:34+03:00",
+        "image": {
+            "id": 1748403454235,
+            "created_at": "2024-10-02T12:32:19+03:00",
+            "src": "https://cdn.shopify.com/s/files/1/0887/0982/4795/collections/Screenshot_2024-10-02_at_12.19.16_PM_487a3181-f889-4bab-9dd6-32f6678d4eee.png?v=1727861539",
+            "alt": null
+        },
+        "products_count": 7
+    },
+    {
+        "id": 496261464347,
+        "title": "Main",
+        "handle": "main",
+        "body_html": null,
+        "published_at": "2025-01-16T17:41:41+02:00",
+        "updated_at": "2025-06-29T14:35:10+03:00",
+        "image": {
+            "id": 1749276786971,
+            "created_at": "2025-01-27T13:50:50+02:00",
+            "src": "https://cdn.shopify.com/s/files/1/0887/0982/4795/collections/WhatsApp_Image_2024-11-03_at_7.23.53_PM_d7a2882d-59b9-425f-903c-dd489f543b53.jpg?v=1737978650",
+            "alt": null
+        },
+        "products_count": 4
+    },
+    {
+        "id": 492679299355,
+        "title": "Maison de chris",
+        "handle": "maison-de-chris",
+        "body_html": null,
+        "published_at": "2024-11-03T20:09:15+02:00",
+        "updated_at": "2025-07-03T03:00:08+03:00",
+        "image": {
+            "id": 1748651999515,
+            "created_at": "2024-11-03T20:09:14+02:00",
+            "src": "https://cdn.shopify.com/s/files/1/0887/0982/4795/collections/WhatsApp_Image_2024-11-03_at_7.56.48_PM_bd524210-ab28-475f-b123-460431cfb3e0.jpg?v=1730657355",
+            "alt": null
+        },
+        "products_count": 5
+    },
+    {
+        "id": 501820096795,
+        "title": "Media Buying",
+        "handle": "media-buying",
+        "body_html": null,
+        "published_at": "2025-06-12T18:12:40+03:00",
+        "updated_at": "2025-06-15T18:38:09+03:00",
+        "image": null,
+        "products_count": 4
+    },
+    {
+        "id": 486705594651,
+        "title": "Men Items On Sale",
+        "handle": "men-sale",
+        "body_html": null,
+        "published_at": "2024-07-16T20:29:55+03:00",
+        "updated_at": "2024-12-01T12:51:31+02:00",
+        "image": null,
+        "products_count": 0
+    },
+    {
+        "id": 486705824027,
+        "title": "Men Loungewear",
+        "handle": "men-lounge-wear",
+        "body_html": null,
+        "published_at": "2024-07-16T20:32:05+03:00",
+        "updated_at": "2024-11-21T13:01:35+02:00",
+        "image": null,
+        "products_count": 1
+    },
+    {
+        "id": 486705856795,
+        "title": "Men's Beachwear",
+        "handle": "men-beachwear",
+        "body_html": null,
+        "published_at": "2024-07-16T20:32:40+03:00",
+        "updated_at": "2024-11-25T13:04:39+02:00",
+        "image": null,
+        "products_count": 1
+    },
+    {
+        "id": 486705692955,
+        "title": "Men's Casuals",
+        "handle": "men-casuals",
+        "body_html": null,
+        "published_at": "2024-07-16T20:30:39+03:00",
+        "updated_at": "2025-07-06T16:20:17+03:00",
+        "image": null,
+        "products_count": 90
+    },
+    {
+        "id": 486705955099,
+        "title": "Men's Clothing",
+        "handle": "men-clothing",
+        "body_html": null,
+        "published_at": "2024-07-16T20:33:30+03:00",
+        "updated_at": "2025-07-07T17:35:58+03:00",
+        "image": null,
+        "products_count": 275
+    },
+    {
+        "id": 492684017947,
+        "title": "Men's Coats",
+        "handle": "mens-coats",
+        "body_html": null,
+        "published_at": "2024-11-03T21:24:51+02:00",
+        "updated_at": "2024-11-21T13:12:52+02:00",
+        "image": null,
+        "products_count": 0
+    },
+    {
+        "id": 486706381083,
+        "title": "Men's Denim",
+        "handle": "men-denim",
+        "body_html": null,
+        "published_at": "2024-07-16T20:38:17+03:00",
+        "updated_at": "2025-07-07T17:35:58+03:00",
+        "image": null,
+        "products_count": 27
+    },
+    {
+        "id": 492791267611,
+        "title": "Men's Denim Jacket",
+        "handle": "mens-denim-jacket",
+        "body_html": null,
+        "published_at": "2024-11-05T21:00:26+02:00",
+        "updated_at": "2024-11-21T13:08:26+02:00",
+        "image": null,
+        "products_count": 0
+    },
+    {
+        "id": 486705660187,
+        "title": "Men's Essentials",
+        "handle": "men-basics",
+        "body_html": null,
+        "published_at": "2024-07-16T20:30:18+03:00",
+        "updated_at": "2025-07-06T16:20:18+03:00",
+        "image": null,
+        "products_count": 44
+    },
+    {
+        "id": 486706315547,
+        "title": "Men's Hoodies",
+        "handle": "men-hoodies-crewnecks",
+        "body_html": null,
+        "published_at": "2024-07-16T20:37:34+03:00",
+        "updated_at": "2025-05-11T13:04:27+03:00",
+        "image": null,
+        "products_count": 33
+    },
+    {
+        "id": 486706086171,
+        "title": "Men's Jackets",
+        "handle": "men-coats-jackets",
+        "body_html": null,
+        "published_at": "2024-07-16T20:34:31+03:00",
+        "updated_at": "2025-05-11T13:04:20+03:00",
+        "image": null,
+        "products_count": 4
+    },
+    {
+        "id": 492790251803,
+        "title": "Men's Knitwear",
+        "handle": "mens-knitwear",
+        "body_html": null,
+        "published_at": "2024-11-05T20:34:54+02:00",
+        "updated_at": "2025-05-11T13:04:22+03:00",
+        "image": null,
+        "products_count": 8
+    },
+    {
+        "id": 486706348315,
+        "title": "Men's Pants",
+        "handle": "men-pants",
+        "body_html": null,
+        "published_at": "2024-07-16T20:37:57+03:00",
+        "updated_at": "2025-07-07T17:24:48+03:00",
+        "image": null,
+        "products_count": 36
+    },
+    {
+        "id": 491853906203,
+        "title": "Men's Polos",
+        "handle": "men-polos",
+        "body_html": null,
+        "published_at": "2024-10-16T05:11:24+03:00",
+        "updated_at": "2025-07-07T17:31:46+03:00",
+        "image": null,
+        "products_count": 18
+    },
+    {
+        "id": 492791365915,
+        "title": "Men's Puffer Jacket",
+        "handle": "mens-puffer-jacket",
+        "body_html": null,
+        "published_at": "2024-11-05T21:03:26+02:00",
+        "updated_at": "2025-05-11T13:04:17+03:00",
+        "image": null,
+        "products_count": 1
+    },
+    {
+        "id": 491876253979,
+        "title": "Men's Sets",
+        "handle": "mens-sets",
+        "body_html": null,
+        "published_at": "2024-10-16T16:08:06+03:00",
+        "updated_at": "2025-06-08T01:14:28+03:00",
+        "image": null,
+        "products_count": 1
+    },
+    {
+        "id": 491853873435,
+        "title": "Men's Shirts",
+        "handle": "men-shirts",
+        "body_html": null,
+        "published_at": "2024-10-16T05:10:58+03:00",
+        "updated_at": "2025-07-07T17:17:25+03:00",
+        "image": null,
+        "products_count": 18
+    },
+    {
+        "id": 486706217243,
+        "title": "Men's Shorts",
+        "handle": "men-shorts",
+        "body_html": null,
+        "published_at": "2024-07-16T20:36:48+03:00",
+        "updated_at": "2025-07-07T17:25:59+03:00",
+        "image": null,
+        "products_count": 14
+    },
+    {
+        "id": 486705725723,
+        "title": "Men's Sportswear",
+        "handle": "men-sportswear",
+        "body_html": null,
+        "published_at": "2024-07-16T20:31:00+03:00",
+        "updated_at": "2024-11-25T13:05:20+02:00",
+        "image": null,
+        "products_count": 1
+    },
+    {
+        "id": 492790120731,
+        "title": "Men's Suit",
+        "handle": "mens-suit",
+        "body_html": null,
+        "published_at": "2024-11-05T20:30:33+02:00",
+        "updated_at": "2024-11-21T13:10:34+02:00",
+        "image": null,
+        "products_count": 0
+    },
+    {
+        "id": 492777144603,
+        "title": "Men's Sweaters",
+        "handle": "mens-sweaters",
+        "body_html": null,
+        "published_at": "2024-11-05T15:59:39+02:00",
+        "updated_at": "2025-05-11T13:04:22+03:00",
+        "image": null,
+        "products_count": 6
+    },
+    {
+        "id": 492777177371,
+        "title": "Men's Sweatshirts",
+        "handle": "mens-sweatshirts",
+        "body_html": null,
+        "published_at": "2024-11-05T16:00:21+02:00",
+        "updated_at": "2025-05-11T13:04:28+03:00",
+        "image": null,
+        "products_count": 17
+    },
+    {
+        "id": 486706512155,
+        "title": "Men's T-Shirts",
+        "handle": "men-t-shirt-vests",
+        "body_html": null,
+        "published_at": "2024-07-16T20:39:53+03:00",
+        "updated_at": "2025-07-07T17:30:31+03:00",
+        "image": null,
+        "products_count": 102
+    },
+    {
+        "id": 492791333147,
+        "title": "Men's Varsity Jacket",
+        "handle": "mens-varsity-jacket",
+        "body_html": null,
+        "published_at": "2024-11-05T21:02:02+02:00",
+        "updated_at": "2025-05-11T13:04:20+03:00",
+        "image": null,
+        "products_count": 2
+    },
+    {
+        "id": 486706479387,
+        "title": "Men's Vests",
+        "handle": "men-vests",
+        "body_html": null,
+        "published_at": "2024-07-16T20:39:15+03:00",
+        "updated_at": "2024-11-21T13:08:02+02:00",
+        "image": null,
+        "products_count": 0
+    },
+    {
+        "id": 492791464219,
+        "title": "Men's Wool Jacket",
+        "handle": "mens-wool-jacket",
+        "body_html": null,
+        "published_at": "2024-11-05T21:05:48+02:00",
+        "updated_at": "2024-11-21T13:09:53+02:00",
+        "image": null,
+        "products_count": 0
+    },
+    {
+        "id": 491137237275,
+        "title": "Milvus",
+        "handle": "milvus",
+        "body_html": null,
+        "published_at": "2024-10-02T10:49:25+03:00",
+        "updated_at": "2025-07-06T16:20:17+03:00",
+        "image": {
+            "id": 1748403487003,
+            "created_at": "2024-10-02T12:32:51+03:00",
+            "src": "https://cdn.shopify.com/s/files/1/0887/0982/4795/collections/Screenshot_2024-10-02_at_12.19.16_PM_4e72b890-8a79-41aa-8768-9ff081e78d64.png?v=1727861571",
+            "alt": null
+        },
+        "products_count": 9
+    },
+    {
+        "id": 491027235099,
+        "title": "Modest",
+        "handle": "modest",
+        "body_html": null,
+        "published_at": "2024-09-29T19:53:58+03:00",
+        "updated_at": "2025-05-11T13:04:26+03:00",
+        "image": null,
+        "products_count": 9
+    },
+    {
+        "id": 492679364891,
+        "title": "Navy",
+        "handle": "navy",
+        "body_html": null,
+        "published_at": "2024-11-03T20:10:26+02:00",
+        "updated_at": "2025-07-06T14:27:03+03:00",
+        "image": {
+            "id": 1748652065051,
+            "created_at": "2024-11-03T20:10:25+02:00",
+            "src": "https://cdn.shopify.com/s/files/1/0887/0982/4795/collections/WhatsApp_Image_2024-11-03_at_7.56.46_PM_dc7a6afe-5093-4c94-8dfd-525b4cfba39f.jpg?v=1730657426",
+            "alt": null
+        },
+        "products_count": 18
+    },
+    {
+        "id": 498933694747,
+        "title": "New Arrival",
+        "handle": "new-arrival",
+        "body_html": null,
+        "published_at": "2025-03-27T15:36:36+02:00",
+        "updated_at": "2025-07-07T17:42:26+03:00",
+        "image": null,
+        "products_count": 470
+    },
+    {
+        "id": 492822167835,
+        "title": "New Arrivals",
+        "handle": "new-arrivals",
+        "body_html": null,
+        "published_at": "2024-11-06T18:13:42+02:00",
+        "updated_at": "2025-07-07T17:42:26+03:00",
+        "image": null,
+        "products_count": 285
+    },
+    {
+        "id": 492679332123,
+        "title": "NH Designs",
+        "handle": "nh-designs",
+        "body_html": null,
+        "published_at": "2024-11-03T20:10:09+02:00",
+        "updated_at": "2025-07-03T04:40:11+03:00",
+        "image": {
+            "id": 1748652032283,
+            "created_at": "2024-11-03T20:10:08+02:00",
+            "src": "https://cdn.shopify.com/s/files/1/0887/0982/4795/collections/WhatsApp_Image_2024-11-03_at_7.56.46_PM_b3e625aa-d0f9-4d79-9bc4-4b61ff2a924b.jpg?v=1730657409",
+            "alt": null
+        },
+        "products_count": 33
+    },
+    {
+        "id": 491027267867,
+        "title": "Night Out",
+        "handle": "night-out",
+        "body_html": null,
+        "published_at": "2024-09-29T19:58:37+03:00",
+        "updated_at": "2025-05-11T13:04:25+03:00",
+        "image": null,
+        "products_count": 6
+    },
+    {
+        "id": 491137401115,
+        "title": "Noah Outfit",
+        "handle": "noah-outfit",
+        "body_html": null,
+        "published_at": "2024-10-02T10:50:07+03:00",
+        "updated_at": "2025-06-14T03:00:17+03:00",
+        "image": {
+            "id": 1748403519771,
+            "created_at": "2024-10-02T12:33:08+03:00",
+            "src": "https://cdn.shopify.com/s/files/1/0887/0982/4795/collections/Screenshot_2024-10-02_at_12.19.16_PM_d3326c9a-98be-4216-92cb-325f71f66f43.png?v=1727861588",
+            "alt": null
+        },
+        "products_count": 3
+    },
+    {
+        "id": 492679463195,
+        "title": "Nyntys",
+        "handle": "nyntys",
+        "body_html": null,
+        "published_at": "2024-11-03T20:11:17+02:00",
+        "updated_at": "2025-04-03T13:04:11+02:00",
+        "image": {
+            "id": 1748652097819,
+            "created_at": "2024-11-03T20:11:16+02:00",
+            "src": "https://cdn.shopify.com/s/files/1/0887/0982/4795/collections/WhatsApp_Image_2024-11-03_at_7.56.46_PM_b7be3253-f9ca-4c06-a5db-836103862934.jpg?v=1730657476",
+            "alt": null
+        },
+        "products_count": 1
+    },
+    {
+        "id": 491137532187,
+        "title": "Old Skool",
+        "handle": "old-skool",
+        "body_html": null,
+        "published_at": "2024-10-02T10:50:44+03:00",
+        "updated_at": "2024-11-25T13:03:57+02:00",
+        "image": {
+            "id": 1748403552539,
+            "created_at": "2024-10-02T12:33:28+03:00",
+            "src": "https://cdn.shopify.com/s/files/1/0887/0982/4795/collections/Screenshot_2024-10-02_at_12.19.16_PM_bf76813c-8f79-4555-b60e-e15bbcc075e6.png?v=1727861609",
+            "alt": null
+        },
+        "products_count": 0
+    },
+    {
+        "id": 492161335579,
+        "title": "On Sale",
+        "handle": "on-sale",
+        "body_html": null,
+        "published_at": "2024-10-22T12:34:39+03:00",
+        "updated_at": "2024-12-01T12:51:31+02:00",
+        "image": null,
+        "products_count": 0
+    },
+    {
+        "id": 491137663259,
+        "title": "Ordinary Product",
+        "handle": "ordinary-product",
+        "body_html": null,
+        "published_at": "2024-10-02T10:51:26+03:00",
+        "updated_at": "2025-06-23T14:54:38+03:00",
+        "image": {
+            "id": 1748403585307,
+            "created_at": "2024-10-02T12:33:49+03:00",
+            "src": "https://cdn.shopify.com/s/files/1/0887/0982/4795/collections/Screenshot_2024-10-02_at_12.19.16_PM_fa6562b0-dedb-457a-aaca-fc19e9cca412.png?v=1727861630",
+            "alt": null
+        },
+        "products_count": 11
+    },
+    {
+        "id": 493492797723,
+        "title": "Organdy",
+        "handle": "organdy",
+        "body_html": null,
+        "published_at": "2024-11-21T13:50:28+02:00",
+        "updated_at": "2025-04-17T15:28:46+02:00",
+        "image": {
+            "id": 1748811481371,
+            "created_at": "2024-11-21T13:50:54+02:00",
+            "src": "https://cdn.shopify.com/s/files/1/0887/0982/4795/collections/WhatsApp_Image_2024-11-03_at_7.23.53_PM_7654c444-a915-4178-a0fc-d79bbc59792d.jpg?v=1732189854",
+            "alt": null
+        },
+        "products_count": 0
+    },
+    {
+        "id": 491137761563,
+        "title": "Ppanther",
+        "handle": "ppanther",
+        "body_html": null,
+        "published_at": "2024-10-02T10:52:27+03:00",
+        "updated_at": "2024-11-25T13:04:01+02:00",
+        "image": {
+            "id": 1748403618075,
+            "created_at": "2024-10-02T12:34:09+03:00",
+            "src": "https://cdn.shopify.com/s/files/1/0887/0982/4795/collections/Screenshot_2024-10-02_at_12.19.16_PM_f3c3cff0-9df3-4d80-9dc1-3bab47399c78.png?v=1727861650",
+            "alt": null
+        },
+        "products_count": 0
+    },
+    {
+        "id": 501147140379,
+        "title": "Psych",
+        "handle": "psych",
+        "body_html": null,
+        "published_at": "2025-05-22T00:41:10+03:00",
+        "updated_at": "2025-07-07T15:55:14+03:00",
+        "image": {
+            "id": 1750188359963,
+            "created_at": "2025-05-22T00:41:09+03:00",
+            "src": "https://cdn.shopify.com/s/files/1/0887/0982/4795/collections/Screenshot_2024-11-23_at_12.30.04_PM_ae680532-0376-41d0-9750-8a08ee11c3b1.png?v=1747863876",
+            "alt": null
+        },
+        "products_count": 5
+    },
+    {
+        "id": 492791398683,
+        "title": "Puffer Jacket",
+        "handle": "womens-puffer-jacket",
+        "body_html": null,
+        "published_at": "2024-11-05T21:04:36+02:00",
+        "updated_at": "2025-05-11T13:04:26+03:00",
+        "image": null,
+        "products_count": 3
+    },
+    {
+        "id": 492679627035,
+        "title": "Riddle",
+        "handle": "riddle",
+        "body_html": null,
+        "published_at": "2024-11-03T20:12:54+02:00",
+        "updated_at": "2025-06-26T00:15:11+03:00",
+        "image": {
+            "id": 1748652163355,
+            "created_at": "2024-11-03T20:12:54+02:00",
+            "src": "https://cdn.shopify.com/s/files/1/0887/0982/4795/collections/WhatsApp_Image_2024-11-03_at_7.56.48_PM_daef0709-1d25-4857-85a9-79b2b3c93414.jpg?v=1730657574",
+            "alt": null
+        },
+        "products_count": 12
+    },
+    {
+        "id": 491137794331,
+        "title": "Saga",
+        "handle": "saga",
+        "body_html": null,
+        "published_at": "2024-10-02T10:53:13+03:00",
+        "updated_at": "2025-06-24T15:30:11+03:00",
+        "image": {
+            "id": 1748403650843,
+            "created_at": "2024-10-02T12:35:26+03:00",
+            "src": "https://cdn.shopify.com/s/files/1/0887/0982/4795/collections/Screenshot_2024-10-02_at_12.19.16_PM_4fabad8b-338c-4018-b3a9-ca8134fb30b4.png?v=1727861727",
+            "alt": null
+        },
+        "products_count": 1
+    },
+    {
+        "id": 491137958171,
+        "title": "Salty",
+        "handle": "salty",
+        "body_html": null,
+        "published_at": "2024-10-02T10:54:56+03:00",
+        "updated_at": "2025-07-07T17:31:17+03:00",
+        "image": {
+            "id": 1748403683611,
+            "created_at": "2024-10-02T12:36:27+03:00",
+            "src": "https://cdn.shopify.com/s/files/1/0887/0982/4795/collections/Screenshot_2024-10-02_at_12.19.16_PM_549e2981-2372-4246-aa0a-b8fc5b799060.png?v=1727861788",
+            "alt": null
+        },
+        "products_count": 8
+    },
+    {
+        "id": 486706708763,
+        "title": "Sandals",
+        "handle": "sandals-1",
+        "body_html": null,
+        "published_at": "2024-07-16T20:42:18+03:00",
+        "updated_at": "2024-10-02T13:00:02+03:00",
+        "image": null,
+        "products_count": 0
+    },
+    {
+        "id": 493496533275,
+        "title": "Semi-Formal Pants",
+        "handle": "semi-formal-pants",
+        "body_html": null,
+        "published_at": "2024-11-21T16:10:51+02:00",
+        "updated_at": "2025-04-17T15:28:35+02:00",
+        "image": null,
+        "products_count": 0
+    },
+    {
+        "id": 492680216859,
+        "title": "Slits & Bits",
+        "handle": "slits-bits",
+        "body_html": null,
+        "published_at": "2024-11-03T20:15:25+02:00",
+        "updated_at": "2025-05-11T13:04:18+03:00",
+        "image": {
+            "id": 1748652196123,
+            "created_at": "2024-11-03T20:15:24+02:00",
+            "src": "https://cdn.shopify.com/s/files/1/0887/0982/4795/collections/WhatsApp_Image_2024-11-03_at_7.56.46_PM_0ee18062-51c6-4dc0-8416-6fbb183ca5f0.jpg?v=1730657724",
+            "alt": null
+        },
+        "products_count": 5
+    },
+    {
+        "id": 486706741531,
+        "title": "Sneakers",
+        "handle": "sneakers-1",
+        "body_html": null,
+        "published_at": "2024-07-16T20:42:49+03:00",
+        "updated_at": "2024-10-02T13:00:02+03:00",
+        "image": null,
+        "products_count": 0
+    },
+    {
+        "id": 491137990939,
+        "title": "Society",
+        "handle": "society",
+        "body_html": null,
+        "published_at": "2024-10-02T10:55:19+03:00",
+        "updated_at": "2024-12-09T15:56:40+02:00",
+        "image": {
+            "id": 1748403716379,
+            "created_at": "2024-10-02T12:36:48+03:00",
+            "src": "https://cdn.shopify.com/s/files/1/0887/0982/4795/collections/Screenshot_2024-10-02_at_12.19.16_PM_e10c4e55-6916-4700-a711-60844a3583bc.png?v=1727861809",
+            "alt": null
+        },
+        "products_count": 0
+    },
+    {
+        "id": 492679528731,
+        "title": "Space Out",
+        "handle": "space-out",
+        "body_html": null,
+        "published_at": "2024-11-03T20:11:46+02:00",
+        "updated_at": "2025-05-11T13:04:16+03:00",
+        "image": {
+            "id": 1748652130587,
+            "created_at": "2024-11-03T20:11:45+02:00",
+            "src": "https://cdn.shopify.com/s/files/1/0887/0982/4795/collections/WhatsApp_Image_2024-11-03_at_7.56.46_PM_3ef83068-16c0-40a2-aea9-9aeb6225166c.jpg?v=1730657506",
+            "alt": null
+        },
+        "products_count": 4
+    },
+    {
+        "id": 491027497243,
+        "title": "Sportswear",
+        "handle": "sportswear",
+        "body_html": null,
+        "published_at": "2024-09-29T20:03:11+03:00",
+        "updated_at": "2025-04-18T21:05:18+02:00",
+        "image": null,
+        "products_count": 4
+    },
+    {
+        "id": 491138023707,
+        "title": "Stay Gamed",
+        "handle": "stay-gamed",
+        "body_html": null,
+        "published_at": "2024-10-02T10:55:54+03:00",
+        "updated_at": "2025-04-20T17:19:05+02:00",
+        "image": {
+            "id": 1748403749147,
+            "created_at": "2024-10-02T12:37:07+03:00",
+            "src": "https://cdn.shopify.com/s/files/1/0887/0982/4795/collections/Screenshot_2024-10-02_at_12.19.16_PM_08b31661-9698-4160-bc75-949bc2b4e408.png?v=1727861828",
+            "alt": null
+        },
+        "products_count": 0
+    },
+    {
+        "id": 499686768923,
+        "title": "Stps",
+        "handle": "stps",
+        "body_html": null,
+        "published_at": "2025-04-17T15:27:16+02:00",
+        "updated_at": "2025-07-03T05:55:14+03:00",
+        "image": {
+            "id": 1749976514843,
+            "created_at": "2025-04-17T15:30:41+02:00",
+            "src": "https://cdn.shopify.com/s/files/1/0887/0982/4795/collections/WhatsApp_Image_2025-02-26_at_7.20.20_PM.jpg?v=1744896641",
+            "alt": null
+        },
+        "products_count": 6
+    },
+    {
+        "id": 491138122011,
+        "title": "Sty",
+        "handle": "sty",
+        "body_html": null,
+        "published_at": "2024-10-02T10:56:17+03:00",
+        "updated_at": "2024-11-25T13:04:47+02:00",
+        "image": {
+            "id": 1748403781915,
+            "created_at": "2024-10-02T12:37:25+03:00",
+            "src": "https://cdn.shopify.com/s/files/1/0887/0982/4795/collections/Screenshot_2024-10-02_at_12.19.16_PM_610cc652-709f-4931-b7d8-051f82d77acf.png?v=1727861845",
+            "alt": null
+        },
+        "products_count": 0
+    },
+    {
+        "id": 492790382875,
+        "title": "Sweatpants",
+        "handle": "mens-sweatpants",
+        "body_html": null,
+        "published_at": "2024-11-05T20:38:55+02:00",
+        "updated_at": "2025-07-02T19:55:13+03:00",
+        "image": null,
+        "products_count": 16
+    },
+    {
+        "id": 492790612251,
+        "title": "Sweatpants",
+        "handle": "womens-sweatpants",
+        "body_html": null,
+        "published_at": "2024-11-05T20:45:01+02:00",
+        "updated_at": "2025-07-02T19:55:13+03:00",
+        "image": null,
+        "products_count": 18
+    },
+    {
+        "id": 491027431707,
+        "title": "Swimwear & Beachwear",
+        "handle": "swimwear-beachwear",
+        "body_html": null,
+        "published_at": "2024-09-29T20:02:21+03:00",
+        "updated_at": "2025-05-07T15:29:37+03:00",
+        "image": null,
+        "products_count": 4
+    },
+    {
+        "id": 491138187547,
+        "title": "Teeoro",
+        "handle": "teeoro",
+        "body_html": null,
+        "published_at": "2024-10-02T10:56:49+03:00",
+        "updated_at": "2025-05-11T13:04:17+03:00",
+        "image": {
+            "id": 1748403814683,
+            "created_at": "2024-10-02T12:37:42+03:00",
+            "src": "https://cdn.shopify.com/s/files/1/0887/0982/4795/collections/Screenshot_2024-10-02_at_12.19.16_PM_5a6c871d-26df-4a0f-a4c6-ca42d074fdc2.png?v=1727861862",
+            "alt": null
+        },
+        "products_count": 3
+    },
+    {
+        "id": 491138220315,
+        "title": "TGS Clothing",
+        "handle": "tgs-clothing",
+        "body_html": null,
+        "published_at": "2024-10-02T10:57:28+03:00",
+        "updated_at": "2024-11-25T13:05:23+02:00",
+        "image": {
+            "id": 1748403847451,
+            "created_at": "2024-10-02T12:37:57+03:00",
+            "src": "https://cdn.shopify.com/s/files/1/0887/0982/4795/collections/Screenshot_2024-10-02_at_12.19.16_PM_7dc68e6d-ee49-4cc4-90e8-0954735acdf2.png?v=1727861878",
+            "alt": null
+        },
+        "products_count": 0
+    },
+    {
+        "id": 500793803035,
+        "title": "The Rue Society",
+        "handle": "the-rue-society",
+        "body_html": null,
+        "published_at": "2025-05-11T14:29:17+03:00",
+        "updated_at": "2025-05-11T14:29:18+03:00",
+        "image": {
+            "id": 1750124986651,
+            "created_at": "2025-05-11T14:29:16+03:00",
+            "src": "https://cdn.shopify.com/s/files/1/0887/0982/4795/collections/WhatsApp_Image_2025-02-26_at_7.20.21_PM_3_394886a2-1c93-4fc6-8c1e-0bff996b6870.jpg?v=1746962957",
+            "alt": null
+        },
+        "products_count": 3
+    },
+    {
+        "id": 497076502811,
+        "title": "THEA",
+        "handle": "thea",
+        "body_html": null,
+        "published_at": "2025-02-09T16:27:06+02:00",
+        "updated_at": "2025-06-29T14:34:42+03:00",
+        "image": {
+            "id": 1749485322523,
+            "created_at": "2025-02-26T19:23:54+02:00",
+            "src": "https://cdn.shopify.com/s/files/1/0887/0982/4795/collections/WhatsApp_Image_2025-02-26_at_7.20.21_PM_1_7b1c2172-4fc4-46ca-b3f5-f7c828ffed67.jpg?v=1740590635",
+            "alt": null
+        },
+        "products_count": 9
+    },
+    {
+        "id": 491138253083,
+        "title": "Totelly",
+        "handle": "totelly",
+        "body_html": null,
+        "published_at": "2024-10-02T10:58:09+03:00",
+        "updated_at": "2024-11-25T13:05:21+02:00",
+        "image": {
+            "id": 1748403880219,
+            "created_at": "2024-10-02T12:38:17+03:00",
+            "src": "https://cdn.shopify.com/s/files/1/0887/0982/4795/collections/Screenshot_2024-10-02_at_12.19.16_PM_fbb012ec-d8fc-4f20-9c77-b85bf96c268b.png?v=1727861897",
+            "alt": null
+        },
+        "products_count": 0
+    },
+    {
+        "id": 493492666651,
+        "title": "Triple 7",
+        "handle": "triple-7",
+        "body_html": null,
+        "published_at": "2024-11-21T13:49:31+02:00",
+        "updated_at": "2025-05-11T13:03:34+03:00",
+        "image": {
+            "id": 1748811415835,
+            "created_at": "2024-11-21T13:49:30+02:00",
+            "src": "https://cdn.shopify.com/s/files/1/0887/0982/4795/collections/WhatsApp_Image_2024-11-03_at_7.23.53_PM.jpg?v=1732189771",
+            "alt": null
+        },
+        "products_count": 3
+    },
+    {
+        "id": 491138351387,
+        "title": "Twenty Seven",
+        "handle": "twenty-seven",
+        "body_html": null,
+        "published_at": "2024-10-02T10:58:45+03:00",
+        "updated_at": "2025-07-06T14:28:29+03:00",
+        "image": {
+            "id": 1748403912987,
+            "created_at": "2024-10-02T12:38:34+03:00",
+            "src": "https://cdn.shopify.com/s/files/1/0887/0982/4795/collections/Screenshot_2024-10-02_at_12.19.16_PM_970b83ae-be75-40e9-8f6b-9ef31c808465.png?v=1727861915",
+            "alt": null
+        },
+        "products_count": 24
+    },
+    {
+        "id": 492791300379,
+        "title": "Varsity Jacket",
+        "handle": "womens-varsity-jackets",
+        "body_html": null,
+        "published_at": "2024-11-05T21:01:18+02:00",
+        "updated_at": "2025-05-11T13:04:20+03:00",
+        "image": null,
+        "products_count": 2
+    },
+    {
+        "id": 492679168283,
+        "title": "Vega",
+        "handle": "vega",
+        "body_html": null,
+        "published_at": "2024-11-03T20:07:44+02:00",
+        "updated_at": "2025-07-06T14:26:50+03:00",
+        "image": {
+            "id": 1748651966747,
+            "created_at": "2024-11-03T20:07:43+02:00",
+            "src": "https://cdn.shopify.com/s/files/1/0887/0982/4795/collections/WhatsApp_Image_2024-11-03_at_7.56.46_PM_75c0c4d6-d233-4250-a370-fbd07ebc92be.jpg?v=1730657263",
+            "alt": null
+        },
+        "products_count": 16
+    },
+    {
+        "id": 491138482459,
+        "title": "Wacko Wear",
+        "handle": "wacko-wear",
+        "body_html": null,
+        "published_at": "2024-10-02T10:59:15+03:00",
+        "updated_at": "2024-11-25T13:05:10+02:00",
+        "image": {
+            "id": 1748403945755,
+            "created_at": "2024-10-02T12:38:52+03:00",
+            "src": "https://cdn.shopify.com/s/files/1/0887/0982/4795/collections/Screenshot_2024-10-02_at_12.19.16_PM_ea8bcfdc-77ff-49bd-b2d8-5aa4731e77a9.png?v=1727861932",
+            "alt": null
+        },
+        "products_count": 0
+    },
+    {
+        "id": 499656458523,
+        "title": "Winter Collection '24",
+        "handle": "winter-collection-24",
+        "body_html": null,
+        "published_at": "2025-04-16T15:40:59+02:00",
+        "updated_at": "2025-06-29T14:35:10+03:00",
+        "image": null,
+        "products_count": 85
+    },
+    {
+        "id": 491138613531,
+        "title": "Woke",
+        "handle": "woke",
+        "body_html": null,
+        "published_at": "2024-10-02T11:00:18+03:00",
+        "updated_at": "2025-07-07T17:36:28+03:00",
+        "image": {
+            "id": 1748404011291,
+            "created_at": "2024-10-02T12:39:11+03:00",
+            "src": "https://cdn.shopify.com/s/files/1/0887/0982/4795/collections/Screenshot_2024-10-02_at_12.19.16_PM_e1ac7a8a-b0f3-4a4d-afb5-b6f680a36325.png?v=1727861952",
+            "alt": null
+        },
+        "products_count": 14
+    },
+    {
+        "id": 486703595803,
+        "title": "Woman Items On Sale",
+        "handle": "sale",
+        "body_html": null,
+        "published_at": "2024-07-16T20:07:47+03:00",
+        "updated_at": "2024-12-01T12:51:31+02:00",
+        "image": null,
+        "products_count": 0
+    },
+    {
+        "id": 486705103131,
+        "title": "Women Backpacks",
+        "handle": "backpacks",
+        "body_html": null,
+        "published_at": "2024-07-16T20:25:34+03:00",
+        "updated_at": "2024-10-30T08:35:05+03:00",
+        "image": null,
+        "products_count": 0
+    },
+    {
+        "id": 486705201435,
+        "title": "Women Belts",
+        "handle": "belts",
+        "body_html": null,
+        "published_at": "2024-07-16T20:26:19+03:00",
+        "updated_at": "2024-10-30T08:34:32+03:00",
+        "image": null,
+        "products_count": 0
+    },
+    {
+        "id": 486704611611,
+        "title": "Women Boots",
+        "handle": "boots",
+        "body_html": null,
+        "published_at": "2024-07-16T20:19:37+03:00",
+        "updated_at": "2024-10-30T08:39:12+03:00",
+        "image": null,
+        "products_count": 0
+    },
+    {
+        "id": 486704906523,
+        "title": "Women Clutches",
+        "handle": "clutches",
+        "body_html": null,
+        "published_at": "2024-07-16T20:23:40+03:00",
+        "updated_at": "2024-11-03T11:02:20+02:00",
+        "image": null,
+        "products_count": 1
+    },
+    {
+        "id": 486704513307,
+        "title": "Women Footwear",
+        "handle": "footwear",
+        "body_html": null,
+        "published_at": "2024-07-16T20:19:13+03:00",
+        "updated_at": "2024-10-30T08:39:36+03:00",
+        "image": null,
+        "products_count": 0
+    },
+    {
+        "id": 486705234203,
+        "title": "Women Glasses",
+        "handle": "glasses",
+        "body_html": null,
+        "published_at": "2024-07-16T20:26:43+03:00",
+        "updated_at": "2024-11-03T11:02:20+02:00",
+        "image": null,
+        "products_count": 1
+    },
+    {
+        "id": 486705299739,
+        "title": "Women Hair Accessories",
+        "handle": "hair-accessories",
+        "body_html": null,
+        "published_at": "2024-07-16T20:27:04+03:00",
+        "updated_at": "2024-10-30T08:33:37+03:00",
+        "image": null,
+        "products_count": 0
+    },
+    {
+        "id": 486705332507,
+        "title": "Women Hats & Caps",
+        "handle": "hats-caps",
+        "body_html": null,
+        "published_at": "2024-07-16T20:27:24+03:00",
+        "updated_at": "2024-11-21T12:56:59+02:00",
+        "image": null,
+        "products_count": 1
+    },
+    {
+        "id": 486705430811,
+        "title": "Women Jewelry",
+        "handle": "jewelry",
+        "body_html": null,
+        "published_at": "2024-07-16T20:28:47+03:00",
+        "updated_at": "2024-10-30T08:32:19+03:00",
+        "image": null,
+        "products_count": 0
+    },
+    {
+        "id": 486704709915,
+        "title": "Women Loafers",
+        "handle": "loafers",
+        "body_html": null,
+        "published_at": "2024-07-16T20:20:56+03:00",
+        "updated_at": "2024-10-02T13:00:00+03:00",
+        "image": null,
+        "products_count": 0
+    },
+    {
+        "id": 486704382235,
+        "title": "Women Loungewear",
+        "handle": "lounge-wear",
+        "body_html": null,
+        "published_at": "2024-07-16T20:17:06+03:00",
+        "updated_at": "2024-11-21T12:31:44+02:00",
+        "image": null,
+        "products_count": 1
+    },
+    {
+        "id": 486704939291,
+        "title": "Women Mini Bags",
+        "handle": "mini-bags",
+        "body_html": null,
+        "published_at": "2024-07-16T20:24:14+03:00",
+        "updated_at": "2024-11-03T11:02:20+02:00",
+        "image": null,
+        "products_count": 1
+    },
+    {
+        "id": 486704742683,
+        "title": "Women Sandals",
+        "handle": "sandals",
+        "body_html": null,
+        "published_at": "2024-07-16T20:21:25+03:00",
+        "updated_at": "2024-10-30T08:37:45+03:00",
+        "image": null,
+        "products_count": 0
+    },
+    {
+        "id": 486705365275,
+        "title": "Women Scarves",
+        "handle": "scarves",
+        "body_html": null,
+        "published_at": "2024-07-16T20:27:54+03:00",
+        "updated_at": "2024-10-30T08:32:53+03:00",
+        "image": null,
+        "products_count": 0
+    },
+    {
+        "id": 486704677147,
+        "title": "Women Slides & Flip-flops",
+        "handle": "slides-flip-flops",
+        "body_html": null,
+        "published_at": "2024-07-16T20:20:22+03:00",
+        "updated_at": "2024-10-02T13:00:00+03:00",
+        "image": null,
+        "products_count": 0
+    },
+    {
+        "id": 486704775451,
+        "title": "Women Sneakers",
+        "handle": "sneakers",
+        "body_html": null,
+        "published_at": "2024-07-16T20:22:01+03:00",
+        "updated_at": "2024-10-30T08:37:31+03:00",
+        "image": null,
+        "products_count": 0
+    },
+    {
+        "id": 486704873755,
+        "title": "Women Tote Bags",
+        "handle": "tote-bags",
+        "body_html": null,
+        "published_at": "2024-07-16T20:23:20+03:00",
+        "updated_at": "2024-10-30T08:38:01+03:00",
+        "image": null,
+        "products_count": 0
+    },
+    {
+        "id": 486705398043,
+        "title": "Women Wallet & Cardholders",
+        "handle": "wallet-cardholders",
+        "body_html": null,
+        "published_at": "2024-07-16T20:28:23+03:00",
+        "updated_at": "2024-10-30T08:31:28+03:00",
+        "image": null,
+        "products_count": 0
+    },
+    {
+        "id": 486705135899,
+        "title": "Women's Accessories",
+        "handle": "accessories",
+        "body_html": null,
+        "published_at": "2024-07-16T20:25:54+03:00",
+        "updated_at": "2024-11-25T13:02:21+02:00",
+        "image": null,
+        "products_count": 0
+    },
+    {
+        "id": 486704808219,
+        "title": "Women's Bags",
+        "handle": "bags",
+        "body_html": null,
+        "published_at": "2024-07-16T20:22:52+03:00",
+        "updated_at": "2024-10-30T08:52:32+03:00",
+        "image": null,
+        "products_count": 0
+    },
+    {
+        "id": 486704054555,
+        "title": "Women's Beachwear",
+        "handle": "woman-swimwear-beachwear",
+        "body_html": null,
+        "published_at": "2024-07-16T20:14:27+03:00",
+        "updated_at": "2025-05-27T18:44:34+03:00",
+        "image": null,
+        "products_count": 4
+    },
+    {
+        "id": 486703923483,
+        "title": "Women's Casuals",
+        "handle": "women-casuals",
+        "body_html": null,
+        "published_at": "2024-07-16T20:13:16+03:00",
+        "updated_at": "2025-07-05T14:00:07+03:00",
+        "image": null,
+        "products_count": 131
+    },
+    {
+        "id": 486704185627,
+        "title": "Women's Clothing",
+        "handle": "all-clothing",
+        "body_html": null,
+        "published_at": "2024-07-16T20:15:31+03:00",
+        "updated_at": "2025-07-07T17:42:26+03:00",
+        "image": null,
+        "products_count": 345
+    },
+    {
+        "id": 492777210139,
+        "title": "Women's Coats",
+        "handle": "womens-coats",
+        "body_html": null,
+        "published_at": "2024-11-05T16:01:36+02:00",
+        "updated_at": "2025-05-11T13:04:25+03:00",
+        "image": null,
+        "products_count": 3
+    },
+    {
+        "id": 486704972059,
+        "title": "Women's Crossbody Bags",
+        "handle": "crossbody-bags",
+        "body_html": null,
+        "published_at": "2024-07-16T20:24:40+03:00",
+        "updated_at": "2024-11-03T11:02:20+02:00",
+        "image": null,
+        "products_count": 1
+    },
+    {
+        "id": 486704283931,
+        "title": "Women's Denim",
+        "handle": "denim",
+        "body_html": null,
+        "published_at": "2024-07-16T20:16:20+03:00",
+        "updated_at": "2025-07-07T17:41:34+03:00",
+        "image": null,
+        "products_count": 48
+    },
+    {
+        "id": 486704316699,
+        "title": "Women's Dresses",
+        "handle": "dresses",
+        "body_html": null,
+        "published_at": "2024-07-16T20:16:34+03:00",
+        "updated_at": "2025-06-01T18:58:52+03:00",
+        "image": null,
+        "products_count": 4
+    },
+    {
+        "id": 486703759643,
+        "title": "Women's Essentials",
+        "handle": "woman-basics",
+        "body_html": null,
+        "published_at": "2024-07-16T20:10:48+03:00",
+        "updated_at": "2025-07-06T16:20:17+03:00",
+        "image": null,
+        "products_count": 53
+    },
+    {
+        "id": 492683919643,
+        "title": "Women's Hoodies",
+        "handle": "womens-hoodies",
+        "body_html": null,
+        "published_at": "2024-11-03T21:24:01+02:00",
+        "updated_at": "2025-05-11T13:04:25+03:00",
+        "image": null,
+        "products_count": 29
+    },
+    {
+        "id": 486704218395,
+        "title": "Women's Jackets",
+        "handle": "coats-jackets",
+        "body_html": null,
+        "published_at": "2024-07-16T20:16:04+03:00",
+        "updated_at": "2025-06-29T14:34:01+03:00",
+        "image": null,
+        "products_count": 18
+    },
+    {
+        "id": 492790284571,
+        "title": "Women's Knitwear",
+        "handle": "womens-knitwear",
+        "body_html": null,
+        "published_at": "2024-11-05T20:35:47+02:00",
+        "updated_at": "2025-05-11T13:04:00+03:00",
+        "image": null,
+        "products_count": 9
+    },
+    {
+        "id": 486703792411,
+        "title": "Women's Modest",
+        "handle": "woman-modest-clothing",
+        "body_html": null,
+        "published_at": "2024-07-16T20:11:30+03:00",
+        "updated_at": "2025-05-11T13:04:26+03:00",
+        "image": null,
+        "products_count": 9
+    },
+    {
+        "id": 486703857947,
+        "title": "Women's Night Out",
+        "handle": "woman-party-clothings",
+        "body_html": null,
+        "published_at": "2024-07-16T20:12:34+03:00",
+        "updated_at": "2025-05-11T13:04:25+03:00",
+        "image": null,
+        "products_count": 6
+    },
+    {
+        "id": 491853644059,
+        "title": "Women's Pants",
+        "handle": "woman-pants",
+        "body_html": null,
+        "published_at": "2024-10-16T05:06:20+03:00",
+        "updated_at": "2025-07-07T17:33:03+03:00",
+        "image": null,
+        "products_count": 43
+    },
+    {
+        "id": 499687194907,
+        "title": "Women's Polos",
+        "handle": "womens-polos",
+        "body_html": null,
+        "published_at": "2025-04-17T15:43:02+02:00",
+        "updated_at": "2025-07-07T17:36:57+03:00",
+        "image": null,
+        "products_count": 9
+    },
+    {
+        "id": 491876286747,
+        "title": "Women's Sets",
+        "handle": "womens-sets",
+        "body_html": null,
+        "published_at": "2024-10-16T16:08:55+03:00",
+        "updated_at": "2025-06-27T11:15:10+03:00",
+        "image": null,
+        "products_count": 10
+    },
+    {
+        "id": 491874615579,
+        "title": "Women's Shirts",
+        "handle": "womens-shirt",
+        "body_html": null,
+        "published_at": "2024-10-16T15:24:23+03:00",
+        "updated_at": "2025-07-07T17:27:02+03:00",
+        "image": null,
+        "products_count": 11
+    },
+    {
+        "id": 491853709595,
+        "title": "Women's Shorts",
+        "handle": "woman-shorts",
+        "body_html": null,
+        "published_at": "2024-10-16T05:06:44+03:00",
+        "updated_at": "2025-07-03T14:00:11+03:00",
+        "image": null,
+        "products_count": 7
+    },
+    {
+        "id": 486705037595,
+        "title": "Women's Shoulder Bags",
+        "handle": "shoulder-bags",
+        "body_html": null,
+        "published_at": "2024-07-16T20:25:02+03:00",
+        "updated_at": "2024-10-30T08:25:24+03:00",
+        "image": null,
+        "products_count": 0
+    },
+    {
+        "id": 486704415003,
+        "title": "Women's Skirts",
+        "handle": "skirts",
+        "body_html": null,
+        "published_at": "2024-07-16T20:17:27+03:00",
+        "updated_at": "2025-05-27T18:46:24+03:00",
+        "image": null,
+        "products_count": 3
+    },
+    {
+        "id": 486704087323,
+        "title": "Women's Sportswear",
+        "handle": "women-sportswear",
+        "body_html": null,
+        "published_at": "2024-07-16T20:14:59+03:00",
+        "updated_at": "2025-05-27T14:26:09+03:00",
+        "image": null,
+        "products_count": 4
+    },
+    {
+        "id": 492790087963,
+        "title": "Women's Suits",
+        "handle": "womens-suits",
+        "body_html": null,
+        "published_at": "2024-11-05T20:29:45+02:00",
+        "updated_at": "2025-05-27T18:43:41+03:00",
+        "image": null,
+        "products_count": 3
+    },
+    {
+        "id": 492776849691,
+        "title": "Women's Sweaters",
+        "handle": "womens-sweaters",
+        "body_html": null,
+        "published_at": "2024-11-05T15:54:54+02:00",
+        "updated_at": "2025-05-11T13:04:00+03:00",
+        "image": null,
+        "products_count": 7
+    },
+    {
+        "id": 492776718619,
+        "title": "Women's Sweatshirts",
+        "handle": "womens-sweatshirts",
+        "body_html": null,
+        "published_at": "2024-11-05T15:53:57+02:00",
+        "updated_at": "2025-05-11T13:04:28+03:00",
+        "image": null,
+        "products_count": 19
+    },
+    {
+        "id": 499917291803,
+        "title": "Women's Swimsuits",
+        "handle": "womens-swimsuits",
+        "body_html": null,
+        "published_at": "2025-04-20T18:23:51+02:00",
+        "updated_at": "2025-04-22T13:32:20+02:00",
+        "image": null,
+        "products_count": 3
+    },
+    {
+        "id": 491853840667,
+        "title": "Women's T-Shirts",
+        "handle": "women-t-shirts",
+        "body_html": null,
+        "published_at": "2024-10-16T05:09:03+03:00",
+        "updated_at": "2025-07-07T17:08:12+03:00",
+        "image": null,
+        "products_count": 86
+    },
+    {
+        "id": 486704447771,
+        "title": "Women's Tops",
+        "handle": "tops",
+        "body_html": null,
+        "published_at": "2024-07-16T20:17:45+03:00",
+        "updated_at": "2025-07-07T17:42:26+03:00",
+        "image": null,
+        "products_count": 43
+    },
+    {
+        "id": 492791824667,
+        "title": "Women's Vests",
+        "handle": "womens-vests",
+        "body_html": null,
+        "published_at": "2024-11-05T21:16:45+02:00",
+        "updated_at": "2025-06-29T14:35:10+03:00",
+        "image": null,
+        "products_count": 0
+    },
+    {
+        "id": 492791529755,
+        "title": "Wool Jacket",
+        "handle": "womens-wool-jacket",
+        "body_html": null,
+        "published_at": "2024-11-05T21:06:44+02:00",
+        "updated_at": "2025-05-11T13:04:14+03:00",
+        "image": null,
+        "products_count": 1
+    },
+    {
+        "id": 491138679067,
+        "title": "Zedzee",
+        "handle": "zedzee",
+        "body_html": null,
+        "published_at": "2024-10-02T11:00:43+03:00",
+        "updated_at": "2025-07-07T17:27:25+03:00",
+        "image": {
+            "id": 1748404044059,
+            "created_at": "2024-10-02T12:39:39+03:00",
+            "src": "https://cdn.shopify.com/s/files/1/0887/0982/4795/collections/Screenshot_2024-10-02_at_12.19.16_PM_06139960-a009-4df7-b5f9-8d71204f50ea.png?v=1727861980",
+            "alt": null
+        },
+        "products_count": 18
+    },
+    {
+        "id": 491138777371,
+        "title": "Zei",
+        "handle": "zei",
+        "body_html": null,
+        "published_at": "2024-10-02T11:01:11+03:00",
+        "updated_at": "2025-07-06T16:20:18+03:00",
+        "image": {
+            "id": 1748404076827,
+            "created_at": "2024-10-02T12:39:55+03:00",
+            "src": "https://cdn.shopify.com/s/files/1/0887/0982/4795/collections/Screenshot_2024-10-02_at_12.19.16_PM_ccba014e-b14f-4360-8d87-2d85dc3ddaa7.png?v=1727861995",
+            "alt": null
+        },
+        "products_count": 3
+    }
+]

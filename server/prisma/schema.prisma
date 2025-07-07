@@ -1,0 +1,48 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+// Looking for ways to speed up your queries, or scale easily with your serverless or edge functions?
+// Try Prisma Accelerate: https://pris.ly/cli/accelerate-init
+
+generator client {
+  provider = "prisma-client-js"
+  output   = "../generated/prisma"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+// Todo: Add your models here
+
+// User Management
+// 1.User
+
+
+// Product Management
+
+// 1. Product
+// 2. Variant
+// 3. Image
+// 4. Option
+
+
+// Collections
+// 1.Collection
+// 2. CollectionProduct
+ 
+
+//Shopping Cart
+// 1. Cart
+// 2. CartItem
+
+// Inventory
+
+// Order
+
+// Reviews
+
+// Whish List
+
+// Settings
