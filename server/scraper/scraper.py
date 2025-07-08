@@ -142,7 +142,7 @@ if __name__ == "__main__":
     shop_url = "https://gonative.eg"  # Replace with the target Shopify store URL
 
     products = scrape_shopify_products(shop_url)
-    save_to_json(products, os.path.join(script_dir, "products.json"))
+    save_to_json(products, os.path.join(script_dir, "output", "products.json"))
 
     collections = scrape_shopify_collections(shop_url)
-    save_to_json(collections, os.path.join(script_dir, "collections.json"))
+    save_to_json(collections, os.path.join(script_dir, "output", "collections.json"))

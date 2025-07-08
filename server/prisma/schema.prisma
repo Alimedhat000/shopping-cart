@@ -14,35 +14,148 @@ datasource db {
   url      = env("DATABASE_URL")
 }
 
-// Todo: Add your models here
-
 // User Management
 // 1.User
+model User {
+  id        String     @id @default(uuid())
+  email     String     @unique
+  name      String?
+  password  String
+  createdAt DateTime   @default(now())
+  updatedAt DateTime   @updatedAt
+  //Todo Cart Items and order Items
+  CartItems CartItem[]
+  Orders    Order[]
+}
 
+// Shopping Cart
+// 1.CartItem
+// 2.Order
+// 3.OrderItem
+model CartItem {
+  id     Int    @id @default(autoincrement())
+  user   User   @relation(fields: [userId], references: [id])
+  userId String
+
+  variant   Variant @relation(fields: [variantId], references: [id])
+  variantId BigInt
+
+  quantity Int
+}
+
+model Order {
+  id        Int      @id @default(autoincrement())
+  user      User     @relation(fields: [userId], references: [id])
+  userId    String
+  createdAt DateTime @default(now())
+
+  orderItems OrderItem[]
+}
+
+model OrderItem {
+  id      Int   @id @default(autoincrement())
+  order   Order @relation(fields: [orderId], references: [id])
+  orderId Int
+
+  variant   Variant @relation(fields: [variantId], references: [id])
+  variantId BigInt
+
+  quantity Int
+  price    Decimal @db.Decimal(10, 2)
+}
 
 // Product Management
 
 // 1. Product
-// 2. Variant
-// 3. Image
-// 4. Option
+model Product {
+  id          BigInt              @id
+  title       String
+  handle      String
+  vendor      String
+  body_html   String?
+  productType String              @map("product_type")
+  tags        String[]
+  createdAt   DateTime            @map("created_at")
+  updatedAt   DateTime            @map("updated_at")
+  publishedAt DateTime?           @map("published_at")
+  variants    Variant[]
+  options     ProductOption[]
+  images      Image[]
+  collections CollectionProduct[]
+}
 
+// 2. Variant
+model Variant {
+  id             BigInt   @id
+  title          String
+  option1        String
+  option2        String?
+  option3        String?
+  available      Boolean
+  price          Decimal  @db.Decimal(10, 2)
+  compareAtPrice Decimal? @map("compare_at_price")
+  position       Int
+  createdAt      DateTime @map("created_at")
+  updatedAt      DateTime @map("updated_at")
+
+  product   Product @relation(fields: [productId], references: [id])
+  productId BigInt
+
+  featuredImage   Image?      @relation("FeaturedImage", fields: [featuredImageId], references: [id])
+  featuredImageId BigInt?
+  CartItem        CartItem[]
+  OrderItem       OrderItem[]
+}
+
+// 3. Image
+model Image {
+  id        BigInt   @id
+  src       String
+  alt       String?
+  width     Int
+  height    Int
+  position  Int
+  createdAt DateTime @map("created_at")
+  updatedAt DateTime @map("updated_at")
+
+  product   Product? @relation(fields: [productId], references: [id])
+  productId BigInt?
+
+  variantsAsFeatured Variant[] @relation("FeaturedImage")
+
+  variantIds BigInt[] // Used for linking variants (JSON-only, denormalized; not enforced by relation)
+}
+
+// 4. Option
+model ProductOption {
+  id       Int      @id @default(autoincrement())
+  name     String
+  position Int
+  values   String[] // array of values, e.g. ["S", "M", "L"]
+
+  product   Product @relation(fields: [productId], references: [id])
+  productId BigInt
+}
 
 // Collections
 // 1.Collection
+model Collection {
+  id            BigInt    @id
+  title         String
+  handle        String
+  publishedAt   DateTime? @map("published_at")
+  updatedAt     DateTime  @map("updated_at")
+  productsCount Int       @map("products_count")
+
+  products CollectionProduct[]
+}
+
 // 2. CollectionProduct
- 
+model CollectionProduct {
+  id           Int        @id @default(autoincrement())
+  collection   Collection @relation(fields: [collectionId], references: [id])
+  collectionId BigInt
 
-//Shopping Cart
-// 1. Cart
-// 2. CartItem
-
-// Inventory
-
-// Order
-
-// Reviews
-
-// Whish List
-
-// Settings
+  product   Product @relation(fields: [productId], references: [id])
+  productId BigInt
+}
