@@ -55,7 +55,7 @@
         "handle": "avelle",
         "body_html": null,
         "published_at": "2025-05-11T14:17:27+03:00",
-        "updated_at": "2025-07-06T14:26:45+03:00",
+        "updated_at": "2025-07-08T15:45:54+03:00",
         "image": {
             "id": 1750124953883,
             "created_at": "2025-05-11T14:19:06+03:00",
@@ -95,9 +95,9 @@
         "handle": "best-seller",
         "body_html": null,
         "published_at": "2025-03-27T15:39:01+02:00",
-        "updated_at": "2025-07-07T17:42:26+03:00",
+        "updated_at": "2025-07-08T21:55:18+03:00",
         "image": null,
-        "products_count": 284
+        "products_count": 299
     },
     {
         "id": 491134615835,
@@ -160,7 +160,7 @@
         "handle": "bowline",
         "body_html": null,
         "published_at": "2025-05-22T00:45:15+03:00",
-        "updated_at": "2025-07-06T17:45:20+03:00",
+        "updated_at": "2025-07-08T16:26:48+03:00",
         "image": {
             "id": 1750188392731,
             "created_at": "2025-05-22T00:45:14+03:00",
@@ -230,7 +230,7 @@
         "handle": "casuals",
         "body_html": null,
         "published_at": "2024-09-29T19:59:41+03:00",
-        "updated_at": "2025-07-06T16:20:17+03:00",
+        "updated_at": "2025-07-08T20:55:11+03:00",
         "image": null,
         "products_count": 163
     },
@@ -270,7 +270,7 @@
         "handle": "clother",
         "body_html": null,
         "published_at": "2024-11-03T20:05:09+02:00",
-        "updated_at": "2025-07-07T17:25:30+03:00",
+        "updated_at": "2025-07-07T18:04:01+03:00",
         "image": {
             "id": 1748651835675,
             "created_at": "2024-11-03T20:05:07+02:00",
@@ -285,7 +285,7 @@
         "handle": "decked-out",
         "body_html": null,
         "published_at": "2025-06-01T19:22:32+03:00",
-        "updated_at": "2025-07-05T20:05:27+03:00",
+        "updated_at": "2025-07-08T16:25:26+03:00",
         "image": null,
         "products_count": 18
     },
@@ -295,7 +295,7 @@
         "handle": "denim-1",
         "body_html": null,
         "published_at": "2025-04-17T15:38:51+02:00",
-        "updated_at": "2025-07-07T17:41:34+03:00",
+        "updated_at": "2025-07-08T20:55:11+03:00",
         "image": null,
         "products_count": 65
     },
@@ -415,7 +415,7 @@
         "handle": "elemnts",
         "body_html": null,
         "published_at": "2025-06-01T19:39:19+03:00",
-        "updated_at": "2025-07-01T03:05:11+03:00",
+        "updated_at": "2025-07-08T16:24:19+03:00",
         "image": null,
         "products_count": 12
     },
@@ -455,9 +455,9 @@
         "handle": "exclusive-products-1",
         "body_html": null,
         "published_at": "2025-04-17T15:23:39+02:00",
-        "updated_at": "2025-07-07T17:42:26+03:00",
+        "updated_at": "2025-07-08T21:55:18+03:00",
         "image": null,
-        "products_count": 285
+        "products_count": 300
     },
     {
         "id": 501668020507,
@@ -465,7 +465,7 @@
         "handle": "fallen-saints",
         "body_html": null,
         "published_at": "2025-06-08T01:33:06+03:00",
-        "updated_at": "2025-07-07T16:47:39+03:00",
+        "updated_at": "2025-07-08T15:45:53+03:00",
         "image": {
             "id": 1750272016667,
             "created_at": "2025-06-08T01:33:05+03:00",
@@ -505,7 +505,7 @@
         "handle": "fourteen",
         "body_html": null,
         "published_at": "2025-05-07T19:03:38+03:00",
-        "updated_at": "2025-07-07T16:35:25+03:00",
+        "updated_at": "2025-07-08T19:20:16+03:00",
         "image": {
             "id": 1750125019419,
             "created_at": "2025-05-11T14:30:55+03:00",
@@ -565,7 +565,7 @@
         "handle": "glitch",
         "body_html": null,
         "published_at": "2024-10-02T10:41:29+03:00",
-        "updated_at": "2025-07-06T14:19:22+03:00",
+        "updated_at": "2025-07-08T15:45:52+03:00",
         "image": {
             "id": 1748403093787,
             "created_at": "2024-10-02T12:28:22+03:00",
@@ -580,7 +580,7 @@
         "handle": "go-native-merch",
         "body_html": null,
         "published_at": "2024-10-02T10:42:16+03:00",
-        "updated_at": "2025-07-07T17:14:04+03:00",
+        "updated_at": "2025-07-08T21:55:18+03:00",
         "image": {
             "id": 1748403126555,
             "created_at": "2024-10-02T12:28:43+03:00",
@@ -670,7 +670,7 @@
         "handle": "juvenile",
         "body_html": null,
         "published_at": "2024-10-02T10:44:52+03:00",
-        "updated_at": "2025-07-07T06:50:13+03:00",
+        "updated_at": "2025-07-08T15:20:04+03:00",
         "image": {
             "id": 1748403257627,
             "created_at": "2024-10-02T12:29:42+03:00",
@@ -730,7 +730,7 @@
         "handle": "kijha",
         "body_html": null,
         "published_at": "2025-01-16T17:41:15+02:00",
-        "updated_at": "2025-07-07T17:16:56+03:00",
+        "updated_at": "2025-07-08T16:26:03+03:00",
         "image": {
             "id": 1749276754203,
             "created_at": "2025-01-27T13:50:16+02:00",
@@ -745,7 +745,7 @@
         "handle": "kntd",
         "body_html": null,
         "published_at": "2024-10-02T10:46:00+03:00",
-        "updated_at": "2025-07-07T17:42:26+03:00",
+        "updated_at": "2025-07-07T18:04:16+03:00",
         "image": {
             "id": 1748403323163,
             "created_at": "2024-10-02T12:30:22+03:00",
@@ -850,7 +850,7 @@
         "handle": "lumaa",
         "body_html": null,
         "published_at": "2024-10-02T10:48:45+03:00",
-        "updated_at": "2025-07-07T17:32:34+03:00",
+        "updated_at": "2025-07-08T16:03:47+03:00",
         "image": {
             "id": 1748403454235,
             "created_at": "2024-10-02T12:32:19+03:00",
@@ -895,7 +895,7 @@
         "handle": "media-buying",
         "body_html": null,
         "published_at": "2025-06-12T18:12:40+03:00",
-        "updated_at": "2025-06-15T18:38:09+03:00",
+        "updated_at": "2025-07-08T16:25:42+03:00",
         "image": null,
         "products_count": 4
     },
@@ -935,7 +935,7 @@
         "handle": "men-casuals",
         "body_html": null,
         "published_at": "2024-07-16T20:30:39+03:00",
-        "updated_at": "2025-07-06T16:20:17+03:00",
+        "updated_at": "2025-07-08T19:20:16+03:00",
         "image": null,
         "products_count": 90
     },
@@ -945,9 +945,9 @@
         "handle": "men-clothing",
         "body_html": null,
         "published_at": "2024-07-16T20:33:30+03:00",
-        "updated_at": "2025-07-07T17:35:58+03:00",
+        "updated_at": "2025-07-08T19:20:16+03:00",
         "image": null,
-        "products_count": 275
+        "products_count": 285
     },
     {
         "id": 492684017947,
@@ -965,7 +965,7 @@
         "handle": "men-denim",
         "body_html": null,
         "published_at": "2024-07-16T20:38:17+03:00",
-        "updated_at": "2025-07-07T17:35:58+03:00",
+        "updated_at": "2025-07-07T18:04:09+03:00",
         "image": null,
         "products_count": 27
     },
@@ -1025,7 +1025,7 @@
         "handle": "men-pants",
         "body_html": null,
         "published_at": "2024-07-16T20:37:57+03:00",
-        "updated_at": "2025-07-07T17:24:48+03:00",
+        "updated_at": "2025-07-07T20:10:23+03:00",
         "image": null,
         "products_count": 36
     },
@@ -1035,9 +1035,9 @@
         "handle": "men-polos",
         "body_html": null,
         "published_at": "2024-10-16T05:11:24+03:00",
-        "updated_at": "2025-07-07T17:31:46+03:00",
+        "updated_at": "2025-07-08T16:25:10+03:00",
         "image": null,
-        "products_count": 18
+        "products_count": 20
     },
     {
         "id": 492791365915,
@@ -1065,9 +1065,9 @@
         "handle": "men-shirts",
         "body_html": null,
         "published_at": "2024-10-16T05:10:58+03:00",
-        "updated_at": "2025-07-07T17:17:25+03:00",
+        "updated_at": "2025-07-08T16:25:26+03:00",
         "image": null,
-        "products_count": 18
+        "products_count": 19
     },
     {
         "id": 486706217243,
@@ -1075,9 +1075,9 @@
         "handle": "men-shorts",
         "body_html": null,
         "published_at": "2024-07-16T20:36:48+03:00",
-        "updated_at": "2025-07-07T17:25:59+03:00",
+        "updated_at": "2025-07-07T20:10:23+03:00",
         "image": null,
-        "products_count": 14
+        "products_count": 15
     },
     {
         "id": 486705725723,
@@ -1125,9 +1125,9 @@
         "handle": "men-t-shirt-vests",
         "body_html": null,
         "published_at": "2024-07-16T20:39:53+03:00",
-        "updated_at": "2025-07-07T17:30:31+03:00",
+        "updated_at": "2025-07-08T19:20:16+03:00",
         "image": null,
-        "products_count": 102
+        "products_count": 108
     },
     {
         "id": 492791333147,
@@ -1190,7 +1190,7 @@
         "handle": "navy",
         "body_html": null,
         "published_at": "2024-11-03T20:10:26+02:00",
-        "updated_at": "2025-07-06T14:27:03+03:00",
+        "updated_at": "2025-07-08T15:46:01+03:00",
         "image": {
             "id": 1748652065051,
             "created_at": "2024-11-03T20:10:25+02:00",
@@ -1205,7 +1205,7 @@
         "handle": "new-arrival",
         "body_html": null,
         "published_at": "2025-03-27T15:36:36+02:00",
-        "updated_at": "2025-07-07T17:42:26+03:00",
+        "updated_at": "2025-07-08T21:55:18+03:00",
         "image": null,
         "products_count": 470
     },
@@ -1215,9 +1215,9 @@
         "handle": "new-arrivals",
         "body_html": null,
         "published_at": "2024-11-06T18:13:42+02:00",
-        "updated_at": "2025-07-07T17:42:26+03:00",
+        "updated_at": "2025-07-08T21:55:18+03:00",
         "image": null,
-        "products_count": 285
+        "products_count": 300
     },
     {
         "id": 492679332123,
@@ -1225,7 +1225,7 @@
         "handle": "nh-designs",
         "body_html": null,
         "published_at": "2024-11-03T20:10:09+02:00",
-        "updated_at": "2025-07-03T04:40:11+03:00",
+        "updated_at": "2025-07-08T20:55:11+03:00",
         "image": {
             "id": 1748652032283,
             "created_at": "2024-11-03T20:10:08+02:00",
@@ -1405,7 +1405,7 @@
         "handle": "salty",
         "body_html": null,
         "published_at": "2024-10-02T10:54:56+03:00",
-        "updated_at": "2025-07-07T17:31:17+03:00",
+        "updated_at": "2025-07-08T15:45:56+03:00",
         "image": {
             "id": 1748403683611,
             "created_at": "2024-10-02T12:36:27+03:00",
@@ -1670,7 +1670,7 @@
         "handle": "twenty-seven",
         "body_html": null,
         "published_at": "2024-10-02T10:58:45+03:00",
-        "updated_at": "2025-07-06T14:28:29+03:00",
+        "updated_at": "2025-07-08T15:46:04+03:00",
         "image": {
             "id": 1748403912987,
             "created_at": "2024-10-02T12:38:34+03:00",
@@ -1695,7 +1695,7 @@
         "handle": "vega",
         "body_html": null,
         "published_at": "2024-11-03T20:07:44+02:00",
-        "updated_at": "2025-07-06T14:26:50+03:00",
+        "updated_at": "2025-07-08T16:25:16+03:00",
         "image": {
             "id": 1748651966747,
             "created_at": "2024-11-03T20:07:43+02:00",
@@ -1735,7 +1735,7 @@
         "handle": "woke",
         "body_html": null,
         "published_at": "2024-10-02T11:00:18+03:00",
-        "updated_at": "2025-07-07T17:36:28+03:00",
+        "updated_at": "2025-07-07T18:04:11+03:00",
         "image": {
             "id": 1748404011291,
             "created_at": "2024-10-02T12:39:11+03:00",
@@ -1970,7 +1970,7 @@
         "handle": "women-casuals",
         "body_html": null,
         "published_at": "2024-07-16T20:13:16+03:00",
-        "updated_at": "2025-07-05T14:00:07+03:00",
+        "updated_at": "2025-07-08T20:55:11+03:00",
         "image": null,
         "products_count": 131
     },
@@ -1980,9 +1980,9 @@
         "handle": "all-clothing",
         "body_html": null,
         "published_at": "2024-07-16T20:15:31+03:00",
-        "updated_at": "2025-07-07T17:42:26+03:00",
+        "updated_at": "2025-07-08T21:55:18+03:00",
         "image": null,
-        "products_count": 345
+        "products_count": 356
     },
     {
         "id": 492777210139,
@@ -2010,9 +2010,9 @@
         "handle": "denim",
         "body_html": null,
         "published_at": "2024-07-16T20:16:20+03:00",
-        "updated_at": "2025-07-07T17:41:34+03:00",
+        "updated_at": "2025-07-08T20:55:11+03:00",
         "image": null,
-        "products_count": 48
+        "products_count": 50
     },
     {
         "id": 486704316699,
@@ -2020,7 +2020,7 @@
         "handle": "dresses",
         "body_html": null,
         "published_at": "2024-07-16T20:16:34+03:00",
-        "updated_at": "2025-06-01T18:58:52+03:00",
+        "updated_at": "2025-07-08T16:25:42+03:00",
         "image": null,
         "products_count": 4
     },
@@ -2090,7 +2090,7 @@
         "handle": "woman-pants",
         "body_html": null,
         "published_at": "2024-10-16T05:06:20+03:00",
-        "updated_at": "2025-07-07T17:33:03+03:00",
+        "updated_at": "2025-07-08T21:55:18+03:00",
         "image": null,
         "products_count": 43
     },
@@ -2100,9 +2100,9 @@
         "handle": "womens-polos",
         "body_html": null,
         "published_at": "2025-04-17T15:43:02+02:00",
-        "updated_at": "2025-07-07T17:36:57+03:00",
+        "updated_at": "2025-07-08T16:25:10+03:00",
         "image": null,
-        "products_count": 9
+        "products_count": 12
     },
     {
         "id": 491876286747,
@@ -2110,7 +2110,7 @@
         "handle": "womens-sets",
         "body_html": null,
         "published_at": "2024-10-16T16:08:55+03:00",
-        "updated_at": "2025-06-27T11:15:10+03:00",
+        "updated_at": "2025-07-08T16:26:03+03:00",
         "image": null,
         "products_count": 10
     },
@@ -2120,9 +2120,9 @@
         "handle": "womens-shirt",
         "body_html": null,
         "published_at": "2024-10-16T15:24:23+03:00",
-        "updated_at": "2025-07-07T17:27:02+03:00",
+        "updated_at": "2025-07-08T16:25:26+03:00",
         "image": null,
-        "products_count": 11
+        "products_count": 12
     },
     {
         "id": 491853709595,
@@ -2210,9 +2210,9 @@
         "handle": "women-t-shirts",
         "body_html": null,
         "published_at": "2024-10-16T05:09:03+03:00",
-        "updated_at": "2025-07-07T17:08:12+03:00",
+        "updated_at": "2025-07-08T19:20:16+03:00",
         "image": null,
-        "products_count": 86
+        "products_count": 88
     },
     {
         "id": 486704447771,
@@ -2220,9 +2220,9 @@
         "handle": "tops",
         "body_html": null,
         "published_at": "2024-07-16T20:17:45+03:00",
-        "updated_at": "2025-07-07T17:42:26+03:00",
+        "updated_at": "2025-07-08T15:46:03+03:00",
         "image": null,
-        "products_count": 43
+        "products_count": 46
     },
     {
         "id": 492791824667,
@@ -2250,7 +2250,7 @@
         "handle": "zedzee",
         "body_html": null,
         "published_at": "2024-10-02T11:00:43+03:00",
-        "updated_at": "2025-07-07T17:27:25+03:00",
+        "updated_at": "2025-07-08T15:46:03+03:00",
         "image": {
             "id": 1748404044059,
             "created_at": "2024-10-02T12:39:39+03:00",

@@ -39,12 +39,6 @@ async function main() {
   await prisma.product.deleteMany();
   await prisma.collection.deleteMany();
 
-  // Reset auto-increment sequences if using PostgreSQL
-  // Uncomment these lines if you're using PostgreSQL:
-  // await prisma.$executeRaw`ALTER SEQUENCE "Product_id_seq" RESTART WITH 1`;
-  // await prisma.$executeRaw`ALTER SEQUENCE "Collection_id_seq" RESTART WITH 1`;
-  // await prisma.$executeRaw`ALTER SEQUENCE "Image_id_seq" RESTART WITH 1`;
-
   // Remove duplicates from productsData based on id
   const uniqueProducts = Array.isArray(productsData)
     ? productsData.filter(
@@ -69,6 +63,7 @@ async function main() {
           productType: p.product_type,
           body_html: p.body_html ?? undefined,
           tags: p.tags,
+          price: p.variants[0].price,
           createdAt: new Date(p.created_at),
           updatedAt: new Date(p.updated_at),
           publishedAt: p.published_at ? new Date(p.published_at) : undefined,

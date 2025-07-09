@@ -70,7 +70,7 @@ model OrderItem {
 model Product {
   id          BigInt              @id
   title       String
-  handle      String
+  handle      String              @unique
   vendor      String
   body_html   String?
   productType String              @map("product_type")
@@ -78,6 +78,7 @@ model Product {
   createdAt   DateTime            @map("created_at")
   updatedAt   DateTime            @map("updated_at")
   publishedAt DateTime?           @map("published_at")
+  price       Decimal             @db.Decimal(10, 2)
   variants    Variant[]
   options     ProductOption[]
   images      Image[]
@@ -142,7 +143,7 @@ model ProductOption {
 model Collection {
   id            BigInt    @id
   title         String
-  handle        String
+  handle        String    @unique
   publishedAt   DateTime? @map("published_at")
   updatedAt     DateTime  @map("updated_at")
   productsCount Int       @map("products_count")
