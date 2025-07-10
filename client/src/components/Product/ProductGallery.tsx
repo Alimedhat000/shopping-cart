@@ -157,7 +157,7 @@ export default function ProductGallery({
       </div>
 
       {/* Main image */}
-      <div className="relative aspect-[4/3] w-full overflow-hidden rounded-2xl bg-gray-100">
+      <div className="relative flex-1 overflow-hidden bg-gray-100">
         <AnimatePresence initial={false} custom={direction} mode="wait">
           <motion.div
             key={selectedIndex}
@@ -167,12 +167,12 @@ export default function ProductGallery({
             animate="center"
             exit="exit"
             transition={{ duration: 0.3, ease: 'easeInOut' }}
-            className="absolute inset-0"
+            className="h-full w-full"
           >
             <img
               src={currentImage}
               alt="Product image"
-              className="h-full w-full object-cover"
+              className="h-auto w-full rounded-2xl object-cover"
               loading="eager"
             />
           </motion.div>
