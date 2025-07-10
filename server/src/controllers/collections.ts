@@ -148,7 +148,7 @@ export const getAllCollections = async (req: Request, res: Response) => {
     const allowedSortFields = ["updatedAt", "publishedAt", "title"];
     const sortBy = allowedSortFields.includes(req.query.sortBy as string)
       ? (req.query.sortBy as string)
-      : "publishedAt2";
+      : "publishedAt";
     const sortOrder =
       (req.query.sortOrder as string) === "asc" ? "asc" : "desc";
 
@@ -185,6 +185,7 @@ export const getAllCollections = async (req: Request, res: Response) => {
     res.setHeader("Content-Type", "application/json");
     res.json(collection);
   } catch (err) {
+    console.log(err);
     logger.error("Failed to fetch collections", { error: err });
     res.status(500).json({ error: "Failed to fetch collections" });
   }

@@ -1,23 +1,9 @@
 // components/SizeSelector.tsx
 import { cn } from '../../lib/utils';
 
-type SizeOption = 'S' | 'M' | 'L' | 'XL';
+type SizeOption = string;
 
-interface SizeAvailability {
-  S: {
-    availability?: boolean;
-  };
-  M: {
-    availability?: boolean;
-  };
-  L: {
-    availability?: boolean;
-  };
-  XL: {
-    availability?: boolean;
-  };
-}
-
+type SizeAvailability = Record<string, { availability?: boolean }>;
 interface SizeSelectorProps {
   sizes: SizeAvailability;
   selectedSize: SizeOption;
@@ -39,7 +25,7 @@ export default function SizeSelector({
       </div>
       <div className="flex gap-2">
         {sizeOptions.map((size) => {
-          const isAvailable = sizes[size].availability;
+          const isAvailable = sizes[size]?.availability ?? false;
           const isSelected = selectedSize === size;
 
           return (

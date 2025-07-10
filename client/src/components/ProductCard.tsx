@@ -4,6 +4,7 @@ interface ProductCardProps {
   id: string;
   image: string;
   title: string;
+  handle: string;
   brand?: string;
   price: number;
   oldPrice?: number;
@@ -14,7 +15,7 @@ interface ProductCardProps {
 }
 
 export default function ProductCard({
-  id,
+  handle,
   image,
   title,
   brand,
@@ -26,7 +27,7 @@ export default function ProductCard({
 }: ProductCardProps) {
   return (
     <div
-      className={`relative row-span-2 grid grid-rows-subgrid rounded-md bg-white ${classname}`}
+      className={`font-condensed relative row-span-2 grid grid-rows-subgrid rounded-md bg-white ${classname}`}
     >
       {/* Discount Badge (if exists) */}
       {discountText && (
@@ -48,19 +49,19 @@ export default function ProductCard({
         : null}
 
       {/* Product Image */}
-      <div className="row-start-1 w-full bg-gray-100">
-        <Link to={`/product/${id}`}>
+      <div className="row-span-1 w-full bg-gray-100">
+        <Link to={`/product/${handle}`}>
           <img
             src={image}
             alt={title}
-            className="aspect-[3/4] h-auto w-full object-cover"
+            className="h-full w-full rounded-md object-cover"
           />
         </Link>
       </div>
 
       {/* Product Info */}
       <div className="row-start-2 space-y-1 px-4 py-4 md:px-6">
-        <Link to={`/product/${id}`}>
+        <Link to={`/product/${handle}`}>
           {/* Brand Link (if exists) */}
           {brand && (
             <p className="text-xs font-medium text-gray-500 hover:text-gray-700">

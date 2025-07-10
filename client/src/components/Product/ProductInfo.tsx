@@ -12,22 +12,9 @@ interface ColorOption {
   availability?: boolean;
 }
 
-type SizeOption = 'S' | 'M' | 'L' | 'XL';
+type SizeOption = string;
 
-interface SizeAvailability {
-  S: {
-    availability?: boolean;
-  };
-  M: {
-    availability?: boolean;
-  };
-  L: {
-    availability?: boolean;
-  };
-  XL: {
-    availability?: boolean;
-  };
-}
+type SizeAvailability = Record<string, { availability?: boolean }>;
 
 interface ProductInfoProps {
   productId: number;
@@ -41,7 +28,7 @@ interface ProductInfoProps {
   selectedColor: string;
   setSelectedColor: (color: string) => void;
   selectedSize: SizeOption;
-  setSelectedSize: (size: SizeOption) => void;
+  setSelectedSize: React.Dispatch<React.SetStateAction<string>>;
   quantity: number;
   decreaseQuantity: () => void;
   increaseQuantity: () => void;

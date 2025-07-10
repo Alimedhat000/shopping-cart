@@ -5,6 +5,7 @@ import {
   IoMdArrowRoundForward,
   IoMdArrowRoundBack,
 } from 'react-icons/io';
+import { Product } from '../../types/products';
 import ProductCard from '../ProductCard';
 import ViewAllButton from '../Util/ViewAllButton';
 
@@ -113,6 +114,9 @@ interface ProductContainerProps {
   totalSlides: number;
   visibleSlides: number;
   sliderRef: React.RefObject<HTMLDivElement | null>;
+  products: Product[];
+  isLoading: boolean;
+  isError: boolean;
 }
 
 const ProductContainer: React.FC<ProductContainerProps> = ({
@@ -120,44 +124,68 @@ const ProductContainer: React.FC<ProductContainerProps> = ({
   totalSlides,
   visibleSlides,
   sliderRef,
+  products,
+  isLoading,
+  isError,
 }) => {
+  console.log(Math.min((totalSlides / visibleSlides) * 100, 300));
   return (
     <div
-      className="grid grid-flow-col grid-rows-[16fr_6fr] gap-x-6 overflow-hidden"
+      className="grid max-h-150 grid-flow-col grid-rows-[16fr_6fr] gap-x-6"
       ref={sliderRef}
       style={{
         transform: `translateX(-${currentSlide * (100 / totalSlides)}%)`,
         transition: 'transform 0.6s ease',
-        display: 'grid',
-        width: `${(totalSlides / visibleSlides) * 100}%`,
       }}
     >
-      {Array.from({ length: totalSlides }).map((_, index) => (
-        <ProductCard
-          id={index.toString()}
-          key={index}
-          image="https://placehold.co/500x700"
-          title="Comfy Pants"
-          brand="Woke"
-          price={750}
-          oldPrice={855}
-          discountText="Save 105.00"
-          classname="min-w-60 lg:min-w-50 "
-        />
-      ))}
+      {isLoading || isError
+        ? Array.from({ length: totalSlides }).map((_, index) => (
+            <ProductCard
+              id={index.toString()}
+              key={index}
+              image={'https://placehold.co/500x700'}
+              handle={'loading'}
+              title={'loading'}
+              brand={'loading'}
+              price={750}
+              oldPrice={undefined} // optionally use a discount system
+              discountText=""
+              classname="max-w-60 lg:max-w-50"
+            />
+          ))
+        : products.map((product) => (
+            <ProductCard
+              id={product.id}
+              handle={product.handle}
+              key={product.id}
+              image={product.images[0].src + '&width=500'}
+              title={product.title}
+              brand={product.vendor}
+              price={Number(product.price)}
+              oldPrice={undefined} // optionally use a discount system
+              discountText=""
+              classname="min-w-60 lg:min-w-50 "
+            />
+          ))}
     </div>
   );
 };
 
 // Main ProductSlider Component
 export default function ProductSlider({
-  Title,
+  title,
   showViewAll,
   className,
+  products,
+  isLoading,
+  isError,
 }: {
-  Title?: string;
+  title?: string;
   showViewAll?: boolean;
   className?: string;
+  products: Product[];
+  isLoading: boolean;
+  isError: boolean;
 }) {
   const totalSlides = 24;
   const visibleSlides = 4;
@@ -188,7 +216,7 @@ export default function ProductSlider({
   return (
     <div className={`space-y-12 overflow-hidden ${className}`}>
       <div className="flex items-center justify-between">
-        <h2 className="font-oswald text-3xl">{Title}</h2>
+        <h2 className="font-oswald text-3xl">{title}</h2>
         {showViewAll && <ViewAllButton />}
       </div>
 
@@ -197,6 +225,9 @@ export default function ProductSlider({
         totalSlides={totalSlides}
         visibleSlides={visibleSlides}
         sliderRef={sliderRef}
+        products={products}
+        isLoading={isLoading}
+        isError={isError}
       />
       <div className="flex items-center justify-between">
         <ProgressBar percentage={progressPercentage} />

@@ -20,11 +20,17 @@ export default function ProductGallery({
   const verticalScrollRef = useRef<HTMLDivElement>(null);
   const horizontalScrollRef = useRef<HTMLDivElement>(null);
 
-  const images =
-    thumbnails.length > 0
-      ? thumbnails
-      : ['https://via.placeholder.com/450x600'];
+  const images = thumbnails;
+
   const currentImage = initialImage || images[selectedIndex];
+
+  // preload thumbnai images
+  useEffect(() => {
+    thumbnails.forEach((src) => {
+      const img = new Image();
+      img.src = src + '&width=1000';
+    });
+  }, [thumbnails]);
 
   const handleThumbnailClick = (index: number) => {
     setDirection(index > selectedIndex ? 1 : -1);
@@ -117,28 +123,31 @@ export default function ProductGallery({
           </div>
         )}
 
-        {images.map((thumb, index) => (
-          <div
-            key={index}
-            className={`group relative flex-shrink-0 cursor-pointer rounded bg-gray-100`}
-            onClick={() => handleThumbnailClick(index)}
-          >
-            <div className="h-24 w-16 overflow-hidden">
-              <img
-                src={thumb || 'https://via.placeholder.com/48x64'}
-                alt={`Product thumbnail ${index + 1}`}
-                className="h-full w-full rounded-lg object-cover"
+        {images.map((thumb, index) => {
+          const smallthumb = thumb + '&width=500';
+          return (
+            <div
+              key={index}
+              className={`group relative flex-shrink-0 cursor-pointer rounded bg-gray-100`}
+              onClick={() => handleThumbnailClick(index)}
+            >
+              <div className="h-24 w-16 overflow-hidden">
+                <img
+                  src={smallthumb}
+                  alt={`Product thumbnail ${index + 1}`}
+                  className="h-full w-full rounded-lg object-cover"
+                />
+              </div>
+              <div
+                className={`inset-0 border-b-2 transition-all duration-300 ${
+                  selectedIndex === index
+                    ? 'mt-1 border-black'
+                    : 'border-transparent'
+                }`}
               />
             </div>
-            <div
-              className={`inset-0 border-b-2 transition-all duration-300 ${
-                selectedIndex === index
-                  ? 'mt-1 border-black'
-                  : 'border-transparent'
-              }`}
-            />
-          </div>
-        ))}
+          );
+        })}
 
         {showBottomFade && (
           <div className="sticky bottom-0 z-10 h-8 w-full bg-gradient-to-t from-[#f2f2f2] to-transparent">
@@ -148,7 +157,7 @@ export default function ProductGallery({
       </div>
 
       {/* Main image */}
-      <div className="relative flex-1 overflow-hidden bg-gray-100">
+      <div className="relative aspect-[4/3] w-full overflow-hidden rounded-2xl bg-gray-100">
         <AnimatePresence initial={false} custom={direction} mode="wait">
           <motion.div
             key={selectedIndex}
@@ -158,12 +167,12 @@ export default function ProductGallery({
             animate="center"
             exit="exit"
             transition={{ duration: 0.3, ease: 'easeInOut' }}
-            className="h-full w-full"
+            className="absolute inset-0"
           >
             <img
-              src={currentImage || 'https://via.placeholder.com/450x600'}
+              src={currentImage}
               alt="Product image"
-              className="h-auto w-full rounded-2xl object-cover"
+              className="h-full w-full object-cover"
               loading="eager"
             />
           </motion.div>
@@ -194,7 +203,7 @@ export default function ProductGallery({
             >
               <div className="h-24 w-16 overflow-hidden">
                 <img
-                  src={thumb || 'https://via.placeholder.com/48x64'}
+                  src={thumb + '&width=500'}
                   alt={`Product thumbnail ${index + 1}`}
                   className="h-full w-full rounded-lg object-cover"
                 />

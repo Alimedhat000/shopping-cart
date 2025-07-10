@@ -8,35 +8,39 @@ import { cn } from '../../lib/utils';
 
 type SortOption = {
   label: string;
-  value: string;
+  sortOrder: 'asc' | 'desc';
+  sortBy: string;
 };
 
 const sortOptions: SortOption[] = [
-  { label: 'Featured', value: 'featured' },
-  { label: 'Best selling', value: 'best-selling' },
-  { label: 'Alphabetically, A-Z', value: 'title-asc' },
-  { label: 'Alphabetically, Z-A', value: 'title-desc' },
-  { label: 'Price, low to high', value: 'price-asc' },
-  { label: 'Price, high to low', value: 'price-desc' },
-  { label: 'Date, old to new', value: 'date-asc' },
-  { label: 'Date, new to old', value: 'date-desc' },
+  { label: 'Alphabetically, A-Z', sortBy: 'title', sortOrder: 'asc' },
+  { label: 'Alphabetically, Z-A', sortBy: 'title', sortOrder: 'desc' },
+  { label: 'Price, low to high', sortBy: 'price', sortOrder: 'asc' },
+  { label: 'Price, high to low', sortBy: 'price', sortOrder: 'desc' },
+  { label: 'Date, old to new', sortBy: 'createdAt', sortOrder: 'asc' },
+  { label: 'Date, new to old', sortBy: 'createdAt', sortOrder: 'desc' },
+  // { label: 'Best selling', value: 'best-selling' },
 ];
 
 interface SortDropdownProps {
-  defaultValue?: string;
-  onSortChange?: (value: string) => void;
+  defaultValue?: { sortOrder: string; sortBy: string };
+  onSortChange?: (sortBy: string, sortOrder: string) => void;
   className?: string;
 }
 
 export function SortDropdown({
-  defaultValue = 'title-asc',
+  defaultValue = { sortBy: 'createdAt', sortOrder: 'desc' },
   onSortChange,
   className,
 }: SortDropdownProps) {
   const [isOpen, setIsOpen] = React.useState(false);
   const [selectedOption, setSelectedOption] = React.useState<SortOption>(
-    sortOptions.find((option) => option.value === defaultValue) ||
-      sortOptions[2]
+    sortOptions.find((option) => {
+      return (
+        option.sortBy === defaultValue.sortBy &&
+        option.sortOrder === defaultValue.sortOrder
+      );
+    }) || sortOptions[2]
   );
   const dropdownRef = React.useRef<HTMLDivElement>(null);
 
@@ -61,7 +65,7 @@ export function SortDropdown({
     setSelectedOption(option);
     setIsOpen(false);
     if (onSortChange) {
-      onSortChange(option.value);
+      onSortChange(option.sortBy, option.sortOrder);
     }
   };
 
@@ -103,10 +107,11 @@ export function SortDropdown({
           <div className="px-2 py-4" role="none">
             {sortOptions.map((option) => (
               <button
-                key={option.value}
+                key={option.sortBy + option.sortOrder}
                 className={cn(
                   'text-xm flex w-full items-center px-3 py-2 tracking-tighter',
-                  selectedOption.value === option.value
+                  option.sortBy === selectedOption.sortBy &&
+                    option.sortOrder === selectedOption.sortOrder
                     ? 'bg-gray-100 text-gray-900'
                     : 'text-gray-700 hover:bg-gray-50'
                 )}
@@ -114,11 +119,12 @@ export function SortDropdown({
                 tabIndex={-1}
                 onClick={() => handleOptionClick(option)}
               >
-                {option.value === selectedOption.value && (
-                  <span className="justify-centertext-xs mr-2 flex h-5 w-5 items-center text-black">
-                    <LuCheck />
-                  </span>
-                )}
+                {option.sortBy === selectedOption.sortBy &&
+                  option.sortOrder === selectedOption.sortOrder && (
+                    <span className="justify-centertext-xs mr-2 flex h-5 w-5 items-center text-black">
+                      <LuCheck />
+                    </span>
+                  )}
                 {option.label}
               </button>
             ))}

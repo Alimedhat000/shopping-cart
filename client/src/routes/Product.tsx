@@ -1,7 +1,6 @@
 // ProductPage.tsx
 import { useParams } from 'react-router-dom';
 import { useState } from 'react';
-
 import ProductGallery from '@/components/Product/ProductGallery';
 import ProductInfo from '@/components/Product/ProductInfo';
 import ProductSlider from '@/components/Home/ProductSlider';
@@ -18,14 +17,18 @@ import {
 import { IconType } from 'react-icons';
 import { ReactElement, ReactNode } from 'react';
 import { Link } from 'react-router-dom';
+import { useQuery } from '@tanstack/react-query';
+import { getAllProducts, getProductDetails } from '@/api/products';
+import { ProductImage, ProductOption, Variant } from '@/types/products';
+import textHex from 'text-hex';
 
-interface ColorOption {
-  name: string;
-  hex: string;
-  availability?: boolean;
-}
+// interface ColorOption {
+//   name: string;
+//   hex: string;
+//   availability?: boolean;
+// }
 
-type SizeOption = 'S' | 'M' | 'L' | 'XL';
+type SizeOption = string;
 
 interface FAQItem {
   question: string;
@@ -70,33 +73,34 @@ const faqData: FAQItem[] = [
 ];
 
 export default function ProductPage() {
-  const { id } = useParams<{ id: string }>();
-  console.log('Product ID:', id);
+  const { handle } = useParams<{ handle: string }>();
+  const producthandle = handle ?? '';
+  console.log('Product handle:', handle);
   const [selectedColor, setSelectedColor] = useState<string>('black');
   const [selectedSize, setSelectedSize] = useState<SizeOption>('S');
   const [quantity, setQuantity] = useState<number>(1);
 
-  const colors: ColorOption[] = [
-    { name: 'black', hex: '#000', availability: true },
-    { name: 'green', hex: '#00A651', availability: true },
-    { name: 'purple', hex: '#800080', availability: true },
-    { name: 'yellow', hex: '#FFFF00', availability: true },
-    { name: 'light-gray', hex: '#D3D3D3', availability: true },
-    { name: 'dark-gray', hex: '#A9A9A9', availability: true },
-    { name: 'gold', hex: '#C9B037', availability: true },
-    { name: 'teal', hex: '#008080', availability: true },
-    { name: 'light-blue', hex: '#ADD8E6', availability: true },
-    { name: 'baby-blue', hex: '#89CFF0', availability: true },
-    { name: 'pink', hex: '#FFC0CB', availability: true },
-    { name: 'blue', hex: '#0000FF', availability: true },
-    { name: 'navy', hex: '#000080', availability: false },
-    { name: 'gray', hex: '#808080', availability: false },
-    { name: 'brown', hex: '#964B00', availability: true },
-    { name: 'red', hex: '#FF0000', availability: true },
-    { name: 'orange', hex: '#FFA500', availability: false },
-    { name: 'hot-pink', hex: '#FF69B4', availability: true },
-    { name: 'lime', hex: '#BFFF00', availability: true },
-  ];
+  // const colors: ColorOption[] = [
+  //   { name: 'black', hex: '#000', availability: true },
+  //   { name: 'green', hex: '#00A651', availability: true },
+  //   { name: 'purple', hex: '#800080', availability: true },
+  //   { name: 'yellow', hex: '#FFFF00', availability: true },
+  //   { name: 'light-gray', hex: '#D3D3D3', availability: true },
+  //   { name: 'dark-gray', hex: '#A9A9A9', availability: true },
+  //   { name: 'gold', hex: '#C9B037', availability: true },
+  //   { name: 'teal', hex: '#008080', availability: true },
+  //   { name: 'light-blue', hex: '#ADD8E6', availability: true },
+  //   { name: 'baby-blue', hex: '#89CFF0', availability: true },
+  //   { name: 'pink', hex: '#FFC0CB', availability: true },
+  //   { name: 'blue', hex: '#0000FF', availability: true },
+  //   { name: 'navy', hex: '#000080', availability: false },
+  //   { name: 'gray', hex: '#808080', availability: false },
+  //   { name: 'brown', hex: '#964B00', availability: true },
+  //   { name: 'red', hex: '#FF0000', availability: true },
+  //   { name: 'orange', hex: '#FFA500', availability: false },
+  //   { name: 'hot-pink', hex: '#FF69B4', availability: true },
+  //   { name: 'lime', hex: '#BFFF00', availability: true },
+  // ];
 
   const descData: FAQItem[] = [
     {
@@ -157,30 +161,6 @@ export default function ProductPage() {
     },
   ];
 
-  const sizes = {
-    S: { availability: true },
-    M: { availability: false },
-    L: { availability: true },
-    XL: { availability: true },
-  };
-
-  const thumbnails: string[] = [
-    'https://placehold.co/560x850',
-    'https://placehold.co/560x850',
-    'https://placehold.co/560x850',
-    'https://placehold.co/560x850',
-    'https://placehold.co/560x850',
-    'https://placehold.co/560x850',
-    'https://placehold.co/560x850',
-    'https://placehold.co/560x850',
-    'https://placehold.co/560x850',
-    'https://placehold.co/560x850',
-    'https://placehold.co/560x850',
-    'https://placehold.co/560x850',
-    'https://placehold.co/560x850',
-    'https://placehold.co/560x850',
-  ];
-
   const decreaseQuantity = () => {
     if (quantity > 1) {
       setQuantity(quantity - 1);
@@ -190,6 +170,74 @@ export default function ProductPage() {
   const increaseQuantity = () => {
     setQuantity(quantity + 1);
   };
+
+  const { data: fetchedProductsData, isLoading } = useQuery({
+    queryKey: ['fetchedProduct', handle],
+    queryFn: () => getProductDetails(producthandle),
+  });
+  const Product = fetchedProductsData;
+
+  const { data: alikeProductsData, isLoading: alikeProductsIsLoading } =
+    useQuery({
+      queryKey: ['alikeProducts', Product?.productType],
+      queryFn: () =>
+        getAllProducts({
+          tags: Product?.tags,
+          productType: Product?.productType,
+          
+          sortOrder: 'desc',
+          sortBy: 'publishedAt',
+          excludeId: Product?.id,
+          limit: 20,
+        }),
+    });
+  const Products = alikeProductsData?.products ?? [];
+
+  if (isLoading) {
+    return <></>;
+  }
+
+  const thumbnails = Product.images.map((img: ProductImage) => img.src);
+
+  const colorValues =
+    Product.options.find((opt: ProductOption) => opt.name === 'Color')
+      ?.values || [];
+
+  colorValues.map((c: string) => {
+    console.log(c, textHex(c.toLowerCase()));
+  });
+  console.log();
+  const sizeValues =
+    Product.options.find((opt: ProductOption) => opt.name === 'Size')?.values ||
+    [];
+
+  const colors = colorValues.map((color: string) => ({
+    name: color,
+    hex: textHex(color.toLowerCase()), // You can map real hex codes if you have a reference
+    availability: Product.variants.some(
+      (v: Variant) => v.option1 === color && v.available
+    ),
+  }));
+
+  const sizes: Record<string, { availability: boolean }> = {};
+
+  // Safe check: make sure variants exist and are an array
+  if (Product.variants && Array.isArray(Product.variants)) {
+    for (const size of sizeValues) {
+      sizes[size] = {
+        availability: Product.variants.some(
+          (v: Variant) => v.option2 === size && v.available
+        ),
+      };
+    }
+  }
+
+  // Fallback in case something goes wrong (optional but safe)
+  if (Object.keys(sizes).length === 0) {
+    for (const size of sizeValues) {
+      sizes[size] = { availability: false };
+    }
+  }
 
   return (
     <>
@@ -201,12 +249,12 @@ export default function ProductPage() {
           <div className="md:w-1/2">
             <div className="md:sticky md:top-30">
               <ProductInfo
-                productId={Number(id)}
-                productName="Long-Sleeve Crewneck Top"
-                productImage="https://placehold.co/560x850"
-                productPrice={513.0}
-                productBrand="Diss&Miss"
-                productDiscount={211.5}
+                productId={Product.id}
+                productName={Product.title}
+                productImage={Product.images[0].src + '&width=400'}
+                productPrice={Product.price}
+                productBrand={Product.vendor}
+                productDiscount={0}
                 colors={colors}
                 sizes={sizes}
                 selectedColor={selectedColor}
@@ -228,9 +276,12 @@ export default function ProductPage() {
       </div>
       {/* You May Also Like */}
       <ProductSlider
-        Title="YOU MAY ALSO LIKE"
+        title="YOU MAY ALSO LIKE"
         className="site-padding mt-16"
         showViewAll={false}
+        products={Products}
+        isLoading={alikeProductsIsLoading}
+        isError={alikeProductsIsLoading}
       />
       <FAQ FAQdata={faqData} />
     </>

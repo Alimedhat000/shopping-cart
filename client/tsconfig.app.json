@@ -16,6 +16,7 @@
     "jsx": "react-jsx",
 
     /* Linting */
+    "typeRoots": ["./node_modules/@types", "./types"],    
     "strict": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
@@ -31,6 +32,7 @@
       "@util/*": ["src/util/*"],
       "@types/*": ["src/types/*"],
     }
+    
   },
   "include": ["src"]
 }

@@ -12,8 +12,8 @@ const routes = {
   children: [
     { path: '', element: <Home /> },
     { path: 'collections', element: <Navigate to="/collection/all" replace /> }, // 👈 redirect
-    { path: 'collections/:category', element: <Collections /> },
-    { path: 'product/:id', element: <ProductPage /> },
+    { path: 'collections/:handle', element: <Collections /> },
+    { path: 'product/:handle', element: <ProductPage /> },
     { path: 'cart', element: <Cart /> },
     {
       path: '*',

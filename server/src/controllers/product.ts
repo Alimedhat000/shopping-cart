@@ -79,6 +79,10 @@ export const getAllProducts = async (req: Request, res: Response) => {
       ? (req.query.fields as string).split(",").map((f) => f.trim())
       : [];
 
+    const excludeId = req.query.excludeId
+      ? BigInt(req.query.excludeId as string)
+      : undefined;
+
     // Build Where object
     const where: any = {};
     if (search) {
@@ -92,6 +96,10 @@ export const getAllProducts = async (req: Request, res: Response) => {
     }
     if (tags.length > 0) {
       where.tags = { hasEvery: tags };
+    }
+
+    if (excludeId) {
+      where.NOT = { id: excludeId };
     }
 
     const allowedFields = [
@@ -120,7 +128,13 @@ export const getAllProducts = async (req: Request, res: Response) => {
       skip,
       take: limit,
       ...(select && { select }),
+      include: {
+        variants: true,
+        images: true,
+      },
     });
+
+    const totalCount = await prisma.product.count({ where });
 
     logger.info("Fetched products", {
       count: products.length,
@@ -130,7 +144,7 @@ export const getAllProducts = async (req: Request, res: Response) => {
     });
 
     res.setHeader("Content-Type", "application/json");
-    res.json({ products });
+    res.json({ products, count: totalCount });
   } catch (err) {
     logger.error("Failed to fetch products", { error: err });
     res.status(500).json({ error: "Failed to fetch products" });
