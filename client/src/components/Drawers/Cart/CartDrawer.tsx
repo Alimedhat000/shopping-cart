@@ -5,9 +5,9 @@ import {
   useDrawer,
 } from '@/components/Util/Drawer';
 import { Link } from 'react-router-dom';
-import { useCart } from '@/util/CartProvider';
+import { useCart } from '@/features/cart/hooks/useCart';
 import { LuShoppingBag } from 'react-icons/lu';
-import CartItemList from '@/components/Cart/CartItemList';
+import CartItemList from '@/features/cart/components/CartItemList';
 import EmptyCartContent from './EmptyCartContent';
 
 export const CartDrawer = () => {

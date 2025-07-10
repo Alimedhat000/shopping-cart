@@ -2,7 +2,7 @@ import React from 'react';
 import { Outlet } from 'react-router-dom';
 import NavBar from '@components/NavBar';
 import Footer from '@components/Footer';
-import { CartProvider } from '@util/CartProvider';
+import { CartProvider } from '@/features/cart/context/CartProvider';
 import ScrollToTop from '@/util/ScrollToTop';
 
 const Layout: React.FC = () => {

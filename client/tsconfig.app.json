@@ -26,9 +26,10 @@
     "baseUrl": "./",
     "paths": {
       "@/*": ["src/*"],
+      "@features/*": ["src/features/*"],
       "@assets/*": ["src/assets/*"],
       "@components/*": ["src/components/*"],
-      "@routes/*": ["src/routes/*"],
+      "@routes/*": ["src/pages/*"],
       "@util/*": ["src/util/*"],
       "@types/*": ["src/types/*"],
     }
