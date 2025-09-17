@@ -2,9 +2,12 @@
     "name": "shopping-cart-root",
     "private": true,
     "scripts": {
-        "dev": "npm --prefix client run dev",
-        "build": "npm --prefix client run build",
+        "dev": "concurrently \"npm --prefix client run dev\" \"npm --prefix server run dev\"",
+        "build": "npm --prefix client run build && npm --prefix server run build",
         "preview": "npm --prefix client run preview",
         "lint": "npm --prefix client run lint"
+    },
+    "devDependencies": {
+        "concurrently": "^9.2.1"
     }
 }
